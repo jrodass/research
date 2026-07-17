@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jorge Rodas-Silva — Associate Professor at Universidad Estatal de Milagro, Ecuador.">
+<title>Jorge Rodas-Silva | Academic Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --dark:   #111827;
+  --mid:    #1E3A5F;
+  --blue:   #1D6FA4;
+  --light:  #2E86C1;
+  --accent: #EEF6FB;
+  --accent2: #F0F4FF;
+  --rule:   #DDE6EF;
+  --text:   #111827;
+  --muted:  #6B7280;
+  --white:  #FFFFFF;
+  --bg:     #F8FAFC;
+  --yellow: #D97706;
+  --green:  #059669;
+  --w: 960px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+/* ─ NAV ─ */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+}
+
+.nav-brand {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: 'DM Mono', monospace;
+  font-size: 9.5px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--blue); }
+
+/* ─ HERO ─ */
+.hero {
+  background: linear-gradient(135deg, #EEF6FB 0%, #F0F4FF 50%, #FAFBFF 100%);
+  padding: 72px 32px 56px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-inner {
+  max-width: var(--w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: end;
+}
+
+.hero-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.hero-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 46px;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+}
+
+.hero-name em {
+  color: var(--blue);
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.hero-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 2px;
+}
+
+.pill-blue   { background: #DBEAFE; color: #1D4ED8; }
+.pill-green  { background: #D1FAE5; color: #065F46; }
+.pill-yellow { background: #FEF3C7; color: #92400E; }
+
+.hero-contact {
+  text-align: right;
+}
+
+.contact-link {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.contact-link:hover { color: var(--blue); }
+
+.orcid-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--white);
+  border: 1.5px solid var(--blue);
+  padding: 7px 14px;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--blue);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  margin-top: 12px;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+.orcid-badge:hover { background: var(--blue); color: white; }
+
+.orcid-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #A6CE39;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  color: white;
+  font-weight: 700;
+}
+
+/* ─ LAYOUT ─ */
+.page {
+  max-width: var(--w);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+
+section {
+  padding-top: 56px;
+}
+
+.sec-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.sec-head h2 {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.sec-head::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* ─ ABOUT ─ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.about-card {
+  background: var(--white);
+  padding: 24px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.about-card-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+/* ─ RESEARCH INTERESTS ─ */
+.interests-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interest-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  padding: 6px 14px;
+  background: var(--accent);
+  color: var(--blue);
+  border: 1px solid var(--rule);
+  font-weight: 400;
+}
+
+/* ─ METRICS ─ */
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.metric-box {
+  background: var(--white);
+  padding: 24px 18px;
+  text-align: center;
+  border-top: 3px solid var(--blue);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.metric-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--blue);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+
+.metric-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.orcid-note {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.orcid-note .live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ─ PUBLICATIONS ─ */
+#pub-loading {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  padding: 24px 0;
+}
+
+.pub-item {
+  border-left: 3px solid var(--rule);
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  background: var(--white);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pub-item:hover {
+  border-color: var(--blue);
+  box-shadow: 0 2px 8px rgba(29,111,164,0.1);
+}
+
+.pub-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 5px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.pub-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub-title a:hover { color: var(--blue); }
+
+.pub-meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 9.5px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+.pub-year {
+  display: inline-block;
+  background: var(--accent2);
+  color: var(--blue);
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 2px 8px;
+  margin-right: 8px;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+}
+
+.pub-q {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border: 1px solid;
+  margin-left: 6px;
+  letter-spacing: 0.08em;
+}
+
+.pub-q1 { border-color: #059669; color: #059669; background: #F0FDF4; border-radius: 2px; }
+.pub-q2 { border-color: #D97706; color: #D97706; background: #FFFBEB; border-radius: 2px; }
+
+/* ─ EXPERIENCE / EDUCATION TIMELINE ─ */
+.timeline {
+  border-left: 2px solid var(--rule);
+  padding-left: 24px;
+  margin-left: 8px;
+}
+
+.tl-item {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--blue);
+  background: var(--bg);
+  border-radius: 50%;
+}
+
+.tl-period {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.tl-role {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 3px;
+}
+
+.tl-org {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.tl-badge {
+  display: inline-block;
+  background: #EFF6FF;
+  color: #1D4ED8;
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  padding: 3px 9px;
+  margin-top: 4px;
+  letter-spacing: 0.08em;
+  border-radius: 2px;
+}
+
+/* ─ EDUCATION ─ */
+.edu-item {
+  border: 1px solid var(--rule);
+  padding: 20px 22px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: start;
+  background: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.edu-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue);
+  padding-top: 3px;
+  white-space: nowrap;
+}
+
+.edu-degree {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 3px;
+}
+
+.edu-uni {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.edu-summa {
+  display: inline-block;
+  background: #FEF3C7;
+  color: #92400E;
+  font-family: 'DM Mono', monospace;
+  font-size: 7.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  margin-top: 5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+/* ─ AWARDS ─ */
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.award-item {
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  border-top: 3px solid var(--blue);
+  background: var(--white);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.award-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 5px;
+}
+
+.award-meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+/* ─ FOOTER ─ */
+footer {
+  background: var(--white);
+  border-top: 1px solid var(--rule);
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer p {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+footer span { color: var(--blue); }
+
+.last-update {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ─ RESPONSIVE ─ */
+@media (max-width: 700px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-contact { text-align: left; }
+  .about-grid { grid-template-columns: 1fr; }
+  .metrics-row { grid-template-columns: repeat(2, 1fr); }
+  .awards-grid { grid-template-columns: 1fr; }
+  nav { padding: 0 16px; }
+  .nav-links { gap: 16px; }
+  .hero { padding: 48px 20px 40px; }
+  .page { padding: 0 20px 60px; }
+}
+
+/* ─ FADE IN ─ */
+.fade-in {
+  animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─ METRIC LINK ─ */
+.metric-box a:hover .metric-num { color: var(--light); }
+.metric-box a .metric-label { transition: color 0.2s; }
+.metric-box a:hover .metric-label { color: var(--blue); }
+
+/* ─ SCHOLAR METRIC BOX ─ */
+.scholar-box { padding: 0; }
+.scholar-metric-link {
+  display: block;
+  padding: 18px 16px 14px;
+  text-decoration: none;
+  height: 100%;
+  transition: background 0.2s;
+}
+.scholar-metric-link:hover { background: var(--accent); }
+.scholar-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.scholar-label-top {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.scholar-stats {
+  display: flex;
+  gap: 0;
+  width: 100%;
+}
+.scholar-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  border-right: 1px solid var(--rule);
+}
+.scholar-stat:last-child { border-right: none; }
+.scholar-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #4285F4;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.scholar-num.scopus-color { color: #E9521E; }
+.scholar-num.wos-color    { color: #5A2D8A; }
+.scholar-stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 7px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-top: 4px;
+  text-align: center;
+  line-height: 1.3;
+}
+.db-loading-dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--muted);
+  opacity: 0.4;
+  animation: pulse 1.4s infinite;
+  vertical-align: middle;
+  margin: 0 1px;
+}
+
+/* ─ AFFILIATIONS ─ */
+.affil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.affil-item {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--rule);
+  border-radius: 0 0 4px 4px;
+  padding: 20px 20px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  position: relative;
+  transition: border-top-color 0.2s, box-shadow 0.2s;
+}
+
+.affil-item:hover {
+  border-top-color: var(--blue);
+  box-shadow: 0 3px 10px rgba(29,111,164,0.1);
+}
+
+.affil-current { border-top-color: var(--blue); }
+
+.affil-period {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.affil-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.affil-location {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.affil-role {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.affil-badge {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 7.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.affil-badge-current {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+@media (max-width: 700px) {
+  .affil-grid { grid-template-columns: 1fr; }
+  .scholar-stats { gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#"></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#affiliations">Affiliations</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-label">🇪🇨 Ecuador</div>
+      <h1 class="hero-name">Jorge Rodas-Silva</h1>
+      <div class="hero-title">
+<a class="contact-link" href="mailto:jorge.rodass@gmail.com" style="display:inline-flex;align-items:center;gap:6px;">
+  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+jorge.rodass@gmail.com
+</a>
+      </div>
+      <div class="hero-pills">
+        <span class="pill pill-blue">Business Intelligence</span>
+        <span class="pill pill-blue">Data warehouse</span>
+        <span class="pill pill-blue">Digital transformation</span>
+                <span class="pill pill-blue">Software Engineering</span>
+        <span class="pill pill-green">BIDWPC CERTIFIED</span> 
+      </div>
+    </div>
+    <div class="hero-contact">
+ 
+
+      <a class="contact-link" href="https://www.scopus.com/authid/detail.uri?authorId=57188854666" target="_blank" style="display:flex;align-items:center;justify-content:flex-end;gap:6px;">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        Scopus
+      </a>
+
+      <a class="contact-link" href="https://www.webofscience.com/wos/author/rid/6710637" target="_blank" style="display:flex;align-items:center;justify-content:flex-end;gap:6px;">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-2.5 3.5-4 5.5-4 9s1.5 5.5 4 9M12 3c2.5 3.5 4 5.5 4 9s-1.5 5.5-4 9"/></svg>
+        Web of Science
+      </a>
+
+
+
+
+
+      <a class="contact-link" href="https://scholar.google.es/citations?user=4mRwvC0AAAAJ" target="_blank" style="display:flex;align-items:center;justify-content:flex-end;gap:6px;">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L1 9l11 6 9-4.91V17"/><path d="M5 12v5c0 1.657 3.134 3 7 3s7-1.343 7-3v-5"/></svg>
+        Google Scholar
+      </a>
+
+      <a class="contact-link" href="https://orcid.org/0000-0001-6526-7740" target="_blank" style="display:flex;align-items:center;justify-content:flex-end;gap:6px;">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 8h3.5a2.5 2.5 0 0 1 0 5H9V8z"/><line x1="9" y1="13" x2="9" y2="16"/><circle cx="9" cy="6" r="1" fill="currentColor" stroke="none"/></svg>
+        ORCID
+      </a>
+
+
+
+
+
+
+    </div>
+  </div>
+</header>
+
+<main class="page">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="sec-head"><h2>About</h2></div>
+    <div class="about-grid fade-in">
+      <div class="about-card">
+        <div class="about-card-label">Profile</div>
+        <p>Associate Professor at the Universidad Estatal de Milagro (UNEMI), Ecuador. Ph.D. in Computer Engineering awarded Cum Laude with International Distinction from the Universidad de Sevilla, Spain. Director of Academic Process Innovation. Over 15 years of teaching and research experience, specializing in Business Intelligence, Digital Transformation, and Software Engineering.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-label">Research Interests</div>
+        <div class="interests-wrap" style="margin-top:4px;">
+          <span class="interest-tag">Business Intelligence</span>
+          <span class="interest-tag">Data Warehouse</span>
+          <span class="interest-tag">Software Product Lines</span>
+          <span class="interest-tag">Recommender Systems</span>
+          <span class="interest-tag">Digital Transformation</span>
+          <span class="interest-tag">Educational Data Mining</span>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS (ORCID live) -->
+  <section id="publications">
+    <div class="sec-head"><h2>Publications</h2></div>
+
+    <!-- Metrics -->
+    <div class="metrics-row fade-in" id="metrics-row">
+
+ 
+      <!-- SCOPUS PANEL -->
+      <div class="metric-box scholar-box">
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57188854666" target="_blank" rel="noopener" class="scholar-metric-link">
+          <div class="scholar-top">
+            <span class="scholar-label-top">Scopus</span>
+          </div>
+          <div class="scholar-stats">
+            <div class="scholar-stat">
+              <span class="scholar-num scopus-color" id="sc-works"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">Works</span>
+            </div>
+            <div class="scholar-stat">
+              <span class="scholar-num scopus-color" id="sc-cites"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">Citations</span>
+            </div>
+            <div class="scholar-stat">
+              <span class="scholar-num scopus-color" id="sc-hindex"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">h-index</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- WEB OF SCIENCE PANEL -->
+      <div class="metric-box scholar-box">
+        <a href="https://www.webofscience.com/wos/author/record/6710637" target="_blank" rel="noopener" class="scholar-metric-link">
+          <div class="scholar-top">
+            <span class="scholar-label-top">Web of Science</span>
+          </div>
+          <div class="scholar-stats">
+            <div class="scholar-stat">
+              <span class="scholar-num wos-color" id="wos-works"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">Works</span>
+            </div>
+            <div class="scholar-stat">
+              <span class="scholar-num wos-color" id="wos-cites"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">Citations</span>
+            </div>
+            <div class="scholar-stat">
+              <span class="scholar-num wos-color" id="wos-hindex"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">h-index</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- GOOGLE SCHOLAR PANEL -->
+      <div class="metric-box scholar-box">
+        <a href="https://scholar.google.es/citations?user=4mRwvC0AAAAJ" target="_blank" rel="noopener" class="scholar-metric-link">
+          <div class="scholar-top">
+            <span class="scholar-label-top">Google Scholar</span>
+          </div>
+          <div class="scholar-stats">
+            <div class="scholar-stat">
+              <span class="scholar-num" id="gs-works"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">Works</span>
+            </div>
+            <div class="scholar-stat">
+              <span class="scholar-num" id="gs-citations"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">Citations</span>
+            </div>
+            <div class="scholar-stat">
+              <span class="scholar-num" id="gs-hindex"><span class="db-loading-dot"></span></span>
+              <span class="scholar-stat-label">h-index</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="metric-box">
+         <a href="https://orcid.org/0000-0001-6526-7740" target="_blank" rel="noopener" class="scholar-metric-link">
+
+        <div class="metric-num" id="m-works">—</div>
+        <div class="metric-label">ORCID Works</div>
+
+             </a>
+      </div>
+    </div>
+
+    <div class="orcid-note" style="margin-bottom:20px;">
+      <span class="live-dot"></span>
+      Publications loaded live from ORCID · Updates automatically
+    </div>
+
+    <div id="pub-loading">Loading publications from ORCID…</div>
+    <div id="pub-list"></div>
+
+    <!-- Pagination -->
+    <div id="pub-pagination" style="display:none; margin-top:20px; display:none; align-items:center; gap:8px; flex-wrap:wrap;">
+      <button id="btn-prev" onclick="changePage(-1)" style="font-family:'DM Mono',monospace;font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:7px 16px;border:1.5px solid var(--rule);background:var(--white);color:var(--muted);cursor:pointer;border-radius:2px;">← Prev</button>
+      <span id="page-info" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);padding:0 8px;"></span>
+      <button id="btn-next" onclick="changePage(1)" style="font-family:'DM Mono',monospace;font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:7px 16px;border:1.5px solid var(--rule);background:var(--white);color:var(--muted);cursor:pointer;border-radius:2px;">Next →</button>
+      <span id="pub-count-label" style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);margin-left:8px;"></span>
+    </div>
+
+    <div style="margin-top:16px; padding:14px 18px; background:var(--accent2); border-left:3px solid var(--blue); border-radius:0 4px 4px 0;">
+      <p style="color:var(--muted); font-family:'DM Mono',monospace; font-size:10px; line-height:1.6;">
+        Scopus and WoS metrics are fetched automatically and may show <strong style="color:var(--blue);">?</strong> if a source is temporarily unavailable.
+        Google Scholar metrics are scraped. For verified real-time figures visit
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57188854666" target="_blank" style="color:var(--blue);">Scopus</a> ·
+        <a href="https://www.webofscience.com/wos/author/rid/6710637" target="_blank" style="color:var(--blue);">Web of Science</a> ·
+        <a href="https://scholar.google.es/citations?user=4mRwvC0AAAAJ" target="_blank" style="color:var(--blue);">Google Scholar</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="sec-head"><h2>Academic Experience</h2></div>
+    <div class="timeline fade-in">
+
+      <div class="tl-item">
+        <div class="tl-period"> 2022 — Present</div>
+        <div class="tl-role">Director of Academic Process Innovation</div>
+        <div class="tl-org">Vice-Rectorate for Undergraduate Academic Training · Universidad Estatal de Milagro</div>
+        <span class="tl-badge">Academic Management</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-period">2020 — 2024</div>
+        <div class="tl-role">Coordinator, M.Sc. in Information Technologies</div>
+        <div class="tl-org">Universidad Estatal de Milagro</div>
+        <span class="tl-badge">Graduate Program Direction</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-period">2015 — Present</div>
+        <div class="tl-role">Associaate Professor</div>
+        <div class="tl-org">Universidad Estatal de Milagro</div>
+        <span class="tl-badge">Business Intelligence · Software Engineering</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-period">2013 — 2014</div>
+        <div class="tl-role">Research Coordinator</div>
+        <div class="tl-org">Faculty of Sciences and Engineering · Universidad Estatal de Milagro</div>
+        <span class="tl-badge">Research</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-period">2008 — 2009</div>
+        <div class="tl-role">Senior Programmer</div>
+        <div class="tl-org">Centro de Especialidades MegaSalud</div>
+        <span class="tl-badge">Industry</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2007 — 2008</div>
+        <div class="tl-role">Junior Programmer</div>
+        <div class="tl-org">Gobierno Autónomo Descentralizado Simón Bolívar</div>
+        <span class="tl-badge">Industry</span>
+      </div>
+
+  
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="sec-head"><h2>Education</h2></div>
+    <div class="fade-in">
+
+      <div class="edu-item">
+        <div class="edu-year">2019</div>
+        <div>
+          <div class="edu-degree">Ph.D. in Computer Engineering</div>
+          <div class="edu-uni">Universidad de Sevilla · Sevilla, Spain</div>
+          <span class="edu-summa">Summa Cum Laude · INTERNATIONAL DISTINCTION</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-year">2011</div>
+        <div>
+          <div class="edu-degree">M.Sc. in Information Technology Management</div>
+          <div class="edu-uni">Universidad Estatal de Milagro · Milagro, Ecuador</div>
+             <span class="edu-summa">HONORABLE MENTION · BEST GRADUATE</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-year">2010</div>
+        <div>
+          <div class="edu-degree">B.Sc. in Computer Engineering</div>
+          <div class="edu-uni">Universidad Estatal de Milagro · Milagro, Ecuador</div>
+          <span class="edu-summa">HONORABLE MENTION · BEST GRADUATE</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-year">2013</div>
+        <div>
+          <div class="edu-degree">Business Intelligence and Datawarehouse (BIDWPC)</div>
+          <div class="edu-uni">Escuela Superior Politécnica del Litoral · Guayaquil, Ecuador</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <div class="sec-head"><h2>Awards &amp; Recognition</h2></div>
+    <div class="awards-grid fade-in">
+
+      <div class="award-item">
+        <div class="award-title">Ph.D. Cum Laude with International Distinction</div>
+        <div class="award-meta">Unanimous · Universidad de Sevilla · December 2019</div> 
+      </div>
+
+      <div class="award-item">
+        <div class="award-title">Honorable Mention — Best M.Sc. Graduate in IT Management</div>
+        <div class="award-meta">First Cohort · Universidad Estatal de Milagro · July 2011</div>
+      </div>
+
+      <div class="award-item">
+        <div class="award-title">Honorable Mention — Best B.Sc. Graduate</div>
+        <div class="award-meta">Computer Systems Engineering · UNEMI · February 2006</div>
+      </div> 
+
+
+    </div>
+  </section>
+
+  <!-- AFFILIATIONS -->
+  <section id="affiliations">
+    <div class="sec-head"><h2>Teaching &amp; Research Affiliations</h2></div>
+    <div class="affil-grid fade-in">
+
+      <div class="affil-item affil-current">
+        <div class="affil-period">2015 – Present</div>
+        <div class="affil-name">Universidad Estatal de Milagro</div>
+        <div class="affil-location">Milagro, Ecuador</div>
+        <div class="affil-role">Associate Professor</div>
+        <span class="affil-badge affil-badge-current">Current</span>
+      </div>
+
+      <div class="affil-item affil-current">
+        <div class="affil-period">2024 – Present</div>
+        <div class="affil-name">Universidad Técnica de Manabí</div>
+        <div class="affil-location">Portoviejo, Ecuador</div>
+        <div class="affil-role">Guest Professor</div>
+        <span class="affil-badge affil-badge-current">Current</span>
+      </div>
+
+      <div class="affil-item affil-current">
+        <div class="affil-period">2021 – 2024</div>
+        <div class="affil-name">Universidad Laica Eloy Alfaro de Manabí</div>
+        <div class="affil-location">Manta, Ecuador</div>
+        <div class="affil-role">Guest Professor</div>
+ 
+      </div>
+
+      <div class="affil-item">
+        <div class="affil-period">2021-2023</div>
+        <div class="affil-name">Universidad Estatal Península de Santa Elena</div>
+        <div class="affil-location">La Liberta, Ecuador</div>
+        <div class="affil-role">Guest Professor</div>
+      </div>
+
+     
+ 
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p><span>Jorge Rodas-Silva</span> · Associate Professor · Universidad Estatal de Milagro</p>
+  <p class="last-update" id="last-update">
+    <span class="live-dot"></span>
+    Publications synced from ORCID
+  </p>
+</footer>
+
+<!-- ─────── ACADEMIC METRICS (Scholar · Scopus · WoS) ─────── -->
+<script>
+(function () {
+  'use strict';
+
+  /*
+   * Static fallback values (from verified profile screenshots, March 2026).
+   * Shown immediately on load; overwritten by live fetch on success.
+   *   Google Scholar : 534 citations · h-index 12
+   *   Scopus         : 35 docs · 263 citations · h-index 8
+   *   Web of Science : 25 pubs · 154 citations · h-index 6
+   */
+  function setText(id, val) {
+    var el = document.getElementById(id);
+    if (el && val !== null && val !== undefined) el.textContent = String(val);
+  }
+
+  setText('gs-citations', '534');
+  setText('gs-hindex',    '12');
+  setText('gs-works',     '61');
+  setText('sc-works',     '?');
+  setText('sc-cites',     '?');
+  setText('sc-hindex',    '?');
+  setText('wos-works',    '25');
+  setText('wos-cites',    '154');
+  setText('wos-hindex',   '6'); 
+
+
+
+  var PROXY_BASE  = 'https://api.allorigins.win/get?url=';
+  var PROXY2_BASE = 'https://corsproxy.io/?';
+
+  /* ════════════════════════════════════════════
+     1. GOOGLE SCHOLAR — corsproxy.io for everything
+     corsproxy.io returns plain text (not JSON wrapper).
+     Paginates cstart=0,20,40... until rows < 20.
+     Confirmed working: 61 works (20+20+20+1).
+  ════════════════════════════════════════════ */
+
+  (function fetchScholar() {
+    var GS_USER  = '4mRwvC0AAAAJ';
+    var PAGE     = 20;
+    var CPBASE   = 'https://corsproxy.io/?';
+
+    function gsUrl(cstart) {
+      return 'https://scholar.google.com/citations?user=' + GS_USER +
+             '&hl=en&pagesize=' + PAGE + '&cstart=' + cstart;
+    }
+
+    var statsSet = false;
+
+    function parseStats(html) {
+      if (statsSet) return;
+      var cells = [];
+      var re = /<td[^>]*class="gsc_rsb_std"[^>]*>(\d+)<\/td>/g, m;
+      while ((m = re.exec(html)) !== null) cells.push(m[1]);
+      if (cells.length >= 3) {
+        setText('gs-citations', cells[0]);
+        setText('gs-hindex',    cells[2]);
+        statsSet = true;
+      }
+    }
+
+    function walkPages(cstart, total) {
+      fetch(CPBASE + encodeURIComponent(gsUrl(cstart)))
+        .then(function(r) { return r.text(); })
+        .then(function(html) {
+          parseStats(html);
+          var rows = (html.match(/class="gsc_a_tr"/g) || []).length - (html.match(/class="gsc_a_trh"/g) || []).length;
+          var newTotal = total + rows;
+          if (rows < PAGE || cstart > 500) {
+            setText('gs-works', newTotal);
+          } else {
+            walkPages(cstart + PAGE, newTotal);
+          }
+        })
+        .catch(function() {
+          if (total > 0) setText('gs-works', total);
+        });
+    }
+
+    walkPages(0, 0);
+  })();
+
+  /* ════════════════════════════════════════════
+     2. SCOPUS via Elsevier Author Retrieval API
+     Author ID : 57193428877
+     Direct call — no proxy needed.
+
+     FIELD MAPPING (Author Retrieval Response):
+       document-count  = number of works (35)
+       citation-count  = total citations received (263)
+         NOTE: cited-by-count = documents that cite the author
+               which is a different, lower number (~242).
+               We want citation-count for the raw total.
+       h-index         = h-index value (8)
+  ════════════════════════════════════════════ */
+    (function fetchScopus() {
+      var SCOPUS_AUTHOR_ID = '57188854666';
+      fetch('https://scopus-proxy-blond.vercel.app/api/scopus?author_id=' + SCOPUS_AUTHOR_ID)
+        .then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .then(function (data) {
+          var resp    = data['author-retrieval-response'];
+          var profile = (resp && resp[0]) || {};
+          var core    = profile['coredata'] || {};
+
+          var works  = core['document-count'];
+          var cites  = core['citation-count'];
+          var hIdx   = profile['h-index'];
+
+          if (works != null) setText('sc-works',  works);
+          if (cites != null) setText('sc-cites',  cites);
+          if (hIdx  != null) setText('sc-hindex', hIdx);
+        })
+        .catch(function (err) {
+          console.warn('Scopus proxy error:', err);
+        });
+    })();
+
+  /* ════════════════════════════════════════════
+     3. WEB OF SCIENCE
+     No public REST API for author metrics.
+     Scrape the public author record page via
+     CORS proxy, parse __NEXT_DATA__ JSON payload
+     or fallback regex on rendered HTML.
+     Profile: webofscience.com/wos/author/record/GZA-8759-2022
+  ════════════════════════════════════════════ */
+  (function fetchWoS() {
+    var WOS_URL = 'https://www.webofscience.com/wos/author/record/6710637';
+
+    function parseAndSet(html) {
+      if (!html) return false;
+      var found = false;
+
+      /* Try embedded __NEXT_DATA__ JSON payload */
+      var ndMatch = html.match(/<script[^>]+id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+      if (ndMatch) {
+        try {
+          var nd = JSON.parse(ndMatch[1]);
+          var ap = nd && nd.props && nd.props.pageProps &&
+                   (nd.props.pageProps.authorData || nd.props.pageProps.author);
+          if (ap) {
+            var pubs  = ap.documentCount  || ap.totalDocuments || ap.publications;
+            var cites = ap.timesCited     || ap.citationCount  || ap.citations;
+            var hIdx  = ap.hIndex         || ap['h-index'];
+            if (pubs  != null) { setText('wos-works',  pubs);  found = true; }
+            if (cites != null) { setText('wos-cites',  cites); found = true; }
+            if (hIdx  != null) { setText('wos-hindex', hIdx);  found = true; }
+          }
+        } catch (e) { /* fall through */ }
+      }
+
+      if (found) return true;
+
+      /* Regex fallback on rendered HTML */
+      var pubM  = html.match(/>(\d+)<\/[^>]+>\s*[^<]*(?:Publication|Document)/i) ||
+                  html.match(/(\d+)\s*Publication/i);
+      var citM  = html.match(/>(\d+)<\/[^>]+>\s*[^<]*(?:Times?\s*Cited|Citation)/i) ||
+                  html.match(/(\d+)\s*Times?\s*Cited/i);
+      var hM    = html.match(/[Hh][\s-]Index[^<]*<[^>]+>\s*(\d+)/) ||
+                  html.match(/(\d+)[^<]*[Hh][\s-]Index/);
+
+      if (pubM)  { setText('wos-works',  pubM[1]);  found = true; }
+      if (citM)  { setText('wos-cites',  citM[1]);  found = true; }
+      if (hM)    { setText('wos-hindex', hM[1]);    found = true; }
+
+      return found;
+    }
+
+    fetch(PROXY_BASE + encodeURIComponent(WOS_URL))
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!parseAndSet(d.contents || '')) throw new Error('parse failed');
+      })
+      .catch(function () {
+        fetch(PROXY2_BASE + encodeURIComponent(WOS_URL))
+          .then(function (r) { return r.text(); })
+          .then(function (html) { parseAndSet(html); })
+          .catch(function () { /* static values remain */ });
+      });
+  })();
+
+})();
+</script>
+
+<!-- ─────── ORCID LIVE INTEGRATION ─────── -->
+<script>
+(function() {
+  var ORCID_ID = "0000-0001-6526-7740";
+  var PAGE_SIZE = 5;
+  var currentPage = 0;
+  var allWorks = [];
+
+  var loadingEl = document.getElementById("pub-loading");
+  var listEl    = document.getElementById("pub-list");
+  var mWorks    = document.getElementById("m-works");
+  var paginEl   = document.getElementById("pub-pagination");
+  var btnPrev   = document.getElementById("btn-prev");
+  var btnNext   = document.getElementById("btn-next");
+  var pageInfo  = document.getElementById("page-info");
+  var countLbl  = document.getElementById("pub-count-label");
+
+  function escapeHtml(str) {
+    return (str || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+
+  function renderPage(page) {
+    listEl.innerHTML = "";
+    var start = page * PAGE_SIZE;
+    var slice = allWorks.slice(start, start + PAGE_SIZE);
+    var totalPages = Math.ceil(allWorks.length / PAGE_SIZE);
+
+    slice.forEach(function(work) {
+      var title   = escapeHtml(work.title && work.title.title && work.title.title.value) || "Untitled";
+      var year    = (work["publication-date"] && work["publication-date"].year && work["publication-date"].year.value) || "";
+      var journal = escapeHtml(work["journal-title"] && work["journal-title"].value);
+      var extIds  = (work["external-ids"] && work["external-ids"]["external-id"]) || [];
+      var doiObj  = extIds.find(function(e){ return e["external-id-type"] === "doi"; });
+      var doi     = doiObj ? doiObj["external-id-value"] : null;
+      var doiUrl  = doi ? "https://doi.org/" + doi : null;
+
+      var titleHtml = doiUrl
+        ? '<a href="' + doiUrl + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">' + title + '</a>'
+        : title;
+
+      // Minimal SVG external-link icon matching the site line
+      var doiIcon = '<svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-bottom:1px;"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"/><polyline points="8 1 11 1 11 4"/><line x1="5" y1="7" x2="11" y2="1"/></svg>';
+
+      var doiBadge = doiUrl
+        ? ' &middot; <a href="' + doiUrl + '" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:3px;color:var(--blue);font-family:\'DM Mono\',monospace;font-size:9px;font-weight:500;text-decoration:none;letter-spacing:0.04em;">DOI ' + doiIcon + '</a>'
+        : "";
+
+      var el = document.createElement("div");
+      el.className = "pub-item";
+      el.innerHTML =
+        '<div class="pub-title">' + titleHtml + '</div>' +
+        '<div class="pub-meta" style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-top:5px;">' +
+          (year    ? '<span class="pub-year">' + year + '</span>' : '') +
+          (journal ? '<em style="color:var(--muted);font-size:12px;">' + journal + '</em>' : '') +
+          doiBadge +
+        '</div>';
+      listEl.appendChild(el);
+    });
+
+    // Pagination controls
+    pageInfo.textContent = "Page " + (page + 1) + " of " + totalPages;
+    countLbl.textContent = allWorks.length + " works total";
+    btnPrev.disabled = (page === 0);
+    btnNext.disabled = (page >= totalPages - 1);
+    btnPrev.style.opacity = (page === 0) ? "0.35" : "1";
+    btnNext.style.opacity = (page >= totalPages - 1) ? "0.35" : "1";
+
+    // Scroll to top of publications section on page change
+    if (page !== 0) {
+      document.getElementById("publications").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
+  window.changePage = function(dir) {
+    var totalPages = Math.ceil(allWorks.length / PAGE_SIZE);
+    currentPage = Math.max(0, Math.min(currentPage + dir, totalPages - 1));
+    renderPage(currentPage);
+  };
+
+  fetch("https://pub.orcid.org/v3.0/" + ORCID_ID + "/works", {
+    headers: { "Accept": "application/json" }
+  })
+  .then(function(res) {
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    return res.json();
+  })
+  .then(function(data) {
+    var groups = data.group || [];
+
+    if (groups.length === 0) {
+      loadingEl.textContent = "No public works found. Make sure works are set to 'Everyone' visibility in ORCID.";
+      return;
+    }
+
+    mWorks.textContent = groups.length;
+    loadingEl.style.display = "none";
+
+    // Sort by year descending, most recent first
+    allWorks = groups
+      .map(function(g) { return g["work-summary"] && g["work-summary"][0]; })
+      .filter(Boolean)
+      .sort(function(a, b) {
+        var ya = (a["publication-date"] && a["publication-date"].year && a["publication-date"].year.value) || "0";
+        var yb = (b["publication-date"] && b["publication-date"].year && b["publication-date"].year.value) || "0";
+        return yb - ya;
+      });
+
+    // Show pagination
+    paginEl.style.display = "flex";
+    renderPage(0);
+
+    // Update footer timestamp
+    var now = new Date();
+    var stamp = now.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+    var footerEl = document.getElementById("last-update");
+    if (footerEl) {
+      footerEl.innerHTML = '<span class="live-dot"></span> Synced from ORCID &middot; ' + stamp;
+    }
+  })
+  .catch(function(err) {
+    loadingEl.innerHTML =
+      '<span style="font-family:\'DM Mono\',monospace;font-size:10px;color:#DC2626;">' +
+      'Could not load publications from ORCID. ' +
+      '<a href="https://orcid.org/0000-0001-8558-9122" target="_blank" style="color:var(--blue);">View on ORCID</a>' +
+      '</span>';
+  });
+
+})();
+</script>
+
+</body>
+</html>
