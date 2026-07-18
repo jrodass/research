@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "year": "2025",
+    "type_es": "Artículo",
+    "type_en": "Article",
+    "title_es": "Análisis bibliométrico de estrategias de enseñanza para cursos de programación en educación superior",
+    "title_en": "Bibliometric analysis of teaching strategies for programming courses in higher education",
+    "journal": "Formación Universitaria, 18(4)",
+    "summary_es": "Estudio bibliométrico de la producción científica sobre estrategias utilizadas para enseñar programación en educación superior. El trabajo identifica tendencias, enfoques recurrentes y líneas de investigación que pueden orientar el diseño de experiencias formativas más efectivas.",
+    "summary_en": "A bibliometric study of scientific production on strategies used to teach programming in higher education. It identifies trends, recurring approaches and research directions that can guide the design of more effective learning experiences.",
+    "url": "https://www.scielo.cl/article_plus.php?lng=es&pid=S0718-50062025000400039&tlng=es",
+    "source": "SciELO"
+  },
+  {
+    "year": "2025",
+    "type_es": "Artículo",
+    "type_en": "Article",
+    "title_es": "Equidad en la evaluación académica y calidad de los exámenes universitarios: un análisis de patrones en educación superior",
+    "title_en": "Equity in academic assessment and quality of university examinations: a pattern analysis in higher education",
+    "journal": "Formación Universitaria",
+    "summary_es": "Investigación sobre patrones asociados con la equidad de la evaluación académica y la calidad de los exámenes universitarios. Propone una lectura basada en datos para apoyar decisiones institucionales orientadas a evaluaciones más consistentes, transparentes y pertinentes.",
+    "summary_en": "Research on patterns associated with equity in academic assessment and the quality of university examinations. It offers a data-informed perspective to support institutional decisions toward more consistent, transparent and relevant assessment.",
+    "url": "https://www.researchgate.net/publication/398788398_Equidad_en_la_evaluacion_academica_y_calidad_de_los_examenes_universitarios_un_analisis_de_patrones_en_educacion_superior",
+    "source": "ResearchGate"
+  },
+  {
+    "year": "2024",
+    "type_es": "Artículo",
+    "type_en": "Article",
+    "title_es": "Aplicación de enfoques basados en lenguajes de programación educativos para desarrollar competencias de programación",
+    "title_en": "Applying Educational Programming Language-Based Approaches to Develop Programming Competencies",
+    "journal": "International Journal of Computer Games Technology",
+    "summary_es": "Trabajo que examina el uso de lenguajes y entornos educativos de programación como apoyo para desarrollar competencias en estudiantes universitarios. Analiza su potencial para facilitar la comprensión de conceptos y fortalecer el aprendizaje inicial de programación.",
+    "summary_en": "A study examining educational programming languages and environments as tools for developing programming competencies among university students. It considers their potential to support conceptual understanding and strengthen introductory programming learning.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1155/2024/4918351",
+    "source": "Wiley"
+  },
+  {
+    "year": "2023",
+    "type_es": "Ponencia",
+    "type_en": "Conference paper",
+    "title_es": "Predicción del rendimiento académico de estudiantes de bajos ingresos mediante minería de datos educativos",
+    "title_en": "Predicting Academic Performance of Low-Income Students using Educational Data Mining",
+    "journal": "CSEDU 2023",
+    "summary_es": "La investigación utiliza técnicas de minería de datos educativos para identificar anticipadamente estudiantes con riesgo de bajo rendimiento. Su finalidad es contribuir al diseño de intervenciones oportunas y a la mejora de la experiencia de aprendizaje en entornos universitarios.",
+    "summary_en": "The research uses educational data mining techniques to identify students at risk of low academic performance at an early stage. Its purpose is to support timely interventions and improve the learning experience in university settings.",
+    "url": "https://www.scitepress.org/Papers/2023/120863/120863.pdf",
+    "source": "SCITEPRESS"
+  },
+  {
+    "year": "2022",
+    "type_es": "Artículo",
+    "type_en": "Article",
+    "title_es": "Análisis comparativo de metodologías y herramientas tecnológicas para procesos de Business Intelligence orientados a la toma de decisiones",
+    "title_en": "Comparative analysis of methodologies and technological tools for decision-oriented Business Intelligence processes",
+    "journal": "Informática y Sistemas, 6(1)",
+    "summary_es": "Análisis comparativo de metodologías y herramientas empleadas en proyectos de inteligencia de negocios. El estudio contrasta características de los enfoques de Bill Inmon y Ralph Kimball y considera su aporte a la toma de decisiones organizacionales.",
+    "summary_en": "A comparative analysis of methodologies and tools used in business intelligence projects. The study contrasts characteristics of the Bill Inmon and Ralph Kimball approaches and considers their contribution to organizational decision-making.",
+    "url": "https://doi.org/10.33936/isrtic.v6i1.4522",
+    "source": "DOI"
+  },
+  {
+    "year": "2021",
+    "type_es": "Artículo",
+    "type_en": "Article",
+    "title_es": "Uso de aplicaciones web para la gestión de clínicas veterinarias y su impacto en la mejora de procesos administrativos",
+    "title_en": "Use of Web applications for the management of veterinary clinics and their impact on administrative process improvement",
+    "journal": "Ecuadorian Science Journal, 5(4)",
+    "summary_es": "Presenta una aplicación web basada en software libre para centralizar y digitalizar la gestión de información en clínicas veterinarias. La solución busca agilizar la atención, reducir duplicidades y mejorar el manejo de historias clínicas y registros.",
+    "summary_en": "Presents a free-software web application for centralizing and digitizing information management in veterinary clinics. The solution seeks to streamline service, reduce duplication and improve the management of clinical histories and records.",
+    "url": "https://doi.org/10.46480/esj.5.4.174",
+    "source": "DOI"
+  },
+  {
+    "year": "2021",
+    "type_es": "Ponencia",
+    "type_en": "Conference paper",
+    "title_es": "Análisis de opinión y sentimiento de usuarios de Twitter durante las elecciones presidenciales de Ecuador de 2021",
+    "title_en": "Opinion and Sentiment Analysis of Twitter Users during the 2021 Ecuador Presidential Election",
+    "journal": "KDIR 2021",
+    "summary_es": "Estudio de publicaciones en Twitter durante el proceso electoral ecuatoriano de 2021. Aplica análisis de opinión y sentimiento para explorar conversaciones, menciones y percepciones expresadas por los usuarios en redes sociales.",
+    "summary_en": "A study of Twitter posts during Ecuador's 2021 electoral process. It applies opinion and sentiment analysis to explore conversations, mentions and perceptions expressed by social-media users.",
+    "url": "https://www.scitepress.org/Papers/2021/106510/106510.pdf",
+    "source": "SCITEPRESS"
+  }
+]

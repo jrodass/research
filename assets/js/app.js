@@ -1,104 +1,52 @@
 
-const ORCID="0000-0001-6526-7740";
-const ORCID_API="https://pub.orcid.org/v3.0";
-const CROSSREF="https://api.crossref.org/works/";
-const fallbackSummary=(title)=>`Publicación académica vinculada con ${title.toLowerCase()}. Consulte el artículo completo para conocer el problema abordado, el enfoque metodológico y sus principales resultados.`;
-
-const cleanHTML=(s="")=>{
- const d=document.createElement("div"); d.innerHTML=s;
- return (d.textContent||d.innerText||"").replace(/\s+/g," ").trim();
-};
-const clip=(s,n=530)=>s.length>n?s.slice(0,n).replace(/\s+\S*$/,"")+"…":s;
-const doiFrom=(ids=[])=>{
- const x=ids.find(i=>(i["external-id-type"]||"").toLowerCase()==="doi");
- return x?.["external-id-value"]?.replace(/^https?:\/\/(dx\.)?doi\.org\//i,"")||"";
-};
-async function crossrefAbstract(doi){
- if(!doi)return "";
- try{
-  const r=await fetch(CROSSREF+encodeURIComponent(doi));
-  if(!r.ok)return "";
-  const m=(await r.json()).message||{};
-  return cleanHTML(m.abstract||m.subtitle?.[0]||"");
- }catch{return ""}
+const LANG=document.documentElement.lang.startsWith("en")?"en":"es";
+const prefix=document.body.dataset.prefix||"";
+let publications=[], posts=[];
+const t=(obj,key)=>obj[`${key}_${LANG}`]||obj[`${key}_es`]||"";
+function publicationCard(p){
+ return `<article class="card pub">
+ <div class="card-top"><span>${p.year}</span><span>${t(p,"type")}</span></div>
+ <h3><a href="${p.url}" target="_blank" rel="noopener">${t(p,"title")}</a></h3>
+ <p class="summary">${t(p,"summary")}</p><div class="journal">${p.journal}</div>
+ <div class="card-foot"><span class="badge">${p.source}</span><a class="more" href="${p.url}" target="_blank" rel="noopener">${LANG==="en"?"Open article":"Ver artículo"} ↗</a></div></article>`;
 }
-async function workDetail(putCode){
- try{
-  const r=await fetch(`${ORCID_API}/${ORCID}/work/${putCode}`,{headers:{Accept:"application/json"}});
-  return r.ok?await r.json():{};
- }catch{return {}}
+function renderPublications(list){
+ const el=document.querySelector("[data-publications]");if(!el)return;
+ el.innerHTML=list.length?list.map(publicationCard).join(""):`<div class="empty">${LANG==="en"?"No publications match the selected criteria.":"No se encontraron publicaciones con los criterios seleccionados."}</div>`;
 }
-async function loadLocal(){
- try{
-  const r=await fetch("data/publications.json",{cache:"no-store"});
-  if(r.ok){const x=await r.json();if(Array.isArray(x)&&x.length)return x}
- }catch{}
- return [];
-}
-async function loadOrcid(){
- const r=await fetch(`${ORCID_API}/${ORCID}/works`,{headers:{Accept:"application/json"}});
- if(!r.ok)throw Error("ORCID");
- const data=await r.json();
- const basic=(data.group||[]).map(g=>{
-  const s=g["work-summary"]?.[0]||{};
-  return {
-   putCode:s["put-code"], title:s.title?.title?.value||"Publicación sin título",
-   year:s["publication-date"]?.year?.value||"—",
-   type:(s.type||"journal-article").replaceAll("_"," ").toLowerCase(),
-   journal:s["journal-title"]?.value||"",
-   doi:doiFrom(s["external-ids"]?.["external-id"]||[]),
-   url:s.url?.value||""
-  }
- }).sort((a,b)=>String(b.year).localeCompare(String(a.year)));
- const enriched=[];
- for(const w of basic){
-  const detail=await workDetail(w.putCode);
-  const desc=cleanHTML(detail["short-description"]||"");
-  const ids=detail["external-ids"]?.["external-id"]||[];
-  const doi=w.doi||doiFrom(ids);
-  let abstract=desc;
-  if(!abstract&&doi)abstract=await crossrefAbstract(doi);
-  const source=doi?`https://doi.org/${doi}`:(detail.url?.value||w.url||`https://orcid.org/${ORCID}`);
-  enriched.push({...w,doi,url:source,summary:clip(abstract||fallbackSummary(w.title))});
- }
- return enriched;
-}
-function card(w){
- const url=w.url||w.doi&&`https://doi.org/${w.doi}`||`https://orcid.org/${ORCID}`;
- return `<article class="pub">
-  <div class="pub-top"><span>${w.year}</span><span>${w.type||"Publicación"}</span></div>
-  <h3><a href="${url}" target="_blank" rel="noopener">${w.title}</a></h3>
-  <p class="pub-summary">${w.summary||fallbackSummary(w.title)}</p>
-  <div class="pub-journal">${w.journal||"Registro académico en ORCID"}</div>
-  <div class="pub-footer"><span class="badge">${w.doi?"DOI":"ORCID"}</span>
-  <a class="pub-link" href="${url}" target="_blank" rel="noopener">Ver artículo ↗</a></div>
- </article>`;
-}
-let works=[];
-function render(list){
- const el=document.querySelector("[data-publications]");
- if(!el)return;
- el.innerHTML=list.length?list.map(card).join(""):`<div class="empty">No se encontraron publicaciones con estos criterios.</div>`;
-}
-function filters(){
- const q=document.querySelector("#pub-search"), y=document.querySelector("#year-filter");
- if(!q||!y)return;
- [...new Set(works.map(x=>x.year))].forEach(v=>y.insertAdjacentHTML("beforeend",`<option value="${v}">${v}</option>`));
- const run=()=>{const s=q.value.toLowerCase(),yr=y.value;render(works.filter(w=>(!yr||w.year==yr)&&(!s||`${w.title} ${w.summary} ${w.journal}`.toLowerCase().includes(s))))};
- q.addEventListener("input",run);y.addEventListener("change",run);
-}
-async function initPublications(){
+async function loadPublications(){
  const el=document.querySelector("[data-publications]");if(!el)return;
  try{
-  works=await loadLocal(); if(!works.length)works=await loadOrcid();
+  const r=await fetch(`${prefix}data/publications.json`,{cache:"force-cache"});
+  publications=await r.json();
   const home=document.body.dataset.page==="home";
-  render(home?works.slice(0,6):works); if(!home)filters();
- }catch{
-  el.innerHTML=`<div class="empty">La fuente ORCID no respondió temporalmente. Puede consultar el perfil institucional directamente en <a href="https://orcid.org/${ORCID}" target="_blank"><strong>ORCID</strong></a>.</div>`;
+  renderPublications(home?publications.slice(0,6):publications);
+  if(!home)setupFilters();
+ }catch{el.innerHTML=`<div class="empty">${LANG==="en"?"The local publication catalogue could not be loaded.":"No se pudo cargar el catálogo local de publicaciones."}</div>`}
+}
+function setupFilters(){
+ const q=document.querySelector("#pub-search"),y=document.querySelector("#year-filter");if(!q||!y)return;
+ [...new Set(publications.map(p=>p.year))].forEach(v=>y.insertAdjacentHTML("beforeend",`<option>${v}</option>`));
+ const run=()=>{const s=q.value.toLowerCase(),yr=y.value;renderPublications(publications.filter(p=>(!yr||p.year===yr)&&(!s||`${t(p,"title")} ${t(p,"summary")} ${p.journal}`.toLowerCase().includes(s))))};
+ q.addEventListener("input",run);y.addEventListener("change",run);
+}
+function postCard(p){
+ return `<article class="card post"><div class="post-date">${p.date}</div><h3>${t(p,"title")}</h3><p>${t(p,"excerpt")}</p>
+ <a class="post-link" href="${prefix}post.html?slug=${p.slug}">${LANG==="en"?"Read note":"Leer nota"} →</a></article>`;
+}
+async function loadPosts(){
+ const list=document.querySelector("[data-posts]");const article=document.querySelector("[data-post]");
+ if(!list&&!article)return;
+ const r=await fetch(`${prefix}data/posts.json`);posts=await r.json();
+ if(list)list.innerHTML=posts.map(postCard).join("");
+ if(article){
+  const slug=new URLSearchParams(location.search).get("slug");const p=posts.find(x=>x.slug===slug)||posts[0];
+  article.innerHTML=`<div class="kicker">${p.date}</div><h1>${t(p,"title")}</h1><p class="lead">${t(p,"excerpt")}</p>${p[`content_${LANG}`].map(x=>`<p>${x}</p>`).join("")}`;
+  document.title=`${t(p,"title")} | Jorge Rodas Silva`;
  }
 }
 document.addEventListener("DOMContentLoaded",()=>{
  document.querySelector(".menu")?.addEventListener("click",()=>document.querySelector(".links")?.classList.toggle("open"));
  document.querySelectorAll("[data-year]").forEach(x=>x.textContent=new Date().getFullYear());
- initPublications();
+ loadPublications();loadPosts();
 });

@@ -1,18 +1,16 @@
-# Sitio académico profesional — Jorge Rodas Silva
+# Sitio académico v3 — Jorge Rodas Silva
 
-## Instalación
-Reemplace el contenido de la rama `main` por estos archivos, manteniendo una rama de respaldo del sitio anterior.
+## Mejoras incluidas
+- Logotipo PNG/WebP con transparencia real.
+- Tipografía Montserrat.
+- Catálogo local de publicaciones: carga inmediata.
+- Resúmenes y enlaces directos a DOI/editorial/base académica.
+- Páginas completas en español e inglés.
+- Experiencia, educación, reconocimientos y afiliaciones restaurados.
+- Sección de ideas con artículos completos.
 
-## Publicaciones
-- La web intenta leer primero `data/publications.json`.
-- Si todavía está vacío, consulta ORCID desde el navegador.
-- La GitHub Action `Actualizar publicaciones` genera semanalmente el JSON local.
-- Los resúmenes proceden de la descripción de ORCID o del abstract disponible en Crossref.
-- El título y el botón `Ver artículo` abren el DOI o el registro académico disponible.
+## Actualización
+Reemplace el contenido de `main` por los archivos de esta carpeta. Mantenga intacta la rama de respaldo del sitio anterior.
 
-## Activar la primera sincronización
-En GitHub vaya a `Actions` → `Actualizar publicaciones` → `Run workflow`.
-También active `Settings` → `Actions` → `General` → `Workflow permissions` → `Read and write permissions`.
-
-## Logo
-El logotipo optimizado está en `assets/img/logo-jorge-rodas.webp`.
+## Revisión recomendada
+Los datos académicos incluidos se basan en el sitio previo y en fuentes públicas. Revise fechas, denominaciones de cargos y afiliaciones antes de la publicación definitiva.
