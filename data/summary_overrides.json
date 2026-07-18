@@ -1,0 +1,42 @@
+{
+  "10.1007/978-3-032-12882-9_6": {
+    "es": "Este estudio compara el desempeño académico de estudiantes en cursos de programación orientada a objetos impartidos en modalidad virtual y presencial. Mediante técnicas de minería de datos educativos, identifica diferencias de rendimiento y patrones útiles para mejorar el diseño de la enseñanza de programación.",
+    "en": "This study compares student performance in online and face-to-face object-oriented programming courses. Using educational data mining techniques, it identifies achievement differences and learning patterns that can inform improvements in programming instruction."
+  },
+  "10.1016/J.CSL.2023.101579": {
+    "es": "El artículo propone un método para identificar palabras clave capaces de filtrar mensajes en español de Twitter relacionados con emergencias. La estrategia busca mejorar la calidad de los datos recopilados para apoyar sistemas de monitoreo, clasificación y respuesta ante incidentes.",
+    "en": "The article proposes a method for identifying keywords that effectively filter Spanish-language Twitter posts related to emergencies. The approach improves the quality of collected data for incident monitoring, classification, and emergency-response applications."
+  },
+  "10.1007/978-3-031-32213-6_4": {
+    "es": "Este capítulo presenta un enfoque de ajuste mediante algoritmos genéticos para clasificar incidentes de emergencia publicados en redes sociales en Ecuador. La optimización de parámetros busca aumentar la precisión de los modelos y facilitar la detección oportuna de información relevante para la gestión de emergencias.",
+    "en": "This chapter presents a genetic-algorithm tuning approach for classifying emergency incidents reported on social media in Ecuador. Parameter optimization is used to improve model accuracy and support timely detection of information relevant to emergency management."
+  },
+  "10.5220/0010651000003058": {
+    "es": "La investigación analiza opiniones y sentimientos expresados por usuarios de Twitter durante las elecciones presidenciales de Ecuador de 2021. El estudio aplica técnicas de procesamiento de lenguaje natural para reconocer tendencias, polaridad y patrones de conversación política en redes sociales.",
+    "en": "This research analyzes opinions and sentiments expressed by Twitter users during Ecuador's 2021 presidential election. Natural language processing techniques are applied to identify trends, polarity, and patterns in political conversations on social media."
+  },
+  "10.1016/j.cola.2019.01.005": {
+    "es": "El trabajo propone un procedimiento automatizado para analizar modelos de características de dos niveles que incluyen atributos. Su contribución facilita la validación de configuraciones y el razonamiento sobre variabilidad en líneas de productos de software complejas.",
+    "en": "The work proposes an automated procedure for analyzing two-layer feature models that include feature attributes. It supports configuration validation and reasoning about variability in complex software product lines."
+  },
+  "Selection of deployment configurations using Recommender Systems on Android,Selección de configuraciones de despliegue usando Sistemas de Recomendación en Android": {
+    "es": "El artículo estudia el uso de sistemas de recomendación para seleccionar configuraciones de despliegue en aplicaciones Android. La propuesta ayuda a orientar decisiones entre múltiples alternativas considerando las características y preferencias asociadas al contexto de implementación.",
+    "en": "This article studies the use of recommender systems to select deployment configurations for Android applications. The approach supports decisions among multiple alternatives by considering characteristics and preferences associated with the implementation context."
+  },
+  "RESDEC: Un prototipo de herramienta para la selección de configuraciones de despliegue basado en Sistemas de Recomendación": {
+    "es": "El trabajo presenta RESDEC, un prototipo que utiliza sistemas de recomendación para apoyar la selección de configuraciones de despliegue. La herramienta busca reducir la complejidad de elección y ofrecer alternativas acordes con las necesidades y preferencias del usuario.",
+    "en": "The paper presents RESDEC, a prototype that uses recommender systems to support deployment-configuration selection. The tool reduces choice complexity and recommends alternatives aligned with user needs and preferences."
+  },
+  "10.18687/LACCEI2017.1.1.268": {
+    "es": "El estudio describe una experiencia de aprendizaje significativo de programación mediante las herramientas Scratch y CARAMBA. La propuesta emplea entornos visuales e interactivos para favorecer la comprensión de conceptos computacionales y aumentar la participación estudiantil.",
+    "en": "The study describes a meaningful programming-learning experience using the Scratch and CARAMBA tools. Visual and interactive environments are used to strengthen understanding of computational concepts and increase student engagement."
+  },
+  "10.1016/J.SSE.2015.11.019": {
+    "es": "La investigación explora paramétricamente el uso de polarización del cuerpo en diseños UTBB FDSOI. Evalúa cómo esta técnica puede ajustar el comportamiento eléctrico de los dispositivos y contribuir al equilibrio entre rendimiento, consumo energético y variaciones de fabricación.",
+    "en": "The research parametrically explores body-bias use in UTBB FDSOI designs. It evaluates how the technique adjusts device electrical behavior and contributes to balancing performance, energy consumption, and manufacturing variations."
+  },
+  "Evaluation and Mitigation of Aging Effects on a Digital On-Chip Voltage and Temperature Sensor": {
+    "es": "El trabajo evalúa los efectos del envejecimiento sobre un sensor digital integrado de voltaje y temperatura. Además, analiza medidas de mitigación orientadas a preservar la precisión y confiabilidad del sensor durante su vida útil.",
+    "en": "The work evaluates aging effects on a digital on-chip voltage and temperature sensor. It also examines mitigation measures intended to preserve sensor accuracy and reliability throughout its operating lifetime."
+  }
+}

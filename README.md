@@ -7,6 +7,7 @@ Sitio estático, bilingüe y accesible para GitHub Pages. La producción cientí
 - Panel principal con 10 indicadores: publicaciones, artículos, congresos, DOI, citas, índice h, citas por publicación, índice i10, publicaciones citadas y acceso abierto.
 - Catálogo incorporado directamente en el HTML, con título, autores, revista, resumen, DOI, acceso abierto, búsqueda, filtro anual y paginación.
 - Las publicaciones siempre son visibles: cinco por página con JavaScript y el catálogo completo como respaldo cuando JavaScript no está disponible.
+- Cuando la fuente científica no ofrece abstract, `data/summary_overrides.json` conserva una síntesis editorial bilingüe basada en el tema y registro bibliográfico del trabajo.
 - Español e inglés.
 - Experiencia, educación, premios, afiliaciones, fotografía y logotipo existentes.
 - CV imprimible: el botón «Guardar CV en PDF» abre el diálogo de impresión del navegador.

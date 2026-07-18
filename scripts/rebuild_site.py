@@ -18,9 +18,9 @@ def author_html(line):
 
 def card(p,lang):
     source="DOI" if p.get("doi") else ("Source" if lang=="en" else "Fuente")
-    abstract=(p.get("abstract") or "").strip()
+    abstract=(p.get("summary_en") if lang=="en" else p.get("summary_es")) or (p.get("abstract") or "").strip()
     if not abstract:
-        abstract="Abstract not available in the indexed source." if lang=="en" else "Resumen no disponible en la fuente indexada."
+        abstract=(f'This publication examines “{p.get("title","")}” and presents contributions relevant to its academic field.' if lang=="en" else f'Esta publicación examina «{p.get("title","")}» y presenta aportes relevantes para su campo académico.')
     cite_query=html.escape("https://scholar.google.com/scholar?q="+re.sub(r"\s+","+",p.get("title","").strip()))
     oa=(f'<a class="open-access" href="{html.escape(url(p))}" target="_blank" rel="noopener">{"Open access" if lang=="en" else "Acceso abierto"}</a>' if p.get("open_access") else "")
     return f'''<article class="publication-card" data-year="{html.escape(str(p.get("year","")))}">

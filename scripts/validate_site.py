@@ -18,12 +18,14 @@ class Counter(HTMLParser):
 publications = json.loads((ROOT / "data/publications.json").read_text(encoding="utf-8"))
 expected = len(publications)
 assert expected > 0, "The scientific catalogue is empty"
+assert all(item.get("summary_es") and item.get("summary_en") for item in publications), "Every publication requires ES and EN summaries"
 for relative in ("index.html", "en/index.html"):
     counter = Counter(); counter.feed((ROOT / relative).read_text(encoding="utf-8"))
     assert counter.cards == expected, f"{relative}: expected {expected} cards, found {counter.cards}"
     assert counter.abstracts == expected, f"{relative}: every card must include an abstract"
 css = (ROOT / "assets/css/styles.css").read_text(encoding="utf-8")
 assert not re.search(r"(?<!\.js-ready )\.publication-card\{display:none\}", css), "Cards must not be hidden without a JS-ready scope"
+assert ".publication-list{min-height:820px}" not in css, "Filtered result lists must shrink to their content"
 javascript = (ROOT / "assets/js/app.js").read_text(encoding="utf-8")
 assert 'querySelectorAll("[data-year]")' not in javascript, "Publication data-year attributes must never be overwritten"
 assert 'querySelectorAll("[data-current-year]")' in javascript, "Footer year must use its dedicated selector"

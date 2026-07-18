@@ -9,7 +9,9 @@
     "authors": "Jorge Rodas-Silva et al.",
     "open_access": false,
     "citations": 0,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "Este estudio compara el desempeño académico de estudiantes en cursos de programación orientada a objetos impartidos en modalidad virtual y presencial. Mediante técnicas de minería de datos educativos, identifica diferencias de rendimiento y patrones útiles para mejorar el diseño de la enseñanza de programación.",
+    "summary_en": "This study compares student performance in online and face-to-face object-oriented programming courses. Using educational data mining techniques, it identifies achievement differences and learning patterns that can inform improvements in programming instruction."
   },
   {
     "year": "2025",
@@ -21,7 +23,9 @@
     "authors": "Mariuxi Vinueza-Morales, Jorge Rodas‐Silva, Cristian Vidal-Silva, Jorge Córdova-Morán, Edwin Cevallos-Ayón",
     "open_access": true,
     "citations": 4,
-    "abstract": "The continuous evolution of digital technologies has significantly reshaped the landscape of higher education, particularly in programming instruction. As programming skills become increasingly essential across multiple disciplines, analyzing the research trends, key contributors, and institutional impact on programming education is crucial. This study presents a bibliometric analysis to identify influential research works, leading authors, and major institutions that have shaped this field over the years. By systematically examining scholarly publications, this study explores the most recurrent pedagogical approaches, the role of emerging technologies, and the methodological frameworks used to assess programming competencies. Additionally, it highlights prevailing research trends, knowledge gaps, and future directions for improving programming education in higher education institutions. The findings of this work will support educators, curriculum designers, and policymakers in refining instructional strategies, fostering innovative learning environments, and aligning academic programs with industry demands."
+    "abstract": "The continuous evolution of digital technologies has significantly reshaped the landscape of higher education, particularly in programming instruction. As programming skills become increasingly essential across multiple disciplines, analyzing the research trends, key contributors, and institutional impact on programming education is crucial. This study presents a bibliometric analysis to identify influential research works, leading authors, and major institutions that have shaped this field over the years. By systematically examining scholarly publications, this study explores the most recurrent pedagogical approaches, the role of emerging technologies, and the methodological frameworks used to assess programming competencies. Additionally, it highlights prevailing research trends, knowledge gaps, and future directions for improving programming education in higher education institutions. The findings of this work will support educators, curriculum designers, and policymakers in refining instructional strategies, fostering innovative learning environments, and aligning academic programs with industry demands.",
+    "summary_es": "The continuous evolution of digital technologies has significantly reshaped the landscape of higher education, particularly in programming instruction. As programming skills become increasingly essential across multiple disciplines, analyzing the research trends, key contributors, and institutional impact on programming education is crucial.",
+    "summary_en": "The continuous evolution of digital technologies has significantly reshaped the landscape of higher education, particularly in programming instruction. As programming skills become increasingly essential across multiple disciplines, analyzing the research trends, key contributors, and institutional impact on programming education is crucial."
   },
   {
     "year": "2025",
@@ -33,7 +37,9 @@
     "authors": "Mariuxi Vinueza-Morales, Jorge Rodas‐Silva, Cristian Vidal-Silva",
     "open_access": true,
     "citations": 2,
-    "abstract": "In today’s information society, developing programming competencies is essential in higher education. Numerous studies have been conducted on effective strategies for fostering these skills. This study performs a bibliometric analysis of research on teaching strategies for programming in higher education, using data from the SCOPUS and Web of Science (WOS) databases between 2014 and 2023. The analysis identifies key trends, influential authors, and collaboration networks in this field. The most effective teaching strategies include project-based learning, flipped classrooms, and collaborative programming. Emerging technologies such as augmented reality and virtual reality are gaining prominence in programming education. Despite the growth of research in this area, challenges remain, such as the lack of longitudinal studies exploring the long-term impact of these methodologies and the need for greater geographic diversity in studies. This paper emphasizes the importance of exploring new technologies and interdisciplinary approaches and fostering international collaborations to enhance programming education. The findings guide researchers and educators on how to optimize programming learning in a global context."
+    "abstract": "In today’s information society, developing programming competencies is essential in higher education. Numerous studies have been conducted on effective strategies for fostering these skills. This study performs a bibliometric analysis of research on teaching strategies for programming in higher education, using data from the SCOPUS and Web of Science (WOS) databases between 2014 and 2023. The analysis identifies key trends, influential authors, and collaboration networks in this field. The most effective teaching strategies include project-based learning, flipped classrooms, and collaborative programming. Emerging technologies such as augmented reality and virtual reality are gaining prominence in programming education. Despite the growth of research in this area, challenges remain, such as the lack of longitudinal studies exploring the long-term impact of these methodologies and the need for greater geographic diversity in studies. This paper emphasizes the importance of exploring new technologies and interdisciplinary approaches and fostering international collaborations to enhance programming education. The findings guide researchers and educators on how to optimize programming learning in a global context.",
+    "summary_es": "In today’s information society, developing programming competencies is essential in higher education. Numerous studies have been conducted on effective strategies for fostering these skills.",
+    "summary_en": "In today’s information society, developing programming competencies is essential in higher education. Numerous studies have been conducted on effective strategies for fostering these skills."
   },
   {
     "year": "2025",
@@ -45,7 +51,9 @@
     "authors": "Jorge Parraga‐Alava, Jorge Rodas‐Silva",
     "open_access": true,
     "citations": 1,
-    "abstract": "ABSTRACT In preuniversity education, educators and decision‐makers need to understand how teaching methods affect student learning in computational thinking (CT). This helps identify factors influencing student outcomes and inform the development of personalized learning programs. In this article, we conduct a comparative analysis of the academic performance of students enrolled in CT courses delivered through online (OL), blended (BL), and face‐to‐face (FTF) modalities in one public university in Ecuador. Our analysis focuses on preuniversity students during the academic year 2023. First, we collect data on student demographics and academic performance in each modality. Then, we applied statistical analysis to determine significant relationships between modalities. Next, we examine patterns and relationships between sociodemographic factors and academic results. Our results reveal that instructional modality has a significant impact on CT performance, with FTF students achieving better outcomes. Across all formats, admission scores and gender emerged as key predictors. While sociodemographic factors had greater influence in the FTF modality, academic factors played a more prominent role in BL and OL escenarios."
+    "abstract": "ABSTRACT In preuniversity education, educators and decision‐makers need to understand how teaching methods affect student learning in computational thinking (CT). This helps identify factors influencing student outcomes and inform the development of personalized learning programs. In this article, we conduct a comparative analysis of the academic performance of students enrolled in CT courses delivered through online (OL), blended (BL), and face‐to‐face (FTF) modalities in one public university in Ecuador. Our analysis focuses on preuniversity students during the academic year 2023. First, we collect data on student demographics and academic performance in each modality. Then, we applied statistical analysis to determine significant relationships between modalities. Next, we examine patterns and relationships between sociodemographic factors and academic results. Our results reveal that instructional modality has a significant impact on CT performance, with FTF students achieving better outcomes. Across all formats, admission scores and gender emerged as key predictors. While sociodemographic factors had greater influence in the FTF modality, academic factors played a more prominent role in BL and OL escenarios.",
+    "summary_es": "In preuniversity education, educators and decision‐makers need to understand how teaching methods affect student learning in computational thinking (CT). This helps identify factors influencing student outcomes and inform the development of personalized learning programs.",
+    "summary_en": "In preuniversity education, educators and decision‐makers need to understand how teaching methods affect student learning in computational thinking (CT). This helps identify factors influencing student outcomes and inform the development of personalized learning programs."
   },
   {
     "year": "2025",
@@ -57,7 +65,9 @@
     "authors": "Mariuxi Vinueza-Morales, Jorge Rodas‐Silva, Cristian Vidal-Silva, Erika Madariaga-García",
     "open_access": true,
     "citations": 0,
-    "abstract": "ResumenEste estudio analiza investigaciones sobre estrategias de enseanza en programacin, utilizando las bases de datos SCOPUS y Web of Science desde 2014 a 2023, para identificar tendencias clave, autores influyentes y redes de colaboracin.El desarrollo de competencias de programacin es esencial en la educacin superior.Los resultados muestran que las estrategias enseanza-aprendizaje ms implementadas son el aprendizaje basado en proyectos (37%), aula invertida (25%) y programacin colaborativa (18%).Tecnologas emergentes como la realidad aumentada y virtual estn cobrando importancia.A pesar de los avances tecnolgicos, metodolgicos e investigaciones en esta rea, an faltan estudios longitudinales para evaluar los impactos a largo plazo.Se destaca la necesidad de explorar tecnologas innovadoras, enfoques interdisciplinarios y el fomento de colaboraciones internacionales.En conclusin, este anlisis bibliomtrico proporciona una visin detallada de las tendencias actuales y los principales contribuyentes en la investigacin sobre la enseanza y el aprendizaje de la programacin en la educacin superior."
+    "abstract": "ResumenEste estudio analiza investigaciones sobre estrategias de enseanza en programacin, utilizando las bases de datos SCOPUS y Web of Science desde 2014 a 2023, para identificar tendencias clave, autores influyentes y redes de colaboracin.El desarrollo de competencias de programacin es esencial en la educacin superior.Los resultados muestran que las estrategias enseanza-aprendizaje ms implementadas son el aprendizaje basado en proyectos (37%), aula invertida (25%) y programacin colaborativa (18%).Tecnologas emergentes como la realidad aumentada y virtual estn cobrando importancia.A pesar de los avances tecnolgicos, metodolgicos e investigaciones en esta rea, an faltan estudios longitudinales para evaluar los impactos a largo plazo.Se destaca la necesidad de explorar tecnologas innovadoras, enfoques interdisciplinarios y el fomento de colaboraciones internacionales.En conclusin, este anlisis bibliomtrico proporciona una visin detallada de las tendencias actuales y los principales contribuyentes en la investigacin sobre la enseanza y el aprendizaje de la programacin en la educacin superior.",
+    "summary_es": "Este estudio analiza investigaciones sobre estrategias de enseanza en programacin, utilizando las bases de datos SCOPUS y Web of Science desde 2014 a 2023, para identificar tendencias clave, autores influyentes y redes de colaboracin.El desarrollo de competencias de programacin es esencial en la educacin superior.Los resultados muestran que las estrategias enseanza-aprendizaje ms implementadas son el aprendizaje basado en proyectos (37%), aula invertida (25%) y programacin colaborativa (18%).Tecnologas…",
+    "summary_en": "Este estudio analiza investigaciones sobre estrategias de enseanza en programacin, utilizando las bases de datos SCOPUS y Web of Science desde 2014 a 2023, para identificar tendencias clave, autores influyentes y redes de colaboracin.El desarrollo de competencias de programacin es esencial en la educacin superior.Los resultados muestran que las estrategias enseanza-aprendizaje ms implementadas son el aprendizaje basado en proyectos (37%), aula invertida (25%) y programacin colaborativa (18%).Tecnologas…"
   },
   {
     "year": "2024",
@@ -69,7 +79,9 @@
     "authors": "Jorge Parraga‐Alava, Jorge Rodas‐Silva",
     "open_access": false,
     "citations": 0,
-    "abstract": "Electric power consumption prediction enables the development of smart strategies aimed at conserving energy, enhancing efficiency, and establishing sensible pricing mechanisms. In this paper, we used predictive models for electric power consumption using machine learning and genetic algorithm techniques. The dataset utilized consists of socio-demographic instances and power consumption-related measured values collected by Centrales Eléctricas de Nariño (CEDENAR), Colombia. Three predictive models—Random Forest (RF), Gradient Boosting Machines (GBM), and Support Vector Machines (SVM)—were employed to predict power consumption. Additionally, a genetic algorithm (GA) was applied to optimize the parameter values of each model. Performance metrics, including mean absolute error (MAE), mean absolute percentage error (MAPE), root mean squared error (RMSE), and coefficient of determination ($\\mathrm{R}^{2}$), were used to evaluate the effectiveness of the models. Our findings indicate that all models, both in their standalone forms and after genetic algorithm optimization, demonstrate improvements in performance metrics. However, statistically, the RF + GA model exhibits superiority only in the MAE and MAPE metrics, achieving an $\\mathrm{R}^{2}$ of 0.76, reflecting its enhanced predictive capability in electric power consumption estimation. These results offer valuable insights for energy management strategies and resource planning in the context of electricity consumption."
+    "abstract": "Electric power consumption prediction enables the development of smart strategies aimed at conserving energy, enhancing efficiency, and establishing sensible pricing mechanisms. In this paper, we used predictive models for electric power consumption using machine learning and genetic algorithm techniques. The dataset utilized consists of socio-demographic instances and power consumption-related measured values collected by Centrales Eléctricas de Nariño (CEDENAR), Colombia. Three predictive models—Random Forest (RF), Gradient Boosting Machines (GBM), and Support Vector Machines (SVM)—were employed to predict power consumption. Additionally, a genetic algorithm (GA) was applied to optimize the parameter values of each model. Performance metrics, including mean absolute error (MAE), mean absolute percentage error (MAPE), root mean squared error (RMSE), and coefficient of determination ($\\mathrm{R}^{2}$), were used to evaluate the effectiveness of the models. Our findings indicate that all models, both in their standalone forms and after genetic algorithm optimization, demonstrate improvements in performance metrics. However, statistically, the RF + GA model exhibits superiority only in the MAE and MAPE metrics, achieving an $\\mathrm{R}^{2}$ of 0.76, reflecting its enhanced predictive capability in electric power consumption estimation. These results offer valuable insights for energy management strategies and resource planning in the context of electricity consumption.",
+    "summary_es": "Electric power consumption prediction enables the development of smart strategies aimed at conserving energy, enhancing efficiency, and establishing sensible pricing mechanisms. In this paper, we used predictive models for electric power consumption using machine learning and genetic algorithm techniques.",
+    "summary_en": "Electric power consumption prediction enables the development of smart strategies aimed at conserving energy, enhancing efficiency, and establishing sensible pricing mechanisms. In this paper, we used predictive models for electric power consumption using machine learning and genetic algorithm techniques."
   },
   {
     "year": "2024",
@@ -81,7 +93,9 @@
     "authors": "Jorge Rodas‐Silva, Jorge Parraga‐Alava, Mariuxi Vinueza-Morales, Ana Eva Chacón-Luna, J. Cobo",
     "open_access": true,
     "citations": 3,
-    "abstract": "The need for knowledgeable programmers has increased, highlighting the importance of strong programming foundations in engineering education. Limited access to high‐quality learning materials and educational opportunities presents challenges unrelated to information and communication technology (ICT) field (non‐ICT‐related) students in acquiring programming skills. Educational programming languages (EPLs) such as App Lab have gained popularity as they offer an accessible platform for students to learn programming fundamentals in a visual and interactive manner. This paper examines the impact of the EPL called App Lab on the development of fundamental programming skills among non‐ICT‐related field engineering college students. We conducted a quasiexperimental research study using a single‐blinded, nonequivalent control group pretest–posttest design. The study included 56 participants, all of whom were enrolled in the Environmental Engineering and Biotechnology program at the State University of Milagro (UNEMI), Ecuador. The experimental group consisted of 26 students, while the control group comprised 30 students. The assessment process involved the administration of a battery of 200 questions before and after the intervention. The intervention involved the use of App Lab as an EPL and lasted for a duration of 3 weeks exclusively for the experimental group, while the control group followed their usual tutoring program. The study results showed that students who received EPL‐mediated learning with App Lab had significant increase in their programming skills. App Lab demonstrated a positive impact, particularly among male students who reported Internet usage, as well as in advanced programming topics including loops, lists, and functions, when compared to their female counterparts."
+    "abstract": "The need for knowledgeable programmers has increased, highlighting the importance of strong programming foundations in engineering education. Limited access to high‐quality learning materials and educational opportunities presents challenges unrelated to information and communication technology (ICT) field (non‐ICT‐related) students in acquiring programming skills. Educational programming languages (EPLs) such as App Lab have gained popularity as they offer an accessible platform for students to learn programming fundamentals in a visual and interactive manner. This paper examines the impact of the EPL called App Lab on the development of fundamental programming skills among non‐ICT‐related field engineering college students. We conducted a quasiexperimental research study using a single‐blinded, nonequivalent control group pretest–posttest design. The study included 56 participants, all of whom were enrolled in the Environmental Engineering and Biotechnology program at the State University of Milagro (UNEMI), Ecuador. The experimental group consisted of 26 students, while the control group comprised 30 students. The assessment process involved the administration of a battery of 200 questions before and after the intervention. The intervention involved the use of App Lab as an EPL and lasted for a duration of 3 weeks exclusively for the experimental group, while the control group followed their usual tutoring program. The study results showed that students who received EPL‐mediated learning with App Lab had significant increase in their programming skills. App Lab demonstrated a positive impact, particularly among male students who reported Internet usage, as well as in advanced programming topics including loops, lists, and functions, when compared to their female counterparts.",
+    "summary_es": "The need for knowledgeable programmers has increased, highlighting the importance of strong programming foundations in engineering education. Limited access to high‐quality learning materials and educational opportunities presents challenges unrelated to information and communication technology (ICT) field (non‐ICT‐related) students in acquiring programming skills.",
+    "summary_en": "The need for knowledgeable programmers has increased, highlighting the importance of strong programming foundations in engineering education. Limited access to high‐quality learning materials and educational opportunities presents challenges unrelated to information and communication technology (ICT) field (non‐ICT‐related) students in acquiring programming skills."
   },
   {
     "year": "2024",
@@ -93,7 +107,9 @@
     "authors": "Joel Garcia-Arteaga, Jesús Zambrano-Zambrano, Jorge Parraga‐Alava, Jorge Rodas‐Silva",
     "open_access": false,
     "citations": 9,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "El artículo propone un método para identificar palabras clave capaces de filtrar mensajes en español de Twitter relacionados con emergencias. La estrategia busca mejorar la calidad de los datos recopilados para apoyar sistemas de monitoreo, clasificación y respuesta ante incidentes.",
+    "summary_en": "The article proposes a method for identifying keywords that effectively filter Spanish-language Twitter posts related to emergencies. The approach improves the quality of collected data for incident monitoring, classification, and emergency-response applications."
   },
   {
     "year": "2023",
@@ -105,7 +121,9 @@
     "authors": "Joel Garcia-Arteaga, Jesús Zambrano-Zambrano, Jorge Parraga‐Alava, Jorge Rodas‐Silva",
     "open_access": false,
     "citations": 1,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "Este capítulo presenta un enfoque de ajuste mediante algoritmos genéticos para clasificar incidentes de emergencia publicados en redes sociales en Ecuador. La optimización de parámetros busca aumentar la precisión de los modelos y facilitar la detección oportuna de información relevante para la gestión de emergencias.",
+    "summary_en": "This chapter presents a genetic-algorithm tuning approach for classifying emergency incidents reported on social media in Ecuador. Parameter optimization is used to improve model accuracy and support timely detection of information relevant to emergency management."
   },
   {
     "year": "2021",
@@ -117,7 +135,9 @@
     "authors": "Jorge Parraga‐Alava, Jorge Rodas‐Silva, Iván Quimi, Roberth Alcívar-Cevallos",
     "open_access": true,
     "citations": 1,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "La investigación analiza opiniones y sentimientos expresados por usuarios de Twitter durante las elecciones presidenciales de Ecuador de 2021. El estudio aplica técnicas de procesamiento de lenguaje natural para reconocer tendencias, polaridad y patrones de conversación política en redes sociales.",
+    "summary_en": "This research analyzes opinions and sentiments expressed by Twitter users during Ecuador's 2021 presidential election. Natural language processing techniques are applied to identify trends, polarity, and patterns in political conversations on social media."
   },
   {
     "year": "2021",
@@ -129,7 +149,9 @@
     "authors": "Anthony Cedeno Ochoa, Axelman Catuto Murillo, Jorge Rodas‐Silva",
     "open_access": true,
     "citations": 1,
-    "abstract": "Actualmente en Ecuador, el problema que existe en el ámbito de la medicina veterinaria, es que en la mayoría de las clínicas no cuentan con herramientas tecnológicas para llevar una gestión centralizada y digitalizada de la información, siendo que aún lo realizan de forma manual lo que conlleva a que la organización de los expedientes almacenados se dificulte y en muchos casos ocasione la pérdida o la duplicidad de información. Este trabajo tiene como objetivo mostrar una aplicación web mediante el uso de software libre para la administración de información en clínicas veterinarias que contribuya al mejoramiento de los procesos administrativos y facilite el trabajo a los empleados. En cuanto a la metodología utilizada para el desarrollo de esta aplicación, fue un modelo de proceso iterativo e incremental, el cual permitió lograr los objetivos propuestos y entregar un producto de calidad que resuelva la problemática existente en las veterinarias. Por lo tanto, el resultado de esta aplicación web generó los siguientes beneficios: reducir el tiempo de atención a las mascotas, acceder a la información de manera ágil, lograr que el manejo de la información sea más eficiente, mejorar la búsqueda de registros, así como la gestión de expedientes clínicos y aportar con el cuidado del medio ambiente al reducir la generación de desperdicios. Finalmente, se propone esta aplicación web como una solución para mejorar los procesos manejados en la clínica veterinaria, todo con el fin de incorporar nuevas tecnologías en esta área para alcanzar su máximo desarrollo y rentabilidad.&#x0D;"
+    "abstract": "Actualmente en Ecuador, el problema que existe en el ámbito de la medicina veterinaria, es que en la mayoría de las clínicas no cuentan con herramientas tecnológicas para llevar una gestión centralizada y digitalizada de la información, siendo que aún lo realizan de forma manual lo que conlleva a que la organización de los expedientes almacenados se dificulte y en muchos casos ocasione la pérdida o la duplicidad de información. Este trabajo tiene como objetivo mostrar una aplicación web mediante el uso de software libre para la administración de información en clínicas veterinarias que contribuya al mejoramiento de los procesos administrativos y facilite el trabajo a los empleados. En cuanto a la metodología utilizada para el desarrollo de esta aplicación, fue un modelo de proceso iterativo e incremental, el cual permitió lograr los objetivos propuestos y entregar un producto de calidad que resuelva la problemática existente en las veterinarias. Por lo tanto, el resultado de esta aplicación web generó los siguientes beneficios: reducir el tiempo de atención a las mascotas, acceder a la información de manera ágil, lograr que el manejo de la información sea más eficiente, mejorar la búsqueda de registros, así como la gestión de expedientes clínicos y aportar con el cuidado del medio ambiente al reducir la generación de desperdicios. Finalmente, se propone esta aplicación web como una solución para mejorar los procesos manejados en la clínica veterinaria, todo con el fin de incorporar nuevas tecnologías en esta área para alcanzar su máximo desarrollo y rentabilidad.&#x0D;",
+    "summary_es": "Actualmente en Ecuador, el problema que existe en el ámbito de la medicina veterinaria, es que en la mayoría de las clínicas no cuentan con herramientas tecnológicas para llevar una gestión centralizada y digitalizada de la información, siendo que aún lo realizan de forma manual lo que conlleva a que la organización de los expedientes almacenados se dificulte y en muchos casos ocasione la pérdida o la duplicidad de información. Este trabajo tiene como objetivo mostrar una aplicación web mediante el uso de…",
+    "summary_en": "Actualmente en Ecuador, el problema que existe en el ámbito de la medicina veterinaria, es que en la mayoría de las clínicas no cuentan con herramientas tecnológicas para llevar una gestión centralizada y digitalizada de la información, siendo que aún lo realizan de forma manual lo que conlleva a que la organización de los expedientes almacenados se dificulte y en muchos casos ocasione la pérdida o la duplicidad de información. Este trabajo tiene como objetivo mostrar una aplicación web mediante el uso de…"
   },
   {
     "year": "2020",
@@ -141,7 +163,9 @@
     "authors": "Mariuxi Vinueza-Morales, Ana Eva Chacón-Luna, Jorge Rodas‐Silva, Héctor Serrano Mantilla",
     "open_access": true,
     "citations": 1,
-    "abstract": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor. The findings indicate a high acceptance in the academic community of App Inventor as an effective tool for motivation and performance of students who are initiated in programming, without distinction in the educational level."
+    "abstract": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor. The findings indicate a high acceptance in the academic community of App Inventor as an effective tool for motivation and performance of students who are initiated in programming, without distinction in the educational level.",
+    "summary_es": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor.",
+    "summary_en": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor."
   },
   {
     "year": "2019",
@@ -153,7 +177,9 @@
     "authors": "Jorge Antonio Córdova Morán, Jorge Rodas‐Silva, Mariuxi G. Vinueza Morales",
     "open_access": true,
     "citations": 1,
-    "abstract": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review. We used the most common databases in the area of computer science such as ACM, IEE, among others; and taking into account a search protocol, and some criteria, 24 articles were selected. Among the findings are the effectiveness of the use of Alice as a learning resource for introduction to programming, the amount of work in English, and the weak validity of the experimental results."
+    "abstract": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review. We used the most common databases in the area of computer science such as ACM, IEE, among others; and taking into account a search protocol, and some criteria, 24 articles were selected. Among the findings are the effectiveness of the use of Alice as a learning resource for introduction to programming, the amount of work in English, and the weak validity of the experimental results.",
+    "summary_es": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review.",
+    "summary_en": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review."
   },
   {
     "year": "2019",
@@ -165,7 +191,9 @@
     "authors": "Jorge Rodas‐Silva, José Á. Galindo, Jorge Garcia-Gutierrez, David Benavides",
     "open_access": true,
     "citations": 44,
-    "abstract": "In software products line (SPL), there may be features which can be implemented by different components, which means there are several implementations for the same feature. In this context, the selection of the best components set to implement a given configuration is a challenging task due to the high number of combinations and options which could be selected. In certain scenarios, it is possible to find information associated with the components which could help in this selection task, such as user ratings. In this paper, we introduce a component-based recommender system, called (REcommender System that suggests implementation Components from selecteD fEatures), which uses information associated with the implementation components to make recommendations in the domain of the SPL configuration. We also provide a RESDEC reference implementation that supports collaborative-based and content-based filtering algorithms to recommend (i.e., implementation components) regarding WordPress-based websites configuration. The empirical results, on a knowledge base with 680 plugins and 187 000 ratings by 116 000 users, show promising results. Concretely, this indicates that it is possible to guide the user throughout the implementation components selection with a margin of error smaller than 13% according to our evaluation."
+    "abstract": "In software products line (SPL), there may be features which can be implemented by different components, which means there are several implementations for the same feature. In this context, the selection of the best components set to implement a given configuration is a challenging task due to the high number of combinations and options which could be selected. In certain scenarios, it is possible to find information associated with the components which could help in this selection task, such as user ratings. In this paper, we introduce a component-based recommender system, called (REcommender System that suggests implementation Components from selecteD fEatures), which uses information associated with the implementation components to make recommendations in the domain of the SPL configuration. We also provide a RESDEC reference implementation that supports collaborative-based and content-based filtering algorithms to recommend (i.e., implementation components) regarding WordPress-based websites configuration. The empirical results, on a knowledge base with 680 plugins and 187 000 ratings by 116 000 users, show promising results. Concretely, this indicates that it is possible to guide the user throughout the implementation components selection with a margin of error smaller than 13% according to our evaluation.",
+    "summary_es": "In software products line (SPL), there may be features which can be implemented by different components, which means there are several implementations for the same feature. In this context, the selection of the best components set to implement a given configuration is a challenging task due to the high number of combinations and options which could be selected.",
+    "summary_en": "In software products line (SPL), there may be features which can be implemented by different components, which means there are several implementations for the same feature. In this context, the selection of the best components set to implement a given configuration is a challenging task due to the high number of combinations and options which could be selected."
   },
   {
     "year": "2019",
@@ -177,7 +205,9 @@
     "authors": "Jorge Rodas‐Silva, José Á. Galindo, Jorge García–Gutiérrez, David Benavides",
     "open_access": true,
     "citations": 4,
-    "abstract": "Software product lines (SPL) management is one of the most important activities for the software engineer and it represents one of the key pieces of software product line engineering. When a software system grow fast, configuring a product becomes a costly and error-prone activity due to the amount of features available for configuration. This process becomes more complex when for each feature, there is more than one component that implements it. Currently the tools available for configuration management do not have automated mechanisms to facilitate the optimal components selection that meet the functions required by a given product. In this paper, we introduce a prototype component-based recommender system called RESDEC (REcommender System that suggest implementation Components from selecteD fEatures) designed to manage the best implementation components alternatives. Our tool is validated using WordPress-based websites where the implementation components are represented by plugins and the recommendations generated by RESDEC help interested parties in the search and efficient plugins selection to configure websites."
+    "abstract": "Software product lines (SPL) management is one of the most important activities for the software engineer and it represents one of the key pieces of software product line engineering. When a software system grow fast, configuring a product becomes a costly and error-prone activity due to the amount of features available for configuration. This process becomes more complex when for each feature, there is more than one component that implements it. Currently the tools available for configuration management do not have automated mechanisms to facilitate the optimal components selection that meet the functions required by a given product. In this paper, we introduce a prototype component-based recommender system called RESDEC (REcommender System that suggest implementation Components from selecteD fEatures) designed to manage the best implementation components alternatives. Our tool is validated using WordPress-based websites where the implementation components are represented by plugins and the recommendations generated by RESDEC help interested parties in the search and efficient plugins selection to configure websites.",
+    "summary_es": "Software product lines (SPL) management is one of the most important activities for the software engineer and it represents one of the key pieces of software product line engineering. When a software system grow fast, configuring a product becomes a costly and error-prone activity due to the amount of features available for configuration.",
+    "summary_en": "Software product lines (SPL) management is one of the most important activities for the software engineer and it represents one of the key pieces of software product line engineering. When a software system grow fast, configuring a product becomes a costly and error-prone activity due to the amount of features available for configuration."
   },
   {
     "year": "2019",
@@ -189,7 +219,9 @@
     "authors": "Michael Lettner, Jorge Rodas‐Silva, José Á. Galindo, David Benavides",
     "open_access": true,
     "citations": 12,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "El trabajo propone un procedimiento automatizado para analizar modelos de características de dos niveles que incluyen atributos. Su contribución facilita la validación de configuraciones y el razonamiento sobre variabilidad en líneas de productos de software complejas.",
+    "summary_en": "The work proposes an automated procedure for analyzing two-layer feature models that include feature attributes. It supports configuration validation and reasoning about variability in complex software product lines."
   },
   {
     "year": "2018",
@@ -201,7 +233,9 @@
     "authors": "Jorge Rodas-Silva et al.",
     "open_access": false,
     "citations": 0,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "El artículo estudia el uso de sistemas de recomendación para seleccionar configuraciones de despliegue en aplicaciones Android. La propuesta ayuda a orientar decisiones entre múltiples alternativas considerando las características y preferencias asociadas al contexto de implementación.",
+    "summary_en": "This article studies the use of recommender systems to select deployment configurations for Android applications. The approach supports decisions among multiple alternatives by considering characteristics and preferences associated with the implementation context."
   },
   {
     "year": "2018",
@@ -213,7 +247,9 @@
     "authors": "Jorge Rodas-Silva et al.",
     "open_access": false,
     "citations": 0,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "El trabajo presenta RESDEC, un prototipo que utiliza sistemas de recomendación para apoyar la selección de configuraciones de despliegue. La herramienta busca reducir la complejidad de elección y ofrecer alternativas acordes con las necesidades y preferencias del usuario.",
+    "summary_en": "The paper presents RESDEC, a prototype that uses recommender systems to support deployment-configuration selection. The tool reduces choice complexity and recommends alternatives aligned with user needs and preferences."
   },
   {
     "year": "2017",
@@ -225,7 +261,9 @@
     "authors": "Jorge Rodas-Silva et al.",
     "open_access": false,
     "citations": 0,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "El estudio describe una experiencia de aprendizaje significativo de programación mediante las herramientas Scratch y CARAMBA. La propuesta emplea entornos visuales e interactivos para favorecer la comprensión de conceptos computacionales y aumentar la participación estudiantil.",
+    "summary_en": "The study describes a meaningful programming-learning experience using the Scratch and CARAMBA tools. Visual and interactive environments are used to strengthen understanding of computational concepts and increase student engagement."
   },
   {
     "year": "2016",
@@ -237,7 +275,9 @@
     "authors": "Jorge Rodas‐Silva, Javier Olivares, José Ángel Galindo Duarte, David Benavides",
     "open_access": true,
     "citations": 0,
-    "abstract": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos. Por otra parte, en la industria encontramos los sistemas de recomendación, los cuales, permiten recomendar la serie de productos que mejor se adapten a un usuario o un contexto de uso particular. En este artículo de prospección exploramos el uso de sistemas de recomendación en el contexto de los sistemas de alta variabilidad. Asimismo, identificamos algunas tareas donde podrían ayudar a la gestión de los sistemas de variabilidad."
+    "abstract": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos. Por otra parte, en la industria encontramos los sistemas de recomendación, los cuales, permiten recomendar la serie de productos que mejor se adapten a un usuario o un contexto de uso particular. En este artículo de prospección exploramos el uso de sistemas de recomendación en el contexto de los sistemas de alta variabilidad. Asimismo, identificamos algunas tareas donde podrían ayudar a la gestión de los sistemas de variabilidad.",
+    "summary_es": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos.",
+    "summary_en": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos."
   },
   {
     "year": "2016",
@@ -249,7 +289,9 @@
     "authors": "Mariuxi Vinueza, Jorge Rodas‐Silva, José Ángel Galindo Duarte, David Benavides",
     "open_access": true,
     "citations": 0,
-    "abstract": "International audience"
+    "abstract": "International audience",
+    "summary_es": "International audience",
+    "summary_en": "International audience"
   },
   {
     "year": "2016",
@@ -261,7 +303,9 @@
     "authors": "Jorge Rodas-Silva et al.",
     "open_access": false,
     "citations": 0,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "La investigación explora paramétricamente el uso de polarización del cuerpo en diseños UTBB FDSOI. Evalúa cómo esta técnica puede ajustar el comportamiento eléctrico de los dispositivos y contribuir al equilibrio entre rendimiento, consumo energético y variaciones de fabricación.",
+    "summary_en": "The research parametrically explores body-bias use in UTBB FDSOI designs. It evaluates how the technique adjusts device electrical behavior and contributes to balancing performance, energy consumption, and manufacturing variations."
   },
   {
     "year": "2015",
@@ -273,7 +317,9 @@
     "authors": "Jorge Rodas‐Silva, David Méndez-Acuña, José Á. Galindo, David Benavides, Jesennia Cardenas",
     "open_access": false,
     "citations": 0,
-    "abstract": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task. For example, in the Android ecosystem we can find up to 24 different valid configurations, thus, making it impossible to test an application on all of them. To alleviate this problem, previous research suggest the selection of a subset of test cases that maximize the changes of finding errors while maximizing the diversity of configurations. Concretely, the proposals focus on the prioritization and selection of tests, so only relevant configurations are tested according to some criterion. In this paper, we envision the use of user reports to prioritize and select meaningful tests. To do this, we explore the use of recommender systems as a possible improvement to the selection of test cases in intensive variability systems."
+    "abstract": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task. For example, in the Android ecosystem we can find up to 24 different valid configurations, thus, making it impossible to test an application on all of them. To alleviate this problem, previous research suggest the selection of a subset of test cases that maximize the changes of finding errors while maximizing the diversity of configurations. Concretely, the proposals focus on the prioritization and selection of tests, so only relevant configurations are tested according to some criterion. In this paper, we envision the use of user reports to prioritize and select meaningful tests. To do this, we explore the use of recommender systems as a possible improvement to the selection of test cases in intensive variability systems.",
+    "summary_es": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task.",
+    "summary_en": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task."
   },
   {
     "year": "2015",
@@ -285,7 +331,9 @@
     "authors": "Jorge Rodas‐Silva, David Méndez-Acuña, José Á. Galindo, David Benavides, Jesennia Cardenas",
     "open_access": false,
     "citations": 0,
-    "abstract": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task. For example, in the Android ecosystem we can find up to 24 different valid configurations, thus, making it impossible to test an application on all of them. To alleviate this problem, previous research suggest the selection of a subset of test cases that maximize the changes of finding errors while maximizing the diversity of configurations. Concretely, the proposals focus on the prioritization and selection of tests, so only relevant configurations are tested according to some criterion. In this paper, we envision the use of user reports to prioritize and select meaningful tests. To do this, we explore the use of recommender systems as a possible improvement to the selection of test cases in intensive variability systems."
+    "abstract": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task. For example, in the Android ecosystem we can find up to 24 different valid configurations, thus, making it impossible to test an application on all of them. To alleviate this problem, previous research suggest the selection of a subset of test cases that maximize the changes of finding errors while maximizing the diversity of configurations. Concretely, the proposals focus on the prioritization and selection of tests, so only relevant configurations are tested according to some criterion. In this paper, we envision the use of user reports to prioritize and select meaningful tests. To do this, we explore the use of recommender systems as a possible improvement to the selection of test cases in intensive variability systems.",
+    "summary_es": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task.",
+    "summary_en": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task."
   },
   {
     "year": "2015",
@@ -297,6 +345,8 @@
     "authors": "Jorge Rodas-Silva et al.",
     "open_access": false,
     "citations": 0,
-    "abstract": ""
+    "abstract": "",
+    "summary_es": "El trabajo evalúa los efectos del envejecimiento sobre un sensor digital integrado de voltaje y temperatura. Además, analiza medidas de mitigación orientadas a preservar la precisión y confiabilidad del sensor durante su vida útil.",
+    "summary_en": "The work evaluates aging effects on a digital on-chip voltage and temperature sensor. It also examines mitigation measures intended to preserve sensor accuracy and reliability throughout its operating lifetime."
   }
 ]

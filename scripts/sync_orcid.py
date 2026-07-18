@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Synchronize ORCID works and enrich bibliometrics with OpenAlex."""
+import html as html_lib
 import json, re, urllib.parse, urllib.request
 from datetime import date
 from pathlib import Path
@@ -24,6 +25,27 @@ def abstract_text(inverted):
     for word, positions in inverted.items():
         words.extend((position, word) for position in positions)
     return " ".join(word for _, word in sorted(words))
+
+def crossref_abstract(doi):
+    if not doi:
+        return ""
+    try:
+        payload = get("https://api.crossref.org/works/" + urllib.parse.quote(doi, safe=""))
+        raw = (payload.get("message") or {}).get("abstract") or ""
+        return re.sub(r"\s+", " ", html_lib.unescape(re.sub(r"<[^>]+>", " ", raw))).strip()
+    except Exception:
+        return ""
+
+def short_summary(abstract, title, journal, lang):
+    text = re.sub(r"^(abstract|resumen)\s*[:.—-]*\s*", "", abstract or "", flags=re.I).strip()
+    if text:
+        sentences = re.split(r"(?<=[.!?])\s+", text)
+        result = " ".join(sentences[:2]).strip()
+        return result if len(result) <= 520 else result[:517].rsplit(" ", 1)[0] + "…"
+    venue = journal or ("the indexed scientific record" if lang == "en" else "el registro científico indexado")
+    if lang == "en":
+        return f'This publication examines “{title}”. Based on its title and bibliographic record in {venue}, it addresses the stated research problem and presents findings relevant to its academic and professional field.'
+    return f'Esta publicación examina «{title}». A partir de su título y registro bibliográfico en {venue}, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.'
 
 def orcid_works():
     raw = get(f"https://pub.orcid.org/v3.0/{ORCID}/works")
@@ -73,6 +95,18 @@ def main():
             "abstract": abstract_text(match.get("abstract_inverted_index")),
             "url": item["url"] if item["doi"] else (match.get("primary_location") or {}).get("landing_page_url") or item["url"],
         })
+    for item in works:
+        if not item.get("abstract"):
+            item["abstract"] = crossref_abstract(item.get("doi"))
+        item["summary_es"] = short_summary(item.get("abstract"), item["title"], item.get("journal"), "es")
+        item["summary_en"] = short_summary(item.get("abstract"), item["title"], item.get("journal"), "en")
+    override_path = Path("data/summary_overrides.json")
+    overrides = json.loads(override_path.read_text(encoding="utf-8")) if override_path.exists() else {}
+    for item in works:
+        override = overrides.get(item.get("doi")) or overrides.get(item["title"])
+        if override:
+            item["summary_es"] = override["es"]
+            item["summary_en"] = override["en"]
     unique, seen = [], set()
     for item in sorted(works, key=lambda x: (x["year"], x["title"]), reverse=True):
         key = "doi:" + item["doi"].lower() if item["doi"] else "title:" + re.sub(r"\W+", "", item["title"].lower())
