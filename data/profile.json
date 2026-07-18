@@ -15,7 +15,7 @@
       "title_es": "Coordinador de la Maestría en Tecnologías de la Información",
       "title_en": "Coordinator, M.Sc. in Information Technologies",
       "org": "Universidad Estatal de Milagro",
-      "area_es": "Dirección de programa de posgrado",
+      "area_es": "Dirección de posgrado",
       "area_en": "Graduate program direction"
     },
     {
@@ -24,8 +24,8 @@
       "title_es": "Profesor titular",
       "title_en": "Associate Professor",
       "org": "Universidad Estatal de Milagro",
-      "area_es": "Inteligencia de negocios · Ingeniería de software",
-      "area_en": "Business intelligence · Software engineering"
+      "area_es": "Inteligencia de negocios e ingeniería de software",
+      "area_en": "Business intelligence and software engineering"
     },
     {
       "date_es": "2013 — 2014",
@@ -62,8 +62,8 @@
       "degree_en": "Ph.D. in Computer Engineering",
       "org_es": "Universidad de Sevilla · Sevilla, España",
       "org_en": "Universidad de Sevilla · Seville, Spain",
-      "honor_es": "Summa Cum Laude · Distinción Internacional",
-      "honor_en": "Summa Cum Laude · International Distinction"
+      "honor_es": "Cum Laude · Distinción Internacional",
+      "honor_en": "Cum Laude · International Distinction"
     },
     {
       "year": "2011",
@@ -89,28 +89,31 @@
       "degree_en": "Business Intelligence and Datawarehouse (BIDWPC)",
       "org_es": "Escuela Superior Politécnica del Litoral · Guayaquil, Ecuador",
       "org_en": "Escuela Superior Politécnica del Litoral · Guayaquil, Ecuador",
-      "honor_es": "Certificación",
-      "honor_en": "Certification"
+      "honor_es": "Certificación profesional",
+      "honor_en": "Professional certification"
     }
   ],
   "awards": [
     {
+      "year": "2019",
       "title_es": "Doctorado Cum Laude con Distinción Internacional",
       "title_en": "Ph.D. Cum Laude with International Distinction",
-      "detail_es": "Decisión unánime · Universidad de Sevilla · diciembre de 2019",
-      "detail_en": "Unanimous decision · Universidad de Sevilla · December 2019"
+      "detail_es": "Decisión unánime · Universidad de Sevilla",
+      "detail_en": "Unanimous decision · Universidad de Sevilla"
     },
     {
-      "title_es": "Mención de Honor — Mejor Graduado de la Maestría en Gerencia de TI",
-      "title_en": "Honorable Mention — Best M.Sc. Graduate in IT Management",
-      "detail_es": "Primera cohorte · Universidad Estatal de Milagro · julio de 2011",
-      "detail_en": "First cohort · Universidad Estatal de Milagro · July 2011"
+      "year": "2011",
+      "title_es": "Mejor graduado de la Maestría en Gerencia de TI",
+      "title_en": "Best M.Sc. Graduate in IT Management",
+      "detail_es": "Mención de Honor · Primera cohorte · Universidad Estatal de Milagro",
+      "detail_en": "Honorable Mention · First cohort · Universidad Estatal de Milagro"
     },
     {
-      "title_es": "Mención de Honor — Mejor Graduado de grado",
-      "title_en": "Honorable Mention — Best B.Sc. Graduate",
-      "detail_es": "Ingeniería en Sistemas Computacionales · UNEMI · febrero de 2006",
-      "detail_en": "Computer Systems Engineering · UNEMI · February 2006"
+      "year": "2006",
+      "title_es": "Mejor graduado de Ingeniería en Sistemas Computacionales",
+      "title_en": "Best Graduate in Computer Systems Engineering",
+      "detail_es": "Mención de Honor · Universidad Estatal de Milagro",
+      "detail_en": "Honorable Mention · Universidad Estatal de Milagro"
     }
   ],
   "affiliations": [

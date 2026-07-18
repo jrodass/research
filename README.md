@@ -1,9 +1,18 @@
-# Sitio académico v9 profesional
+# Sitio académico v10 premium
 
-El contenido principal está incorporado directamente en HTML. No depende de `fetch()` y no puede mostrar mensajes de error por falta de carga de JSON.
+## Mejoras
+- Fotografía oficial tomada del perfil institucional de UNEMI.
+- Tablero bibliométrico con una paleta uniforme.
+- Publicaciones con autores, revista, año, tipo, DOI y acceso abierto.
+- Experiencia presentada en tarjetas profesionales, no en filas extensas.
+- Educación, premios y afiliaciones con componentes diferenciados.
+- Todo el contenido inicial está incorporado en HTML.
 
-GitHub Actions consulta ORCID diariamente, actualiza el catálogo y reescribe las secciones de publicaciones en español e inglés.
+## Publicaciones completas
+El paquete contiene registros públicos verificados como base. Al subirlo a `main`, la acción `Sync ORCID and rebuild site` consulta el registro público completo de ORCID, sustituye el conteo y reconstruye el catálogo.
 
-Activación:
+Para permitir la escritura:
 Settings → Actions → General → Workflow permissions → Read and write permissions.
-Actions → Update academic site → Run workflow.
+
+Luego:
+Actions → Sync ORCID and rebuild site → Run workflow.

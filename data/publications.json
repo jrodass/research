@@ -5,15 +5,19 @@
     "journal": "Proceedings of the 19th Iberian Conference on Information Systems and Technologies, CISTI 2024, Vol. 3",
     "doi": "",
     "url": "https://orcid.org/0000-0001-6526-7740",
-    "type": "Conference paper"
+    "type": "Conference paper",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": false
   },
   {
     "year": "2025",
-    "title": "Bibliometric analysis of teaching strategies for programming courses in higher education, Análisis bibliométrico de estrategias de enseñanza para cursos de programación en educación superior",
-    "journal": "Formación Universitaria",
-    "doi": "",
-    "url": "https://www.scielo.cl/article_plus.php?lng=es&pid=S0718-50062025000400039&tlng=es",
-    "type": "Journal article"
+    "title": "Bibliometric analysis of teaching strategies for programming courses in higher education / Análisis bibliométrico de estrategias de enseñanza para cursos de programación en educación superior",
+    "journal": "Formación Universitaria, 18(4), 39–50",
+    "doi": "10.4067/S0718-50062025000400039",
+    "url": "https://doi.org/10.4067/S0718-50062025000400039",
+    "type": "Journal article",
+    "authors": "Mariuxi Vinueza-Morales, Jorge Rodas-Silva, Cristian Vidal-Silva and Erika Madariaga-García",
+    "open_access": true
   },
   {
     "year": "2025",
@@ -21,7 +25,9 @@
     "journal": "Engineering Reports",
     "doi": "",
     "url": "https://orcid.org/0000-0001-6526-7740",
-    "type": "Journal article"
+    "type": "Journal article",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": false
   },
   {
     "year": "2025",
@@ -29,7 +35,9 @@
     "journal": "Formación Universitaria",
     "doi": "",
     "url": "https://www.researchgate.net/publication/398788398_Equidad_en_la_evaluacion_academica_y_calidad_de_los_examenes_universitarios_un_analisis_de_patrones_en_educacion_superior",
-    "type": "Journal article"
+    "type": "Journal article",
+    "authors": "Jesennia Cárdenas-Cobo, Fabricio Guevara-Viejó, Jorge Rodas-Silva and Cristian Vidal-Silva",
+    "open_access": true
   },
   {
     "year": "2024",
@@ -37,7 +45,9 @@
     "journal": "International Journal of Computer Games Technology",
     "doi": "10.1155/2024/4918351",
     "url": "https://doi.org/10.1155/2024/4918351",
-    "type": "Journal article"
+    "type": "Journal article",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": true
   },
   {
     "year": "2023",
@@ -45,7 +55,19 @@
     "journal": "CSEDU 2023",
     "doi": "",
     "url": "https://www.scitepress.org/Papers/2023/120863/120863.pdf",
-    "type": "Conference paper"
+    "type": "Conference paper",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": true
+  },
+  {
+    "year": "2023",
+    "title": "A Tuning Approach Using Genetic Algorithms for Emergency Incidents Classification in Social Media in Ecuador",
+    "journal": "Smart Technologies, Systems and Applications, CCIS 1705",
+    "doi": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-32213-6_4",
+    "type": "Book chapter",
+    "authors": "Joel Garcia-Arteaga, Jesus Zambrano-Zambrano, Jorge Parraga-Alava and Jorge Rodas-Silva",
+    "open_access": false
   },
   {
     "year": "2022",
@@ -53,15 +75,19 @@
     "journal": "Informática y Sistemas, 6(1)",
     "doi": "10.33936/isrtic.v6i1.4522",
     "url": "https://doi.org/10.33936/isrtic.v6i1.4522",
-    "type": "Journal article"
+    "type": "Journal article",
+    "authors": "María José Guerrero García and Jorge Rodas-Silva",
+    "open_access": true
   },
   {
     "year": "2021",
-    "title": "Uso de aplicaciones web para la gestión de clínicas veterinarias y su impacto en la mejora de procesos administrativos",
+    "title": "Use of Web applications for veterinary clinic management and their impact on administrative process improvement",
     "journal": "Ecuadorian Science Journal, 5(4)",
     "doi": "10.46480/esj.5.4.174",
     "url": "https://doi.org/10.46480/esj.5.4.174",
-    "type": "Journal article"
+    "type": "Journal article",
+    "authors": "Anthony Cedeno Ochoa, Axelman Catuto Murillo and Jorge Rodas-Silva",
+    "open_access": true
   },
   {
     "year": "2021",
@@ -69,6 +95,28 @@
     "journal": "KDIR 2021",
     "doi": "",
     "url": "https://www.scitepress.org/Papers/2021/106510/106510.pdf",
-    "type": "Conference paper"
+    "type": "Conference paper",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": true
+  },
+  {
+    "year": "2019",
+    "title": "Selection of Software Product Line Implementation Components Using Recommender Systems: An Application to WordPress",
+    "journal": "IEEE Access, 7, 69226–69245",
+    "doi": "",
+    "url": "https://dblp.org/rec/journals/access/Rodas-SilvaGGB19",
+    "type": "Journal article",
+    "authors": "Jorge Rodas-Silva, José Angel Galindo, Jorge García-Gutiérrez and David Benavides",
+    "open_access": true
+  },
+  {
+    "year": "2019",
+    "title": "RESDEC: online management tool for implementation components selection in software product lines using recommender systems",
+    "journal": "SPLC (B) 2019, 63:1–63:4",
+    "doi": "",
+    "url": "https://dblp.org/rec/conf/splc/Rodas-SilvaGGB19",
+    "type": "Conference paper",
+    "authors": "Jorge Rodas-Silva, José Angel Galindo, Jorge García-Gutiérrez and David Benavides",
+    "open_access": false
   }
 ]
