@@ -1,20 +1,21 @@
-# Sitio académico v7
+# Sitio académico v8 editorial
 
-## Arquitectura
-- Página principal de una sola página con navegación por secciones.
-- Publicaciones leídas desde `data/publications.json`, por lo que cargan rápido.
-- GitHub Actions consulta ORCID al subir el proyecto y cada lunes.
-- El visitante nunca espera a ORCID o Crossref.
-- Experiencia, educación, premios y afiliaciones se cargan desde un JSON local.
-- Versión completa en inglés en `/en/`.
+## Diseño
+- Cormorant Garamond para títulos editoriales.
+- DM Sans para lectura.
+- IBM Plex Mono para metadatos.
+- Paleta uniforme azul marino, azul medio, blanco y gris cálido.
+- Iconografía lineal monocromática.
+- Publicaciones recientes en la portada y catálogo completo debajo.
 
-## Primera sincronización
-Después de subir:
-1. Settings → Actions → General.
-2. Workflow permissions → Read and write permissions.
-3. Actions → Sync ORCID publications → Run workflow.
+## Publicaciones
+- Se leen desde `data/publications.json`.
+- GitHub Actions actualiza el catálogo diariamente desde ORCID.
+- El visitante no espera a ORCID, por lo que la carga es rápida.
+- El DOI se usa como enlace prioritario.
 
-El workflow también se ejecuta automáticamente al hacer push a `main`.
-
-## Métricas
-Las cifras iniciales reproducen las mostradas en el sitio de referencia. Scopus, Web of Science y Google Scholar no ofrecen una API pública simple para actualización automática sin credenciales o scraping. Deben revisarse periódicamente en `data/metrics.json`.
+## Activación
+En GitHub:
+Settings → Actions → General → Workflow permissions → Read and write permissions.
+Después:
+Actions → Sync publications → Run workflow.
