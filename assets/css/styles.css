@@ -82,3 +82,26 @@ h1 span{color:var(--blue)}.hero-copy{font-size:clamp(1.03rem,1.45vw,1.25rem);col
   .education-entry{grid-template-columns:48px 1fr}
   .education-honor{grid-column:2;text-align:left}
 }
+
+/* v12 — research dashboard, accessibility and refined professional profile */
+:focus-visible{outline:3px solid var(--orange);outline-offset:4px;border-radius:4px}
+.publications-lead{max-width:760px;margin:-8px 0 30px;color:#667a98;font-size:1rem}
+.metrics-ten{grid-template-columns:repeat(5,minmax(0,1fr));margin-bottom:54px}
+.metrics-ten .metric{min-height:138px;padding:21px 22px;transition:transform .2s ease,box-shadow .2s ease}
+.metrics-ten .metric:hover{transform:translateY(-3px);box-shadow:0 15px 32px rgba(22,54,101,.11)}
+.metrics-ten .metric-head>span:first-child{display:grid;place-items:center;width:22px;height:22px;color:var(--blue);font-weight:800;font-size:1rem}
+.identity-card span{font-size:.72rem;letter-spacing:.015em}
+.publication-card a:hover,.nav-links a:hover{color:var(--blue)}
+.toolbar input:focus,.toolbar select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(35,88,216,.12);outline:0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media(max-width:1180px){.metrics-ten{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.metrics-ten{grid-template-columns:repeat(2,1fr)}.metrics-ten .metric{min-height:128px}.metric strong{font-size:1.8rem}}
+@media(max-width:440px){.metrics-ten{grid-template-columns:1fr}}
+@media print{
+  .site-header,.hero-actions,.toolbar,.pagination,.all-filter-link{display:none!important}
+  body,.section,.hero,.section.white{background:#fff!important;color:#111!important}
+  .hero,.section{padding:24px 0}.hero-grid{grid-template-columns:1fr 180px;gap:24px}
+  .portrait{max-height:210px}.identity-card{margin:8px 0 0;box-shadow:none}
+  .publication-card{display:block!important;break-inside:avoid}.metrics-ten{grid-template-columns:repeat(5,1fr)}
+  .metric,.career-entry,.education-entry,.award-card,.aff-card{box-shadow:none;break-inside:avoid}
+}

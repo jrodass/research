@@ -1,9 +1,18 @@
 {
   "publications": 25,
-  "recent_visible": 4,
-  "journals": 7,
-  "conference_papers": 4,
+  "journals": 16,
+  "conference_papers": 8,
   "book_chapters": 1,
-  "doi_links": 5,
-  "updated": "2026-07-18"
+  "doi_links": 19,
+  "citations": 96,
+  "h_index": 4,
+  "i10_index": 2,
+  "citations_per_publication": 2.7,
+  "cited_publications_share": "50%",
+  "open_access_share": "61%",
+  "updated": "2026-07-18",
+  "sources": [
+    "ORCID",
+    "OpenAlex"
+  ]
 }

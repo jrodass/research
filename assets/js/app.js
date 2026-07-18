@@ -1,8 +1,13 @@
 
 document.addEventListener("DOMContentLoaded",()=>{
+  fetch(document.documentElement.lang.startsWith("en")?"../data/metrics.json":"data/metrics.json")
+    .then(response=>response.ok?response.json():Promise.reject())
+    .then(metrics=>document.querySelectorAll("[data-metric]").forEach(el=>{const value=metrics[el.dataset.metric];if(value!==undefined)el.textContent=value;}))
+    .catch(()=>{});
   const menu=document.querySelector(".menu");
   const nav=document.querySelector(".nav-links");
-  menu?.addEventListener("click",()=>nav?.classList.toggle("open"));
+  menu?.addEventListener("click",()=>{const open=nav?.classList.toggle("open");menu.setAttribute("aria-expanded",String(Boolean(open)));});
+  document.querySelectorAll("[data-print-cv]").forEach(link=>link.addEventListener("click",event=>{event.preventDefault();window.print();}));
 
   const search=document.querySelector("#pub-search");
   const year=document.querySelector("#year-filter");
