@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded",()=>{
+  document.body.classList.add("js-ready");
   fetch(document.documentElement.lang.startsWith("en")?"../data/metrics.json":"data/metrics.json")
     .then(response=>response.ok?response.json():Promise.reject())
     .then(metrics=>document.querySelectorAll("[data-metric]").forEach(el=>{const value=metrics[el.dataset.metric];if(value!==undefined)el.textContent=value;}))

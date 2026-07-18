@@ -14,11 +14,22 @@ def url(p):
 
 def author_html(line):
     text=html.escape(line or "Jorge Rodas-Silva et al.")
-    return text.replace("Jorge Rodas-Silva","<strong>Jorge Rodas-Silva</strong>")
+    return re.sub(r"Jorge\s+Rodas[\-‐‑–—]Silva",lambda m:f"<strong>{m.group(0)}</strong>",text,flags=re.I)
 
 def card(p,lang):
     source="DOI" if p.get("doi") else ("Source" if lang=="en" else "Fuente")
-    return f'<article class="publication-card" data-year="{html.escape(str(p.get("year","")))}"><h3><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{html.escape(p.get("title",""))}</a></h3><div class="authors">{author_html(p.get("authors",""))}</div><div class="publication-info"><span class="pub-badge">{html.escape(str(p.get("year","—")))} · {html.escape(p.get("type","Publication"))}</span><span class="journal">{html.escape(p.get("journal") or "Academic publication")}</span></div><div class="publication-actions"><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{icon("external")} {source}</a><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{icon("quote")} {"Cite" if lang=="en" else "Citar"}</a></div></article>'
+    abstract=(p.get("abstract") or "").strip()
+    if not abstract:
+        abstract="Abstract not available in the indexed source." if lang=="en" else "Resumen no disponible en la fuente indexada."
+    cite_query=html.escape("https://scholar.google.com/scholar?q="+re.sub(r"\s+","+",p.get("title","").strip()))
+    oa=(f'<a class="open-access" href="{html.escape(url(p))}" target="_blank" rel="noopener">{"Open access" if lang=="en" else "Acceso abierto"}</a>' if p.get("open_access") else "")
+    return f'''<article class="publication-card" data-year="{html.escape(str(p.get("year","")))}">
+      <h3><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{html.escape(p.get("title",""))}</a></h3>
+      <div class="authors">{author_html(p.get("authors",""))}</div>
+      <div class="publication-info"><span class="pub-badge">{html.escape(str(p.get("year","—")))} · {html.escape(p.get("type","Publication"))}</span><span class="journal">{html.escape(p.get("journal") or "Academic publication")}</span></div>
+      <p class="publication-abstract"><strong>{"Abstract:" if lang=="en" else "Resumen:"}</strong> {html.escape(abstract)}</p>
+      <div class="publication-actions"><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{icon("external")} {source}</a><a href="{cite_query}" target="_blank" rel="noopener">{icon("quote")} {"Cite" if lang=="en" else "Citar"}</a>{oa}</div>
+    </article>'''
 
 def rebuild(pubs,metrics):
     for path,lang in [(ROOT/"index.html","es"),(ROOT/"en/index.html","en")]:

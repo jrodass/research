@@ -16,6 +16,15 @@ def get(url):
 def clean_doi(value):
     return re.sub(r"^https?://(dx\.)?doi\.org/", "", value or "", flags=re.I).strip()
 
+def abstract_text(inverted):
+    """Reconstruct OpenAlex's inverted abstract index as readable text."""
+    if not inverted:
+        return ""
+    words = []
+    for word, positions in inverted.items():
+        words.extend((position, word) for position in positions)
+    return " ".join(word for _, word in sorted(words))
+
 def orcid_works():
     raw = get(f"https://pub.orcid.org/v3.0/{ORCID}/works")
     works = []
@@ -33,6 +42,7 @@ def orcid_works():
             "authors": "Jorge Rodas-Silva et al.",
             "open_access": False,
             "citations": 0,
+            "abstract": "",
         })
     return works
 
@@ -60,6 +70,7 @@ def main():
             "authors": ", ".join(filter(None, authors)) or item["authors"],
             "citations": int(match.get("cited_by_count") or 0),
             "open_access": bool((match.get("open_access") or {}).get("is_oa")),
+            "abstract": abstract_text(match.get("abstract_inverted_index")),
             "url": item["url"] if item["doi"] else (match.get("primary_location") or {}).get("landing_page_url") or item["url"],
         })
     unique, seen = [], set()
