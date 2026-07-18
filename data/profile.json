@@ -1,0 +1,154 @@
+{
+  "experience": [
+    {
+      "date_es": "2022 — Actualidad",
+      "date_en": "2022 — Present",
+      "title_es": "Director de Innovación de Procesos Académicos",
+      "title_en": "Director of Academic Process Innovation",
+      "org": "Vicerrectorado de Formación Académica de Grado · Universidad Estatal de Milagro",
+      "area_es": "Gestión académica",
+      "area_en": "Academic Management"
+    },
+    {
+      "date_es": "2020 — 2024",
+      "date_en": "2020 — 2024",
+      "title_es": "Coordinador de la Maestría en Tecnologías de la Información",
+      "title_en": "Coordinator, M.Sc. in Information Technologies",
+      "org": "Universidad Estatal de Milagro",
+      "area_es": "Dirección de programa de posgrado",
+      "area_en": "Graduate Program Direction"
+    },
+    {
+      "date_es": "2015 — Actualidad",
+      "date_en": "2015 — Present",
+      "title_es": "Profesor titular",
+      "title_en": "Associate Professor",
+      "org": "Universidad Estatal de Milagro",
+      "area_es": "Inteligencia de negocios · Ingeniería de software",
+      "area_en": "Business Intelligence · Software Engineering"
+    },
+    {
+      "date_es": "2013 — 2014",
+      "date_en": "2013 — 2014",
+      "title_es": "Coordinador de Investigación",
+      "title_en": "Research Coordinator",
+      "org": "Facultad de Ciencias e Ingeniería · Universidad Estatal de Milagro",
+      "area_es": "Investigación",
+      "area_en": "Research"
+    },
+    {
+      "date_es": "2008 — 2009",
+      "date_en": "2008 — 2009",
+      "title_es": "Programador sénior",
+      "title_en": "Senior Programmer",
+      "org": "Centro de Especialidades MegaSalud",
+      "area_es": "Industria",
+      "area_en": "Industry"
+    },
+    {
+      "date_es": "2007 — 2008",
+      "date_en": "2007 — 2008",
+      "title_es": "Programador júnior",
+      "title_en": "Junior Programmer",
+      "org": "Gobierno Autónomo Descentralizado Simón Bolívar",
+      "area_es": "Industria",
+      "area_en": "Industry"
+    }
+  ],
+  "education": [
+    {
+      "year": "2019",
+      "degree_es": "Doctor en Ingeniería Informática",
+      "degree_en": "Ph.D. in Computer Engineering",
+      "org_es": "Universidad de Sevilla · Sevilla, España",
+      "org_en": "Universidad de Sevilla · Seville, Spain",
+      "honor_es": "Summa Cum Laude · Distinción Internacional",
+      "honor_en": "Summa Cum Laude · International Distinction"
+    },
+    {
+      "year": "2011",
+      "degree_es": "Magíster en Gerencia de Tecnologías de la Información",
+      "degree_en": "M.Sc. in Information Technology Management",
+      "org_es": "Universidad Estatal de Milagro · Milagro, Ecuador",
+      "org_en": "Universidad Estatal de Milagro · Milagro, Ecuador",
+      "honor_es": "Mención de Honor · Mejor Graduado",
+      "honor_en": "Honorable Mention · Best Graduate"
+    },
+    {
+      "year": "2010",
+      "degree_es": "Ingeniero en Sistemas Computacionales",
+      "degree_en": "B.Sc. in Computer Engineering",
+      "org_es": "Universidad Estatal de Milagro · Milagro, Ecuador",
+      "org_en": "Universidad Estatal de Milagro · Milagro, Ecuador",
+      "honor_es": "Mención de Honor · Mejor Graduado",
+      "honor_en": "Honorable Mention · Best Graduate"
+    },
+    {
+      "year": "2013",
+      "degree_es": "Business Intelligence and Datawarehouse (BIDWPC)",
+      "degree_en": "Business Intelligence and Datawarehouse (BIDWPC)",
+      "org_es": "Escuela Superior Politécnica del Litoral · Guayaquil, Ecuador",
+      "org_en": "Escuela Superior Politécnica del Litoral · Guayaquil, Ecuador",
+      "honor_es": "Certificación",
+      "honor_en": "Certification"
+    }
+  ],
+  "awards": [
+    {
+      "title_es": "Doctorado Cum Laude con Distinción Internacional",
+      "title_en": "Ph.D. Cum Laude with International Distinction",
+      "detail_es": "Decisión unánime · Universidad de Sevilla · diciembre de 2019",
+      "detail_en": "Unanimous · Universidad de Sevilla · December 2019"
+    },
+    {
+      "title_es": "Mención de Honor — Mejor Graduado de la Maestría en Gerencia de TI",
+      "title_en": "Honorable Mention — Best M.Sc. Graduate in IT Management",
+      "detail_es": "Primera cohorte · Universidad Estatal de Milagro · julio de 2011",
+      "detail_en": "First Cohort · Universidad Estatal de Milagro · July 2011"
+    },
+    {
+      "title_es": "Mención de Honor — Mejor Graduado de grado",
+      "title_en": "Honorable Mention — Best B.Sc. Graduate",
+      "detail_es": "Ingeniería en Sistemas Computacionales · UNEMI · febrero de 2006",
+      "detail_en": "Computer Systems Engineering · UNEMI · February 2006"
+    }
+  ],
+  "affiliations": [
+    {
+      "date_es": "2015 — Actualidad",
+      "date_en": "2015 — Present",
+      "institution": "Universidad Estatal de Milagro",
+      "location": "Milagro, Ecuador",
+      "role_es": "Profesor titular",
+      "role_en": "Associate Professor",
+      "current": true
+    },
+    {
+      "date_es": "2024 — Actualidad",
+      "date_en": "2024 — Present",
+      "institution": "Universidad Técnica de Manabí",
+      "location": "Portoviejo, Ecuador",
+      "role_es": "Profesor invitado",
+      "role_en": "Guest Professor",
+      "current": true
+    },
+    {
+      "date_es": "2021 — 2024",
+      "date_en": "2021 — 2024",
+      "institution": "Universidad Laica Eloy Alfaro de Manabí",
+      "location": "Manta, Ecuador",
+      "role_es": "Profesor invitado",
+      "role_en": "Guest Professor",
+      "current": false
+    },
+    {
+      "date_es": "2021 — 2023",
+      "date_en": "2021 — 2023",
+      "institution": "Universidad Estatal Península de Santa Elena",
+      "location": "La Libertad, Ecuador",
+      "role_es": "Profesor invitado",
+      "role_en": "Guest Professor",
+      "current": false
+    }
+  ]
+}
