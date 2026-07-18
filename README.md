@@ -1,18 +1,19 @@
-# Sitio académico v4
+# Sitio académico v5 multipágina
 
-## Cambio técnico clave
-Las publicaciones están incorporadas directamente en `index.html` y `en/index.html`. No se usa `fetch`, ORCID ni Crossref durante la apertura de la página. Por ello cargan inmediatamente incluso si una API externa está lenta o bloqueada.
+## Páginas en español
+- index.html
+- publications.html
+- experience.html
+- education.html
+- awards.html
+- affiliations.html
 
-## Contenido incorporado
-- Perfil
-- Publicaciones con resúmenes y enlaces
-- Experiencia completa
-- Educación y certificación
-- Premios y reconocimientos
-- Afiliaciones docentes y de investigación
-- Versión integral en español e inglés
-- Logotipo transparente
-- Montserrat
+## Páginas en inglés
+- en/index.html
+- en/publications.html
+- en/experience.html
+- en/education.html
+- en/awards.html
+- en/affiliations.html
 
-## Instalación
-Copie el contenido de esta carpeta sobre la rama `main` del repositorio. Mantenga la rama de respaldo sin cambios.
+Todas las páginas existen físicamente y los enlaces del menú apuntan a archivos reales.
