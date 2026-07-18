@@ -24,4 +24,7 @@ for relative in ("index.html", "en/index.html"):
     assert counter.abstracts == expected, f"{relative}: every card must include an abstract"
 css = (ROOT / "assets/css/styles.css").read_text(encoding="utf-8")
 assert not re.search(r"(?<!\.js-ready )\.publication-card\{display:none\}", css), "Cards must not be hidden without a JS-ready scope"
+javascript = (ROOT / "assets/js/app.js").read_text(encoding="utf-8")
+assert 'querySelectorAll("[data-year]")' not in javascript, "Publication data-year attributes must never be overwritten"
+assert 'querySelectorAll("[data-current-year]")' in javascript, "Footer year must use its dedicated selector"
 print(f"Validated {expected} visible publication cards in ES and EN")

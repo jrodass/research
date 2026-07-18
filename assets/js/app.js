@@ -60,6 +60,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   prev?.addEventListener("click",()=>{if(page>1){page--;render();document.querySelector("#publication-list")?.scrollIntoView({behavior:"smooth",block:"start"});}});
   next?.addEventListener("click",()=>{const count=Math.max(1,Math.ceil(matchingCards().length/pageSize));if(page<count){page++;render();document.querySelector("#publication-list")?.scrollIntoView({behavior:"smooth",block:"start"});}});
 
-  document.querySelectorAll("[data-year]").forEach(el=>el.textContent=new Date().getFullYear());
+  document.querySelectorAll("[data-current-year]").forEach(el=>el.textContent=new Date().getFullYear());
   render();
 });
