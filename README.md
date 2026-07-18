@@ -1,17 +1,16 @@
-# Sitio académico v10 premium
+# Sitio académico v11 — catálogo paginado
 
-## Mejoras
-- Fotografía oficial tomada del perfil institucional de UNEMI.
-- Tablero bibliométrico con una paleta uniforme.
-- Publicaciones con autores, revista, año, tipo, DOI y acceso abierto.
-- Experiencia presentada en tarjetas profesionales, no en filas extensas.
-- Educación, premios y afiliaciones con componentes diferenciados.
-- Todo el contenido inicial está incorporado en HTML.
+## Comportamiento
+- Las publicaciones están incorporadas directamente en el HTML.
+- Se muestran cinco publicaciones por página.
+- Incluye navegación Anterior / Siguiente, número de página y total de resultados.
+- El buscador y el filtro por año trabajan sobre todo el catálogo.
+- No se presenta al visitante ningún texto técnico sobre el proceso de sincronización.
 
-## Publicaciones completas
-El paquete contiene registros públicos verificados como base. Al subirlo a `main`, la acción `Sync ORCID and rebuild site` consulta el registro público completo de ORCID, sustituye el conteo y reconstruye el catálogo.
+## Actualización
+La acción `Sync ORCID and rebuild site` consulta ORCID, actualiza los archivos de datos y reconstruye las fichas HTML. La paginación se aplica después en el navegador sin volver a consultar servicios externos.
 
-Para permitir la escritura:
+## Activación
 Settings → Actions → General → Workflow permissions → Read and write permissions.
 
 Luego:

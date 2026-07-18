@@ -1,1 +1,59 @@
-document.addEventListener("DOMContentLoaded",()=>{const b=document.querySelector(".menu"),n=document.querySelector(".nav-links");b?.addEventListener("click",()=>n?.classList.toggle("open"));const q=document.querySelector("#pub-search"),y=document.querySelector("#year-filter"),cards=[...document.querySelectorAll(".publication-card")];if(y){[...new Set(cards.map(c=>c.dataset.year))].sort().reverse().forEach(v=>y.insertAdjacentHTML("beforeend",`<option>${v}</option>`));}const filter=()=>{const s=(q?.value||"").toLowerCase(),yr=y?.value||"";cards.forEach(c=>c.classList.toggle("hidden",!((!s||c.textContent.toLowerCase().includes(s))&&(!yr||c.dataset.year===yr))));};q?.addEventListener("input",filter);y?.addEventListener("change",filter);document.querySelectorAll("[data-year]").forEach(e=>e.textContent=new Date().getFullYear());});
+
+document.addEventListener("DOMContentLoaded",()=>{
+  const menu=document.querySelector(".menu");
+  const nav=document.querySelector(".nav-links");
+  menu?.addEventListener("click",()=>nav?.classList.toggle("open"));
+
+  const search=document.querySelector("#pub-search");
+  const year=document.querySelector("#year-filter");
+  const cards=[...document.querySelectorAll(".publication-card")];
+  const prev=document.querySelector("#prev-page");
+  const next=document.querySelector("#next-page");
+  const pageStatus=document.querySelector("#page-status");
+  const filteredCount=document.querySelector("#filtered-count");
+  const visibleTotal=document.querySelector("#visible-total");
+  const pageSize=5;
+  let page=1;
+
+  if(year){
+    [...new Set(cards.map(card=>card.dataset.year).filter(Boolean))]
+      .sort().reverse()
+      .forEach(value=>year.insertAdjacentHTML("beforeend",`<option>${value}</option>`));
+  }
+
+  const matchingCards=()=>{
+    const query=(search?.value||"").trim().toLowerCase();
+    const selectedYear=year?.value||"";
+    return cards.filter(card=>{
+      const matchesQuery=!query||card.textContent.toLowerCase().includes(query);
+      const matchesYear=!selectedYear||card.dataset.year===selectedYear;
+      return matchesQuery&&matchesYear;
+    });
+  };
+
+  const render=()=>{
+    const results=matchingCards();
+    const pageCount=Math.max(1,Math.ceil(results.length/pageSize));
+    if(page>pageCount) page=pageCount;
+    cards.forEach(card=>card.classList.remove("is-visible"));
+    const start=(page-1)*pageSize;
+    results.slice(start,start+pageSize).forEach(card=>card.classList.add("is-visible"));
+
+    if(pageStatus){
+      const label=document.documentElement.lang.startsWith("en")?"Page":"Página";
+      pageStatus.textContent=`${label} ${page} ${document.documentElement.lang.startsWith("en")?"of":"de"} ${pageCount}`;
+    }
+    if(filteredCount) filteredCount.textContent=results.length;
+    if(visibleTotal) visibleTotal.textContent=cards.length;
+    if(prev) prev.disabled=page<=1;
+    if(next) next.disabled=page>=pageCount;
+  };
+
+  search?.addEventListener("input",()=>{page=1;render();});
+  year?.addEventListener("change",()=>{page=1;render();});
+  prev?.addEventListener("click",()=>{if(page>1){page--;render();document.querySelector("#publication-list")?.scrollIntoView({behavior:"smooth",block:"start"});}});
+  next?.addEventListener("click",()=>{const count=Math.max(1,Math.ceil(matchingCards().length/pageSize));if(page<count){page++;render();document.querySelector("#publication-list")?.scrollIntoView({behavior:"smooth",block:"start"});}});
+
+  document.querySelectorAll("[data-year]").forEach(el=>el.textContent=new Date().getFullYear());
+  render();
+});
