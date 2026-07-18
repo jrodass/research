@@ -35,7 +35,7 @@ def rebuild(pubs,metrics):
     for path,lang in [(ROOT/"index.html","es"),(ROOT/"en/index.html","en")]:
         s=path.read_text(encoding="utf-8")
         cards="".join(card(p,lang) for p in pubs)
-        s=re.sub(r'(<div id="publication-list" class="publication-list">).*?(</div>\s*<nav class="pagination")',lambda m:m.group(1)+cards+m.group(2),s,flags=re.S)
+        s=re.sub(r'(<div id="publication-list" class="publication-list"[^>]*>).*?(</div>\s*<nav class="pagination")',lambda m:m.group(1)+cards+m.group(2),s,flags=re.S)
         s=re.sub(r'(<strong id="visible-total">)\d+(</strong>)',rf'\g<1>{len(pubs)}\g<2>',s)
         s=re.sub(r'(<strong id="filtered-count">)\d+(</strong>)',rf'\g<1>{len(pubs)}\g<2>',s)
         for key,value in metrics.items():

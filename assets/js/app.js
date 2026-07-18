@@ -18,6 +18,13 @@ document.addEventListener("DOMContentLoaded",()=>{
   const pageStatus=document.querySelector("#page-status");
   const filteredCount=document.querySelector("#filtered-count");
   const visibleTotal=document.querySelector("#visible-total");
+  const publicationList=document.querySelector("#publication-list");
+  if(publicationList){
+    publicationList.style.setProperty("min-height","0","important");
+    publicationList.style.setProperty("height","auto","important");
+    publicationList.style.alignContent="start";
+    publicationList.style.gridAutoRows="max-content";
+  }
   const pageSize=5;
   let page=1;
 
@@ -43,7 +50,12 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(page>pageCount) page=pageCount;
     cards.forEach(card=>card.classList.remove("is-visible"));
     const start=(page-1)*pageSize;
-    results.slice(start,start+pageSize).forEach(card=>card.classList.add("is-visible"));
+    results.slice(start,start+pageSize).forEach(card=>{
+      card.classList.add("is-visible");
+      card.style.setProperty("min-height","0","important");
+      card.style.setProperty("height","auto","important");
+      card.style.alignSelf="start";
+    });
 
     if(pageStatus){
       const label=document.documentElement.lang.startsWith("en")?"Page":"Página";

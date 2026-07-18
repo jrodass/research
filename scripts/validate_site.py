@@ -26,7 +26,9 @@ for relative in ("index.html", "en/index.html"):
 css = (ROOT / "assets/css/styles.css").read_text(encoding="utf-8")
 assert not re.search(r"(?<!\.js-ready )\.publication-card\{display:none\}", css), "Cards must not be hidden without a JS-ready scope"
 assert ".publication-list{min-height:820px}" not in css, "Filtered result lists must shrink to their content"
+assert ".publication-list{min-height:0!important;height:auto!important;align-content:start;grid-auto-rows:max-content}" in css, "Publication grid must use content-sized rows"
 javascript = (ROOT / "assets/js/app.js").read_text(encoding="utf-8")
 assert 'querySelectorAll("[data-year]")' not in javascript, "Publication data-year attributes must never be overwritten"
 assert 'querySelectorAll("[data-current-year]")' in javascript, "Footer year must use its dedicated selector"
+assert 'gridAutoRows="max-content"' in javascript, "Filtered cards must use content-sized grid rows"
 print(f"Validated {expected} visible publication cards in ES and EN")
