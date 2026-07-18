@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   }
   const pageSize=5;
   let page=1;
+  let topicFilter="";
 
   if(year){
     [...new Set(cards.map(card=>card.dataset.year).filter(Boolean))]
@@ -40,7 +41,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     return cards.filter(card=>{
       const matchesQuery=!query||card.textContent.toLowerCase().includes(query);
       const matchesYear=!selectedYear||card.dataset.year===selectedYear;
-      return matchesQuery&&matchesYear;
+      const matchesTopic=!topicFilter||(card.dataset.topics||"").split(" ").includes(topicFilter);
+      return matchesQuery&&matchesYear&&matchesTopic;
     });
   };
 
@@ -67,8 +69,16 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(next) next.disabled=page>=pageCount;
   };
 
-  search?.addEventListener("input",()=>{page=1;render();});
-  year?.addEventListener("change",()=>{page=1;render();});
+  search?.addEventListener("input",()=>{topicFilter="";document.querySelectorAll("[data-topic-filter]").forEach(button=>button.classList.remove("is-active"));page=1;render();});
+  year?.addEventListener("change",()=>{topicFilter="";document.querySelectorAll("[data-topic-filter]").forEach(button=>button.classList.remove("is-active"));page=1;render();});
+  document.querySelectorAll("[data-topic-filter]").forEach(button=>button.addEventListener("click",()=>{
+    topicFilter=button.dataset.topicFilter||"";
+    if(search)search.value="";
+    if(year)year.value="";
+    document.querySelectorAll("[data-topic-filter]").forEach(item=>item.classList.toggle("is-active",item===button));
+    page=1;render();
+    document.querySelector("#publications")?.scrollIntoView({behavior:"smooth",block:"start"});
+  }));
   prev?.addEventListener("click",()=>{if(page>1){page--;render();document.querySelector("#publication-list")?.scrollIntoView({behavior:"smooth",block:"start"});}});
   next?.addEventListener("click",()=>{const count=Math.max(1,Math.ceil(matchingCards().length/pageSize));if(page<count){page++;render();document.querySelector("#publication-list")?.scrollIntoView({behavior:"smooth",block:"start"});}});
 

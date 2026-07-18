@@ -23,6 +23,9 @@ for relative in ("index.html", "en/index.html"):
     counter = Counter(); counter.feed((ROOT / relative).read_text(encoding="utf-8"))
     assert counter.cards == expected, f"{relative}: expected {expected} cards, found {counter.cards}"
     assert counter.abstracts == expected, f"{relative}: every card must include an abstract"
+    source=(ROOT / relative).read_text(encoding="utf-8")
+    assert 'id="research"' in source, f"{relative}: research section is missing"
+    assert source.count('data-topic-filter=') == 6, f"{relative}: expected six research filters"
 css = (ROOT / "assets/css/styles.css").read_text(encoding="utf-8")
 assert not re.search(r"(?<!\.js-ready )\.publication-card\{display:none\}", css), "Cards must not be hidden without a JS-ready scope"
 assert ".publication-list{min-height:820px}" not in css, "Filtered result lists must shrink to their content"
@@ -31,4 +34,5 @@ javascript = (ROOT / "assets/js/app.js").read_text(encoding="utf-8")
 assert 'querySelectorAll("[data-year]")' not in javascript, "Publication data-year attributes must never be overwritten"
 assert 'querySelectorAll("[data-current-year]")' in javascript, "Footer year must use its dedicated selector"
 assert 'gridAutoRows="max-content"' in javascript, "Filtered cards must use content-sized grid rows"
+assert 'data-topic-filter' in javascript and 'dataset.topics' in javascript, "Research cards must filter publications by topic"
 print(f"Validated {expected} visible publication cards in ES and EN")

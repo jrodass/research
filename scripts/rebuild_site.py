@@ -16,6 +16,18 @@ def author_html(line):
     text=html.escape(line or "Jorge Rodas-Silva et al.")
     return re.sub(r"Jorge\s+Rodas[\-‐‑–—]Silva",lambda m:f"<strong>{m.group(0)}</strong>",text,flags=re.I)
 
+def topic_tags(p):
+    text=" ".join(str(p.get(key) or "") for key in ("title","abstract","summary_es","summary_en","journal")).lower()
+    groups={
+      "business":("business intelligence","analytics","prediction","predictive","classification","data mining","sentiment","keywords","decision"),
+      "education":("education","educational","academic performance","student","learning","teaching","university","competenc"),
+      "programming":("programming","computational thinking","scratch","app inventor","object-oriented","coding"),
+      "software":("software","feature model","configuration","deployment","recommender","android","product line"),
+      "digital":("digital","online","web","twitter","social media","technology","virtual","mobile"),
+      "ai":("artificial intelligence","machine learning","genetic algorithm","predictive","classification","natural language","recommender","sentiment")
+    }
+    return " ".join(name for name,terms in groups.items() if any(term in text for term in terms))
+
 def card(p,lang):
     source="DOI" if p.get("doi") else ("Source" if lang=="en" else "Fuente")
     abstract=(p.get("summary_en") if lang=="en" else p.get("summary_es")) or (p.get("abstract") or "").strip()
@@ -23,7 +35,7 @@ def card(p,lang):
         abstract=(f'This publication examines “{p.get("title","")}” and presents contributions relevant to its academic field.' if lang=="en" else f'Esta publicación examina «{p.get("title","")}» y presenta aportes relevantes para su campo académico.')
     cite_query=html.escape("https://scholar.google.com/scholar?q="+re.sub(r"\s+","+",p.get("title","").strip()))
     oa=(f'<a class="open-access" href="{html.escape(url(p))}" target="_blank" rel="noopener">{"Open access" if lang=="en" else "Acceso abierto"}</a>' if p.get("open_access") else "")
-    return f'''<article class="publication-card" data-year="{html.escape(str(p.get("year","")))}">
+    return f'''<article class="publication-card" data-year="{html.escape(str(p.get("year","")))}" data-topics="{html.escape(topic_tags(p))}">
       <h3><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{html.escape(p.get("title",""))}</a></h3>
       <div class="authors">{author_html(p.get("authors",""))}</div>
       <div class="publication-info"><span class="pub-badge">{html.escape(str(p.get("year","—")))} · {html.escape(p.get("type","Publication"))}</span><span class="journal">{html.escape(p.get("journal") or "Academic publication")}</span></div>
