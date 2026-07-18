@@ -1,6 +1,14 @@
-# Sitio académico v5 multipágina
+# Sitio académico v6 final
 
-## Páginas en español
+## Arquitectura
+Sitio estático multipágina con publicaciones incorporadas directamente en HTML para carga inmediata.
+
+## Contenido académico
+La experiencia, educación, premios y afiliaciones se reprodujeron conforme al contenido público de:
+https://jorgeklz.github.io/rodas/
+
+## Páginas
+Español:
 - index.html
 - publications.html
 - experience.html
@@ -8,12 +16,10 @@
 - awards.html
 - affiliations.html
 
-## Páginas en inglés
+Inglés:
 - en/index.html
 - en/publications.html
 - en/experience.html
 - en/education.html
 - en/awards.html
 - en/affiliations.html
-
-Todas las páginas existen físicamente y los enlaces del menú apuntan a archivos reales.
