@@ -1,37 +1,18 @@
-# Research Site v2
+# Sitio académico profesional — Jorge Rodas Silva
 
-Sitio académico estático para GitHub Pages.
+## Instalación
+Reemplace el contenido de la rama `main` por estos archivos, manteniendo una rama de respaldo del sitio anterior.
 
-## Publicación
+## Publicaciones
+- La web intenta leer primero `data/publications.json`.
+- Si todavía está vacío, consulta ORCID desde el navegador.
+- La GitHub Action `Actualizar publicaciones` genera semanalmente el JSON local.
+- Los resúmenes proceden de la descripción de ORCID o del abstract disponible en Crossref.
+- El título y el botón `Ver artículo` abren el DOI o el registro académico disponible.
 
-1. Haz una copia de seguridad del repositorio actual.
-2. Sustituye su contenido por los archivos de esta carpeta.
-3. Confirma que GitHub Pages publique desde `main` y `/ (root)`.
-4. Haz commit y push.
-5. Abre `https://jrodass.github.io/research/`.
+## Activar la primera sincronización
+En GitHub vaya a `Actions` → `Actualizar publicaciones` → `Run workflow`.
+También active `Settings` → `Actions` → `General` → `Workflow permissions` → `Read and write permissions`.
 
-## Estructura
-
-- `index.html`: portada.
-- `publications.html`: publicaciones con búsqueda y filtro.
-- `posts.html`: noticias y divulgación.
-- `about.html`: perfil.
-- `cv.html`: experiencia y formación.
-- `es/index.html`: portada en español.
-- `assets/css/styles.css`: diseño.
-- `assets/js/app.js`: navegación y conexión con ORCID.
-- `data/site.json`: datos centrales para futuras ampliaciones.
-
-## ORCID
-
-El sitio utiliza el ORCID `0000-0001-6526-7740`.
-La API pública de ORCID puede aplicar límites temporales o bloquear ciertas solicitudes desde el navegador. Para producción robusta se recomienda añadir una GitHub Action que genere un archivo local `data/publications.json`.
-
-## Próximas mejoras recomendadas
-
-- Foto profesional optimizada en WebP.
-- CV descargable en PDF.
-- Google Scholar, Scopus y Web of Science.
-- Posts individuales.
-- SEO avanzado, Open Graph, sitemap y analytics.
-- GitHub Action para sincronización programada de ORCID/Crossref.
+## Logo
+El logotipo optimizado está en `assets/img/logo-jorge-rodas.webp`.
