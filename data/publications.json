@@ -2,10 +2,10 @@
   {
     "year": "2026",
     "title": "Comparing Academic Performance in Online and Face-to-Face Object-Oriented Programming Courses: An Educational Data Mining Analysis",
-    "journal": "Proceedings of 19th Iberian Conference on Information Systems and Technologies, CISTI 2024, Vol. 3",
+    "journal": "Proceedings of the 19th Iberian Conference on Information Systems and Technologies, CISTI 2024, Vol. 3",
     "doi": "",
     "url": "https://orcid.org/0000-0001-6526-7740",
-    "type": "conference-paper"
+    "type": "Conference paper"
   },
   {
     "year": "2025",
@@ -13,7 +13,7 @@
     "journal": "Formación Universitaria",
     "doi": "",
     "url": "https://www.scielo.cl/article_plus.php?lng=es&pid=S0718-50062025000400039&tlng=es",
-    "type": "journal-article"
+    "type": "Journal article"
   },
   {
     "year": "2025",
@@ -21,7 +21,7 @@
     "journal": "Engineering Reports",
     "doi": "",
     "url": "https://orcid.org/0000-0001-6526-7740",
-    "type": "journal-article"
+    "type": "Journal article"
   },
   {
     "year": "2025",
@@ -29,7 +29,7 @@
     "journal": "Formación Universitaria",
     "doi": "",
     "url": "https://www.researchgate.net/publication/398788398_Equidad_en_la_evaluacion_academica_y_calidad_de_los_examenes_universitarios_un_analisis_de_patrones_en_educacion_superior",
-    "type": "journal-article"
+    "type": "Journal article"
   },
   {
     "year": "2024",
@@ -37,7 +37,7 @@
     "journal": "International Journal of Computer Games Technology",
     "doi": "10.1155/2024/4918351",
     "url": "https://doi.org/10.1155/2024/4918351",
-    "type": "journal-article"
+    "type": "Journal article"
   },
   {
     "year": "2023",
@@ -45,6 +45,30 @@
     "journal": "CSEDU 2023",
     "doi": "",
     "url": "https://www.scitepress.org/Papers/2023/120863/120863.pdf",
-    "type": "conference-paper"
+    "type": "Conference paper"
+  },
+  {
+    "year": "2022",
+    "title": "Análisis comparativo de metodologías y herramientas tecnológicas para procesos de Business Intelligence orientados a la toma de decisiones",
+    "journal": "Informática y Sistemas, 6(1)",
+    "doi": "10.33936/isrtic.v6i1.4522",
+    "url": "https://doi.org/10.33936/isrtic.v6i1.4522",
+    "type": "Journal article"
+  },
+  {
+    "year": "2021",
+    "title": "Uso de aplicaciones web para la gestión de clínicas veterinarias y su impacto en la mejora de procesos administrativos",
+    "journal": "Ecuadorian Science Journal, 5(4)",
+    "doi": "10.46480/esj.5.4.174",
+    "url": "https://doi.org/10.46480/esj.5.4.174",
+    "type": "Journal article"
+  },
+  {
+    "year": "2021",
+    "title": "Opinion and Sentiment Analysis of Twitter Users during the 2021 Ecuador Presidential Election",
+    "journal": "KDIR 2021",
+    "doi": "",
+    "url": "https://www.scitepress.org/Papers/2021/106510/106510.pdf",
+    "type": "Conference paper"
   }
 ]

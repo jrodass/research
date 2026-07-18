@@ -1,21 +1,9 @@
-# Sitio académico v8 editorial
+# Sitio académico v9 profesional
 
-## Diseño
-- Cormorant Garamond para títulos editoriales.
-- DM Sans para lectura.
-- IBM Plex Mono para metadatos.
-- Paleta uniforme azul marino, azul medio, blanco y gris cálido.
-- Iconografía lineal monocromática.
-- Publicaciones recientes en la portada y catálogo completo debajo.
+El contenido principal está incorporado directamente en HTML. No depende de `fetch()` y no puede mostrar mensajes de error por falta de carga de JSON.
 
-## Publicaciones
-- Se leen desde `data/publications.json`.
-- GitHub Actions actualiza el catálogo diariamente desde ORCID.
-- El visitante no espera a ORCID, por lo que la carga es rápida.
-- El DOI se usa como enlace prioritario.
+GitHub Actions consulta ORCID diariamente, actualiza el catálogo y reescribe las secciones de publicaciones en español e inglés.
 
-## Activación
-En GitHub:
+Activación:
 Settings → Actions → General → Workflow permissions → Read and write permissions.
-Después:
-Actions → Sync publications → Run workflow.
+Actions → Update academic site → Run workflow.
