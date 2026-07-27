@@ -1,0 +1,41 @@
+name: Sync scientific profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:17 en Ecuador (UTC-5), todos los días.
+    - cron: "17 11 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update Scopus, ORCID and OpenAlex data
+        env:
+          ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
+          ELSEVIER_INSTTOKEN: ${{ secrets.ELSEVIER_INSTTOKEN }}
+        run: python scripts/sync_orcid.py
+
+      - name: Validate publication catalogue
+        run: python scripts/validate_site.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "research-profile-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data index.html en/index.html
+          git diff --cached --quiet || git commit -m "chore: sync scientific profile"
+          git push
