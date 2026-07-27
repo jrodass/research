@@ -27,6 +27,8 @@ for relative in ("index.html", "en/index.html"):
     assert 'id="research"' in source, f"{relative}: research section is missing"
     assert source.count('data-topic-filter=') == 6, f"{relative}: expected six research filters"
 css = (ROOT / "assets/css/styles.css").read_text(encoding="utf-8")
+assert "--max:1200px" in css, "Desktop content must remain centered in a 1200px container"
+assert ".container{width:min(calc(100% - 64px),var(--max));margin-inline:auto}" in css, "Desktop container must preserve balanced side margins"
 assert not re.search(r"(?<!\.js-ready )\.publication-card\{display:none\}", css), "Cards must not be hidden without a JS-ready scope"
 assert ".publication-list{min-height:820px}" not in css, "Filtered result lists must shrink to their content"
 assert ".publication-list{min-height:0!important;height:auto!important;align-content:start;grid-auto-rows:max-content}" in css, "Publication grid must use content-sized rows"
