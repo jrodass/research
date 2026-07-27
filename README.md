@@ -1,6 +1,6 @@
 # Jorge Rodas-Silva — sitio profesional de investigación
 
-Sitio estático, bilingüe y accesible para GitHub Pages. La producción científica se toma de ORCID `0000-0001-6526-7740` y se enriquece con OpenAlex para autores, citas, acceso abierto e indicadores bibliométricos.
+Sitio estático, bilingüe y accesible para GitHub Pages. El catálogo combina ORCID `0000-0001-6526-7740` con los perfiles Scopus `59258484700` y `57188854666`; OpenAlex y Crossref completan autores, resúmenes, citas, acceso abierto e indicadores bibliométricos.
 
 ## Qué incluye
 
@@ -12,7 +12,7 @@ Sitio estático, bilingüe y accesible para GitHub Pages. La producción cientí
 - Español e inglés.
 - Experiencia, educación, premios, afiliaciones, fotografía y logotipo existentes.
 - CV imprimible: el botón «Guardar CV en PDF» abre el diálogo de impresión del navegador.
-- Actualización automática semanal mediante GitHub Actions.
+- Actualización automática diaria mediante GitHub Actions.
 - Diseño adaptable, navegación por teclado, foco visible y respeto por `prefers-reduced-motion`.
 
 ## Publicar en GitHub Pages
@@ -38,14 +38,28 @@ git commit -m "feat: redesign professional research profile"
 git push origin main
 ```
 
-## Activar la actualización científica
+## Activar la actualización científica automática
 
-1. En GitHub abra **Settings → Actions → General**.
-2. En **Workflow permissions**, seleccione **Read and write permissions** y guarde.
-3. Abra **Actions → Sync scientific profile → Run workflow**.
-4. Revise que la ejecución termine en verde.
+### 1. Crear la clave de Scopus
 
-Después de activarlo, el flujo se ejecuta cada lunes y también puede lanzarse manualmente. Modifica únicamente `data/publications.json`, `data/metrics.json`, `index.html` y `en/index.html`.
+1. Registre una aplicación académica en `https://dev.elsevier.com/`.
+2. Copie la API key generada. No la escriba en el código ni la envíe por correo o chat.
+3. Si la biblioteca de UNEMI le proporciona un *institutional token*, consérvelo para el paso siguiente. Es opcional, pero puede ampliar el acceso a metadatos y resúmenes.
+
+### 2. Guardar las credenciales de forma segura
+
+1. En GitHub abra el repositorio y entre a **Settings → Secrets and variables → Actions**.
+2. Pulse **New repository secret**.
+3. Cree `ELSEVIER_API_KEY` y pegue la API key.
+4. Solo si dispone del token institucional, cree también `ELSEVIER_INSTTOKEN`.
+
+### 3. Activar el flujo
+
+1. En **Settings → Actions → General**, seleccione **Read and write permissions** y guarde.
+2. Abra **Actions → Sync scientific profile → Run workflow**.
+3. Revise que la ejecución termine en verde.
+
+Después de activarlo, el flujo se ejecuta todos los días a las 06:17 (hora de Ecuador) y también puede lanzarse manualmente. Consulta ambos perfiles Scopus, une sus resultados con ORCID, elimina duplicados por DOI, EID o título, completa los metadatos disponibles y modifica únicamente `data/publications.json`, `data/metrics.json`, `index.html` y `en/index.html`. Si una fuente falla temporalmente, el catálogo anterior se conserva para evitar que desaparezcan publicaciones.
 
 ## Verificación posterior
 
@@ -54,8 +68,8 @@ Después de activarlo, el flujo se ejecuta cada lunes y también puede lanzarse 
 - Recorra la página usando solo la tecla `Tab`.
 - En móvil, compruebe el menú y las tarjetas.
 - Pulse **Guardar CV en PDF** y seleccione “Guardar como PDF”.
-- Compare el total de publicaciones con ORCID.
+- Compare el total y los títulos con los dos perfiles de Scopus y con ORCID.
 
 ## Fuentes y alcance de los indicadores
 
-ORCID es la fuente maestra del catálogo. OpenAlex enriquece las coincidencias y calcula las métricas visibles. Por ello, las cifras pueden diferir de Google Scholar o Scopus. El sitio no utiliza claves privadas ni expone credenciales.
+Scopus y ORCID son las fuentes maestras del catálogo. OpenAlex y Crossref enriquecen las coincidencias y cubren campos ausentes. Las métricas se recalculan sobre el catálogo unificado, por lo que pueden diferir de las que cada base muestra de forma aislada. La clave privada se lee únicamente desde GitHub Actions y nunca se publica en el sitio.
