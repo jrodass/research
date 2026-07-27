@@ -11,8 +11,11 @@
     "citations": 0,
     "abstract": "",
     "sources": [
-      "ORCID"
+      "ORCID",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-105030882645",
+    "scopus_id": "105030882645",
     "summary_es": "Este estudio compara el desempeño académico de estudiantes en cursos de programación orientada a objetos impartidos en modalidad virtual y presencial. Mediante técnicas de minería de datos educativos, identifica diferencias de rendimiento y patrones útiles para mejorar el diseño de la enseñanza de programación.",
     "summary_en": "This study compares student performance in online and face-to-face object-oriented programming courses. Using educational data mining techniques, it identifies achievement differences and learning patterns that can inform improvements in programming instruction."
   },
@@ -29,8 +32,11 @@
     "abstract": "The continuous evolution of digital technologies has significantly reshaped the landscape of higher education, particularly in programming instruction. As programming skills become increasingly essential across multiple disciplines, analyzing the research trends, key contributors, and institutional impact on programming education is crucial. This study presents a bibliometric analysis to identify influential research works, leading authors, and major institutions that have shaped this field over the years. By systematically examining scholarly publications, this study explores the most recurrent pedagogical approaches, the role of emerging technologies, and the methodological frameworks used to assess programming competencies. Additionally, it highlights prevailing research trends, knowledge gaps, and future directions for improving programming education in higher education institutions. The findings of this work will support educators, curriculum designers, and policymakers in refining instructional strategies, fostering innovative learning environments, and aligning academic programs with industry demands.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-105002256477",
+    "scopus_id": "105002256477",
     "summary_es": "The continuous evolution of digital technologies has significantly reshaped the landscape of higher education, particularly in programming instruction. As programming skills become increasingly essential across multiple disciplines, analyzing the research trends, key contributors, and institutional impact on programming education is crucial.",
     "summary_en": "The continuous evolution of digital technologies has significantly reshaped the landscape of higher education, particularly in programming instruction. As programming skills become increasingly essential across multiple disciplines, analyzing the research trends, key contributors, and institutional impact on programming education is crucial."
   },
@@ -47,10 +53,71 @@
     "abstract": "In today’s information society, developing programming competencies is essential in higher education. Numerous studies have been conducted on effective strategies for fostering these skills. This study performs a bibliometric analysis of research on teaching strategies for programming in higher education, using data from the SCOPUS and Web of Science (WOS) databases between 2014 and 2023. The analysis identifies key trends, influential authors, and collaboration networks in this field. The most effective teaching strategies include project-based learning, flipped classrooms, and collaborative programming. Emerging technologies such as augmented reality and virtual reality are gaining prominence in programming education. Despite the growth of research in this area, challenges remain, such as the lack of longitudinal studies exploring the long-term impact of these methodologies and the need for greater geographic diversity in studies. This paper emphasizes the importance of exploring new technologies and interdisciplinary approaches and fostering international collaborations to enhance programming education. The findings guide researchers and educators on how to optimize programming learning in a global context.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85216849400",
+    "scopus_id": "85216849400",
     "summary_es": "In today’s information society, developing programming competencies is essential in higher education. Numerous studies have been conducted on effective strategies for fostering these skills.",
     "summary_en": "In today’s information society, developing programming competencies is essential in higher education. Numerous studies have been conducted on effective strategies for fostering these skills."
+  },
+  {
+    "year": "2025",
+    "title": "Equity in academic evaluation and quality of university exams: a pattern analysis in higher education",
+    "journal": "Formacion Universitaria",
+    "doi": "10.4067/S0718-50062025000600135",
+    "url": "https://doi.org/10.4067/S0718-50062025000600135",
+    "type": "Article",
+    "authors": "J. Cobo, Fabricio Guevara-Viejó, Jorge Rodas‐Silva, Cristian Vidal-Silva",
+    "open_access": true,
+    "citations": 0,
+    "abstract": "ResumenEste estudio analiza la equidad en la evaluacin acadmica y la calidad de exmenes universitarios en modalidades presencial, semipresencial y en lnea.A partir de un enfoque cuantitativo, se examina la distribucin de calificaciones en una muestra de 300 estudiantes de pregrado, considerando variables como acceso tecnolgico, supervisin acadmica y validez de los instrumentos aplicados.Los resultados revelan diferencias estadsticamente significativas en el rendimiento segn la modalidad, siendo la evaluacin presencial la que muestra mayor homogeneidad y promedio de calificaciones, mientras que la modalidad en lnea presenta una mayor dispersin.Esta variabilidad se interpreta como una manifestacin de inequidad evaluativa.Se recomienda fortalecer los mecanismos de supervisin digital, estandarizar los criterios de evaluacin y promover el acceso equitativo a recursos tecnolgicos.En conclusin, el presente estudio aporta evidencia emprica sobre los desafos que enfrentan las instituciones de educacin superior para garantizar la equidad y confiabilidad en procesos evaluativos en contextos hbridos y digitales.",
+    "scopus_eid": "2-s2.0-105024915044",
+    "scopus_id": "105024915044",
+    "sources": [
+      "OpenAlex",
+      "Scopus"
+    ],
+    "summary_es": "Este estudio analiza la equidad en la evaluacin acadmica y la calidad de exmenes universitarios en modalidades presencial, semipresencial y en lnea.A partir de un enfoque cuantitativo, se examina la distribucin de calificaciones en una muestra de 300 estudiantes de pregrado, considerando variables como acceso tecnolgico, supervisin acadmica y validez de los instrumentos aplicados.Los resultados revelan diferencias estadsticamente significativas en el rendimiento segn la modalidad, siendo la evaluacin presencial…",
+    "summary_en": "Este estudio analiza la equidad en la evaluacin acadmica y la calidad de exmenes universitarios en modalidades presencial, semipresencial y en lnea.A partir de un enfoque cuantitativo, se examina la distribucin de calificaciones en una muestra de 300 estudiantes de pregrado, considerando variables como acceso tecnolgico, supervisin acadmica y validez de los instrumentos aplicados.Los resultados revelan diferencias estadsticamente significativas en el rendimiento segn la modalidad, siendo la evaluacin presencial…"
+  },
+  {
+    "year": "2025",
+    "title": "Enhanced Helmet Detection using a CNN and Genetic Algorithm for Personal Protective Equipment Compliance",
+    "journal": "Conference Proceedings IEEE International Conference on Systems Man and Cybernetics",
+    "doi": "10.1109/SMC58881.2025.11343106",
+    "url": "https://doi.org/10.1109/SMC58881.2025.11343106",
+    "type": "Conference Paper",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "scopus_eid": "2-s2.0-105033155475",
+    "scopus_id": "105033155475",
+    "sources": [
+      "Scopus"
+    ],
+    "summary_es": "Esta publicación examina «Enhanced Helmet Detection using a CNN and Genetic Algorithm for Personal Protective Equipment Compliance». A partir de su título y registro bibliográfico en Conference Proceedings IEEE International Conference on Systems Man and Cybernetics, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “Enhanced Helmet Detection using a CNN and Genetic Algorithm for Personal Protective Equipment Compliance”. Based on its title and bibliographic record in Conference Proceedings IEEE International Conference on Systems Man and Cybernetics, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+  },
+  {
+    "year": "2025",
+    "title": "Deep Learning for Aphids Detection: A Comparative CNNs Study on Lemon Leaves Images",
+    "journal": "Etcm 2025 9th Ecuador Technical Chapters Meeting",
+    "doi": "10.1109/ETCM67548.2025.11304406",
+    "url": "https://doi.org/10.1109/ETCM67548.2025.11304406",
+    "type": "Conference Paper",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "scopus_eid": "2-s2.0-105032518036",
+    "scopus_id": "105032518036",
+    "sources": [
+      "Scopus"
+    ],
+    "summary_es": "Esta publicación examina «Deep Learning for Aphids Detection: A Comparative CNNs Study on Lemon Leaves Images». A partir de su título y registro bibliográfico en Etcm 2025 9th Ecuador Technical Chapters Meeting, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “Deep Learning for Aphids Detection: A Comparative CNNs Study on Lemon Leaves Images”. Based on its title and bibliographic record in Etcm 2025 9th Ecuador Technical Chapters Meeting, it addresses the stated research problem and presents findings relevant to its academic and professional field."
   },
   {
     "year": "2025",
@@ -65,8 +132,11 @@
     "abstract": "ABSTRACT In preuniversity education, educators and decision‐makers need to understand how teaching methods affect student learning in computational thinking (CT). This helps identify factors influencing student outcomes and inform the development of personalized learning programs. In this article, we conduct a comparative analysis of the academic performance of students enrolled in CT courses delivered through online (OL), blended (BL), and face‐to‐face (FTF) modalities in one public university in Ecuador. Our analysis focuses on preuniversity students during the academic year 2023. First, we collect data on student demographics and academic performance in each modality. Then, we applied statistical analysis to determine significant relationships between modalities. Next, we examine patterns and relationships between sociodemographic factors and academic results. Our results reveal that instructional modality has a significant impact on CT performance, with FTF students achieving better outcomes. Across all formats, admission scores and gender emerged as key predictors. While sociodemographic factors had greater influence in the FTF modality, academic factors played a more prominent role in BL and OL escenarios.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-105007852457",
+    "scopus_id": "105007852457",
     "summary_es": "In preuniversity education, educators and decision‐makers need to understand how teaching methods affect student learning in computational thinking (CT). This helps identify factors influencing student outcomes and inform the development of personalized learning programs.",
     "summary_en": "In preuniversity education, educators and decision‐makers need to understand how teaching methods affect student learning in computational thinking (CT). This helps identify factors influencing student outcomes and inform the development of personalized learning programs."
   },
@@ -83,8 +153,11 @@
     "abstract": "ResumenEste estudio analiza investigaciones sobre estrategias de enseanza en programacin, utilizando las bases de datos SCOPUS y Web of Science desde 2014 a 2023, para identificar tendencias clave, autores influyentes y redes de colaboracin.El desarrollo de competencias de programacin es esencial en la educacin superior.Los resultados muestran que las estrategias enseanza-aprendizaje ms implementadas son el aprendizaje basado en proyectos (37%), aula invertida (25%) y programacin colaborativa (18%).Tecnologas emergentes como la realidad aumentada y virtual estn cobrando importancia.A pesar de los avances tecnolgicos, metodolgicos e investigaciones en esta rea, an faltan estudios longitudinales para evaluar los impactos a largo plazo.Se destaca la necesidad de explorar tecnologas innovadoras, enfoques interdisciplinarios y el fomento de colaboraciones internacionales.En conclusin, este anlisis bibliomtrico proporciona una visin detallada de las tendencias actuales y los principales contribuyentes en la investigacin sobre la enseanza y el aprendizaje de la programacin en la educacin superior.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-105017983686",
+    "scopus_id": "105017983686",
     "summary_es": "Este estudio analiza investigaciones sobre estrategias de enseanza en programacin, utilizando las bases de datos SCOPUS y Web of Science desde 2014 a 2023, para identificar tendencias clave, autores influyentes y redes de colaboracin.El desarrollo de competencias de programacin es esencial en la educacin superior.Los resultados muestran que las estrategias enseanza-aprendizaje ms implementadas son el aprendizaje basado en proyectos (37%), aula invertida (25%) y programacin colaborativa (18%).Tecnologas…",
     "summary_en": "Este estudio analiza investigaciones sobre estrategias de enseanza en programacin, utilizando las bases de datos SCOPUS y Web of Science desde 2014 a 2023, para identificar tendencias clave, autores influyentes y redes de colaboracin.El desarrollo de competencias de programacin es esencial en la educacin superior.Los resultados muestran que las estrategias enseanza-aprendizaje ms implementadas son el aprendizaje basado en proyectos (37%), aula invertida (25%) y programacin colaborativa (18%).Tecnologas…"
   },
@@ -101,8 +174,11 @@
     "abstract": "Electric power consumption prediction enables the development of smart strategies aimed at conserving energy, enhancing efficiency, and establishing sensible pricing mechanisms. In this paper, we used predictive models for electric power consumption using machine learning and genetic algorithm techniques. The dataset utilized consists of socio-demographic instances and power consumption-related measured values collected by Centrales Eléctricas de Nariño (CEDENAR), Colombia. Three predictive models—Random Forest (RF), Gradient Boosting Machines (GBM), and Support Vector Machines (SVM)—were employed to predict power consumption. Additionally, a genetic algorithm (GA) was applied to optimize the parameter values of each model. Performance metrics, including mean absolute error (MAE), mean absolute percentage error (MAPE), root mean squared error (RMSE), and coefficient of determination ($\\mathrm{R}^{2}$), were used to evaluate the effectiveness of the models. Our findings indicate that all models, both in their standalone forms and after genetic algorithm optimization, demonstrate improvements in performance metrics. However, statistically, the RF + GA model exhibits superiority only in the MAE and MAPE metrics, achieving an $\\mathrm{R}^{2}$ of 0.76, reflecting its enhanced predictive capability in electric power consumption estimation. These results offer valuable insights for energy management strategies and resource planning in the context of electricity consumption.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85211815624",
+    "scopus_id": "85211815624",
     "summary_es": "Electric power consumption prediction enables the development of smart strategies aimed at conserving energy, enhancing efficiency, and establishing sensible pricing mechanisms. In this paper, we used predictive models for electric power consumption using machine learning and genetic algorithm techniques.",
     "summary_en": "Electric power consumption prediction enables the development of smart strategies aimed at conserving energy, enhancing efficiency, and establishing sensible pricing mechanisms. In this paper, we used predictive models for electric power consumption using machine learning and genetic algorithm techniques."
   },
@@ -119,8 +195,11 @@
     "abstract": "The need for knowledgeable programmers has increased, highlighting the importance of strong programming foundations in engineering education. Limited access to high‐quality learning materials and educational opportunities presents challenges unrelated to information and communication technology (ICT) field (non‐ICT‐related) students in acquiring programming skills. Educational programming languages (EPLs) such as App Lab have gained popularity as they offer an accessible platform for students to learn programming fundamentals in a visual and interactive manner. This paper examines the impact of the EPL called App Lab on the development of fundamental programming skills among non‐ICT‐related field engineering college students. We conducted a quasiexperimental research study using a single‐blinded, nonequivalent control group pretest–posttest design. The study included 56 participants, all of whom were enrolled in the Environmental Engineering and Biotechnology program at the State University of Milagro (UNEMI), Ecuador. The experimental group consisted of 26 students, while the control group comprised 30 students. The assessment process involved the administration of a battery of 200 questions before and after the intervention. The intervention involved the use of App Lab as an EPL and lasted for a duration of 3 weeks exclusively for the experimental group, while the control group followed their usual tutoring program. The study results showed that students who received EPL‐mediated learning with App Lab had significant increase in their programming skills. App Lab demonstrated a positive impact, particularly among male students who reported Internet usage, as well as in advanced programming topics including loops, lists, and functions, when compared to their female counterparts.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85201151592",
+    "scopus_id": "85201151592",
     "summary_es": "The need for knowledgeable programmers has increased, highlighting the importance of strong programming foundations in engineering education. Limited access to high‐quality learning materials and educational opportunities presents challenges unrelated to information and communication technology (ICT) field (non‐ICT‐related) students in acquiring programming skills.",
     "summary_en": "The need for knowledgeable programmers has increased, highlighting the importance of strong programming foundations in engineering education. Limited access to high‐quality learning materials and educational opportunities presents challenges unrelated to information and communication technology (ICT) field (non‐ICT‐related) students in acquiring programming skills."
   },
@@ -137,15 +216,18 @@
     "abstract": "",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85175232121",
+    "scopus_id": "85175232121",
     "summary_es": "El artículo propone un método para identificar palabras clave capaces de filtrar mensajes en español de Twitter relacionados con emergencias. La estrategia busca mejorar la calidad de los datos recopilados para apoyar sistemas de monitoreo, clasificación y respuesta ante incidentes.",
     "summary_en": "The article proposes a method for identifying keywords that effectively filter Spanish-language Twitter posts related to emergencies. The approach improves the quality of collected data for incident monitoring, classification, and emergency-response applications."
   },
   {
     "year": "2023",
     "title": "A Tuning Approach Using Genetic Algorithms for Emergency Incidents Classification in Social Media in Ecuador",
-    "journal": "",
+    "journal": "Communications in Computer and Information Science",
     "doi": "10.1007/978-3-031-32213-6_4",
     "url": "https://doi.org/10.1007/978-3-031-32213-6_4",
     "type": "Book-Chapter",
@@ -155,8 +237,11 @@
     "abstract": "",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85161211769",
+    "scopus_id": "85161211769",
     "summary_es": "Este capítulo presenta un enfoque de ajuste mediante algoritmos genéticos para clasificar incidentes de emergencia publicados en redes sociales en Ecuador. La optimización de parámetros busca aumentar la precisión de los modelos y facilitar la detección oportuna de información relevante para la gestión de emergencias.",
     "summary_en": "This chapter presents a genetic-algorithm tuning approach for classifying emergency incidents reported on social media in Ecuador. Parameter optimization is used to improve model accuracy and support timely detection of information relevant to emergency management."
   },
@@ -169,12 +254,15 @@
     "type": "Journal-Article",
     "authors": "Jorge Parraga‐Alava, Jorge Rodas‐Silva, Iván Quimi, Roberth Alcívar-Cevallos",
     "open_access": true,
-    "citations": 1,
+    "citations": 2,
     "abstract": "",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85146198380",
+    "scopus_id": "85146198380",
     "summary_es": "La investigación analiza opiniones y sentimientos expresados por usuarios de Twitter durante las elecciones presidenciales de Ecuador de 2021. El estudio aplica técnicas de procesamiento de lenguaje natural para reconocer tendencias, polaridad y patrones de conversación política en redes sociales.",
     "summary_en": "This research analyzes opinions and sentiments expressed by Twitter users during Ecuador's 2021 presidential election. Natural language processing techniques are applied to identify trends, polarity, and patterns in political conversations on social media."
   },
@@ -205,12 +293,15 @@
     "type": "Conference-Paper",
     "authors": "Mariuxi Vinueza-Morales, Ana Eva Chacón-Luna, Jorge Rodas‐Silva, Héctor Serrano Mantilla",
     "open_access": true,
-    "citations": 1,
+    "citations": 2,
     "abstract": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor. The findings indicate a high acceptance in the academic community of App Inventor as an effective tool for motivation and performance of students who are initiated in programming, without distinction in the educational level.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85096810867",
+    "scopus_id": "85096810867",
     "summary_es": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor.",
     "summary_en": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor."
   },
@@ -227,8 +318,11 @@
     "abstract": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review. We used the most common databases in the area of computer science such as ACM, IEE, among others; and taking into account a search protocol, and some criteria, 24 articles were selected. Among the findings are the effectiveness of the use of Alice as a learning resource for introduction to programming, the amount of work in English, and the weak validity of the experimental results.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85073595967",
+    "scopus_id": "85073595967",
     "summary_es": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review.",
     "summary_en": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review."
   },
@@ -245,8 +339,11 @@
     "abstract": "In software products line (SPL), there may be features which can be implemented by different components, which means there are several implementations for the same feature. In this context, the selection of the best components set to implement a given configuration is a challenging task due to the high number of combinations and options which could be selected. In certain scenarios, it is possible to find information associated with the components which could help in this selection task, such as user ratings. In this paper, we introduce a component-based recommender system, called (REcommender System that suggests implementation Components from selecteD fEatures), which uses information associated with the implementation components to make recommendations in the domain of the SPL configuration. We also provide a RESDEC reference implementation that supports collaborative-based and content-based filtering algorithms to recommend (i.e., implementation components) regarding WordPress-based websites configuration. The empirical results, on a knowledge base with 680 plugins and 187 000 ratings by 116 000 users, show promising results. Concretely, this indicates that it is possible to guide the user throughout the implementation components selection with a margin of error smaller than 13% according to our evaluation.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85067252529",
+    "scopus_id": "85067252529",
     "summary_es": "In software products line (SPL), there may be features which can be implemented by different components, which means there are several implementations for the same feature. In this context, the selection of the best components set to implement a given configuration is a challenging task due to the high number of combinations and options which could be selected.",
     "summary_en": "In software products line (SPL), there may be features which can be implemented by different components, which means there are several implementations for the same feature. In this context, the selection of the best components set to implement a given configuration is a challenging task due to the high number of combinations and options which could be selected."
   },
@@ -259,12 +356,15 @@
     "type": "Journal-Article",
     "authors": "Jorge Rodas‐Silva, José Á. Galindo, Jorge García–Gutiérrez, David Benavides",
     "open_access": true,
-    "citations": 4,
+    "citations": 5,
     "abstract": "Software product lines (SPL) management is one of the most important activities for the software engineer and it represents one of the key pieces of software product line engineering. When a software system grow fast, configuring a product becomes a costly and error-prone activity due to the amount of features available for configuration. This process becomes more complex when for each feature, there is more than one component that implements it. Currently the tools available for configuration management do not have automated mechanisms to facilitate the optimal components selection that meet the functions required by a given product. In this paper, we introduce a prototype component-based recommender system called RESDEC (REcommender System that suggest implementation Components from selecteD fEatures) designed to manage the best implementation components alternatives. Our tool is validated using WordPress-based websites where the implementation components are represented by plugins and the recommendations generated by RESDEC help interested parties in the search and efficient plugins selection to configure websites.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85117539034",
+    "scopus_id": "85117539034",
     "summary_es": "Software product lines (SPL) management is one of the most important activities for the software engineer and it represents one of the key pieces of software product line engineering. When a software system grow fast, configuring a product becomes a costly and error-prone activity due to the amount of features available for configuration.",
     "summary_en": "Software product lines (SPL) management is one of the most important activities for the software engineer and it represents one of the key pieces of software product line engineering. When a software system grow fast, configuring a product becomes a costly and error-prone activity due to the amount of features available for configuration."
   },
@@ -277,12 +377,15 @@
     "type": "Journal-Article",
     "authors": "Michael Lettner, Jorge Rodas‐Silva, José Á. Galindo, David Benavides",
     "open_access": true,
-    "citations": 12,
+    "citations": 13,
     "abstract": "",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85065076928",
+    "scopus_id": "85065076928",
     "summary_es": "El trabajo propone un procedimiento automatizado para analizar modelos de características de dos niveles que incluyen atributos. Su contribución facilita la validación de configuraciones y el razonamiento sobre variabilidad en líneas de productos de software complejas.",
     "summary_en": "The work proposes an automated procedure for analyzing two-layer feature models that include feature attributes. It supports configuration validation and reasoning about variability in complex software product lines."
   },
@@ -305,6 +408,25 @@
   },
   {
     "year": "2018",
+    "title": "Selection of deployment configurations using Recommender Systems on Android",
+    "journal": "Risti Revista Iberica De Sistemas E Tecnologias De Informacao",
+    "doi": "",
+    "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85048519228&origin=resultslist",
+    "type": "Article",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "scopus_eid": "2-s2.0-85048519228",
+    "scopus_id": "85048519228",
+    "sources": [
+      "Scopus"
+    ],
+    "summary_es": "Esta publicación examina «Selection of deployment configurations using Recommender Systems on Android». A partir de su título y registro bibliográfico en Risti Revista Iberica De Sistemas E Tecnologias De Informacao, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “Selection of deployment configurations using Recommender Systems on Android”. Based on its title and bibliographic record in Risti Revista Iberica De Sistemas E Tecnologias De Informacao, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+  },
+  {
+    "year": "2018",
     "title": "RESDEC: Un prototipo de herramienta para la selección de configuraciones de despliegue basado en Sistemas de Recomendación",
     "journal": "Actas de las 23rd Jornadas de Ingenieria del Software y Bases de Datos, JISBD 2018",
     "doi": "",
@@ -321,6 +443,25 @@
     "summary_en": "The paper presents RESDEC, a prototype that uses recommender systems to support deployment-configuration selection. The tool reduces choice complexity and recommends alternatives aligned with user needs and preferences."
   },
   {
+    "year": "2018",
+    "title": "RESDEC: A prototype tool for the selection of deployment configurations based on recommender systems",
+    "journal": "Actas De Las 23rd Jornadas De Ingenieria Del Software Y Bases De Datos Jisbd 2018",
+    "doi": "",
+    "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85172614366&origin=resultslist",
+    "type": "Conference Paper",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "scopus_eid": "2-s2.0-85172614366",
+    "scopus_id": "85172614366",
+    "sources": [
+      "Scopus"
+    ],
+    "summary_es": "Esta publicación examina «RESDEC: A prototype tool for the selection of deployment configurations based on recommender systems». A partir de su título y registro bibliográfico en Actas De Las 23rd Jornadas De Ingenieria Del Software Y Bases De Datos Jisbd 2018, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “RESDEC: A prototype tool for the selection of deployment configurations based on recommender systems”. Based on its title and bibliographic record in Actas De Las 23rd Jornadas De Ingenieria Del Software Y Bases De Datos Jisbd 2018, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+  },
+  {
     "year": "2017",
     "title": "Programming with the SCRATCH + CARAMBA tool. A significant learning experience,Programación con la herramienta SCRATCH +CARAMBA. Una experiencia de aprendizaje significativo",
     "journal": "Proceedings of the LACCEI international Multi-conference for Engineering, Education and Technology",
@@ -329,13 +470,54 @@
     "type": "Conference-Paper",
     "authors": "Jorge Rodas-Silva et al.",
     "open_access": false,
-    "citations": 0,
+    "citations": 1,
     "abstract": "",
     "sources": [
-      "ORCID"
+      "ORCID",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-85046302606",
+    "scopus_id": "85046302606",
     "summary_es": "El estudio describe una experiencia de aprendizaje significativo de programación mediante las herramientas Scratch y CARAMBA. La propuesta emplea entornos visuales e interactivos para favorecer la comprensión de conceptos computacionales y aumentar la participación estudiantil.",
     "summary_en": "The study describes a meaningful programming-learning experience using the Scratch and CARAMBA tools. Visual and interactive environments are used to strengthen understanding of computational concepts and increase student engagement."
+  },
+  {
+    "year": "2016",
+    "title": "Towards the use of recommender systems in variability intensive systems",
+    "journal": "Actas De Las 21st Jornadas De Ingenier Amp Amp Amp Amp Amp 65533 A Del Software Y Bases De Datos Jisbd 2016",
+    "doi": "",
+    "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85172611545&origin=resultslist",
+    "type": "Conference Paper",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "scopus_eid": "2-s2.0-85172611545",
+    "scopus_id": "85172611545",
+    "sources": [
+      "Scopus"
+    ],
+    "summary_es": "Esta publicación examina «Towards the use of recommender systems in variability intensive systems». A partir de su título y registro bibliográfico en Actas De Las 21st Jornadas De Ingenier Amp Amp Amp Amp Amp 65533 A Del Software Y Bases De Datos Jisbd 2016, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “Towards the use of recommender systems in variability intensive systems”. Based on its title and bibliographic record in Actas De Las 21st Jornadas De Ingenier Amp Amp Amp Amp Amp 65533 A Del Software Y Bases De Datos Jisbd 2016, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+  },
+  {
+    "year": "2016",
+    "title": "The use of feature models with attributes for testing variability intensive systems: First steps",
+    "journal": "Actas De Las 21st Jornadas De Ingenier Amp Amp Amp Amp Amp 65533 A Del Software Y Bases De Datos Jisbd 2016",
+    "doi": "",
+    "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85172597645&origin=resultslist",
+    "type": "Conference Paper",
+    "authors": "Jorge Rodas-Silva et al.",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "scopus_eid": "2-s2.0-85172597645",
+    "scopus_id": "85172597645",
+    "sources": [
+      "Scopus"
+    ],
+    "summary_es": "Esta publicación examina «The use of feature models with attributes for testing variability intensive systems: First steps». A partir de su título y registro bibliográfico en Actas De Las 21st Jornadas De Ingenier Amp Amp Amp Amp Amp 65533 A Del Software Y Bases De Datos Jisbd 2016, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “The use of feature models with attributes for testing variability intensive systems: First steps”. Based on its title and bibliographic record in Actas De Las 21st Jornadas De Ingenier Amp Amp Amp Amp Amp 65533 A Del Software Y Bases De Datos Jisbd 2016, it addresses the stated research problem and presents findings relevant to its academic and professional field."
   },
   {
     "year": "2016",
@@ -392,28 +574,10 @@
   },
   {
     "year": "2015",
-    "title": "Towards testing variability intensive systems using user reviews,Hacia las pruebas en sistemas de alta variabilidad utilizando opiniones de los usuarios",
-    "journal": "2015 10th Colombian Computing Conference, 10CCC 2015",
-    "doi": "10.1109/ColumbianCC.2015.7333410",
-    "url": "https://doi.org/10.1109/ColumbianCC.2015.7333410",
-    "type": "Conference-Paper",
-    "authors": "Jorge Rodas‐Silva, David Méndez-Acuña, José Á. Galindo, David Benavides, Jesennia Cardenas",
-    "open_access": false,
-    "citations": 0,
-    "abstract": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task. For example, in the Android ecosystem we can find up to 24 different valid configurations, thus, making it impossible to test an application on all of them. To alleviate this problem, previous research suggest the selection of a subset of test cases that maximize the changes of finding errors while maximizing the diversity of configurations. Concretely, the proposals focus on the prioritization and selection of tests, so only relevant configurations are tested according to some criterion. In this paper, we envision the use of user reports to prioritize and select meaningful tests. To do this, we explore the use of recommender systems as a possible improvement to the selection of test cases in intensive variability systems.",
-    "sources": [
-      "ORCID",
-      "OpenAlex"
-    ],
-    "summary_es": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task.",
-    "summary_en": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task."
-  },
-  {
-    "year": "2015",
     "title": "Towards testing variability intensive systems using user reviews",
     "journal": "2015 10TH COMPUTING COLOMBIAN CONFERENCE (10CCC)",
-    "doi": "",
-    "url": "https://orcid.org/0000-0001-6526-7740",
+    "doi": "10.1109/ColumbianCC.2015.7333410",
+    "url": "https://doi.org/10.1109/ColumbianCC.2015.7333410",
     "type": "Journal-Article",
     "authors": "Jorge Rodas‐Silva, David Méndez-Acuña, José Á. Galindo, David Benavides, Jesennia Cardenas",
     "open_access": false,
@@ -421,8 +585,11 @@
     "abstract": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task. For example, in the Android ecosystem we can find up to 24 different valid configurations, thus, making it impossible to test an application on all of them. To alleviate this problem, previous research suggest the selection of a subset of test cases that maximize the changes of finding errors while maximizing the diversity of configurations. Concretely, the proposals focus on the prioritization and selection of tests, so only relevant configurations are tested according to some criterion. In this paper, we envision the use of user reports to prioritize and select meaningful tests. To do this, we explore the use of recommender systems as a possible improvement to the selection of test cases in intensive variability systems.",
     "sources": [
       "ORCID",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
+    "scopus_eid": "2-s2.0-84963815735",
+    "scopus_id": "84963815735",
     "summary_es": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task.",
     "summary_en": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task."
   },
