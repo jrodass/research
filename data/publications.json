@@ -580,7 +580,7 @@
     "url": "https://doi.org/10.1109/ColumbianCC.2015.7333410",
     "type": "Journal-Article",
     "authors": "Jorge Rodas‐Silva, David Méndez-Acuña, José Á. Galindo, David Benavides, Jesennia Cardenas",
-    "open_access": false,
+    "open_access": true,
     "citations": 0,
     "abstract": "Variability intensive systems are software systems that describe a large set of diverse and different configurations that share some characteristics. This high number of configurations makes testing such systems an expensive and error-prone task. For example, in the Android ecosystem we can find up to 24 different valid configurations, thus, making it impossible to test an application on all of them. To alleviate this problem, previous research suggest the selection of a subset of test cases that maximize the changes of finding errors while maximizing the diversity of configurations. Concretely, the proposals focus on the prioritization and selection of tests, so only relevant configurations are tested according to some criterion. In this paper, we envision the use of user reports to prioritize and select meaningful tests. To do this, we explore the use of recommender systems as a possible improvement to the selection of test cases in intensive variability systems.",
     "sources": [
