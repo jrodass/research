@@ -10,6 +10,152 @@ SCOPUS_AUTHOR_IDS = ("59258484700", "57188854666")
 ADDITIONAL_DOIS = ("10.1016/j.bdr.2026.100630",)
 HEAD = {"Accept": "application/json", "User-Agent": "JorgeRodasResearch/14.0"}
 
+# Confirmed works published in journals registered by Latindex that are not
+# consistently returned by the author-profile APIs.  English titles are used
+# as the site's display standard; title_aliases retain the original titles for
+# deduplication and OpenAlex matching.
+LATINDEX_WORKS = (
+    {
+        "year": "2022",
+        "publication_date": "2022-05-31",
+        "title": "Comparative Analysis of Methodologies and Technological Tools for Business Intelligence Processes Aimed at Decision-Making",
+        "title_aliases": [
+            "Análisis comparativo de metodologías y herramientas tecnológicas para procesos de Business Intelligence orientado a la toma de decisiones",
+        ],
+        "journal": "Informática y Sistemas",
+        "doi": "10.33936/isrtic.v6i1.4522",
+        "url": "https://doi.org/10.33936/isrtic.v6i1.4522",
+        "type": "Journal Article",
+        "authors": "María José Guerrero García, Jorge Rodas-Silva",
+        "open_access": True,
+        "citations": 0,
+        "abstract": "",
+        "sources": ["Latindex"],
+    },
+    {
+        "year": "2018",
+        "publication_date": "2018-03-24",
+        "title": "Selection of Deployment Configurations Using Recommender Systems on Android",
+        "title_aliases": [
+            "Selection of deployment configurations using Recommender Systems on Android",
+        ],
+        "journal": "RISTI - Revista Ibérica de Sistemas e Tecnologias de Informação",
+        "doi": "",
+        "url": "https://investigacion.unemi.edu.ec/perfil-docente/298/?subtab=articulos&tab=produccion",
+        "type": "Journal Article",
+        "authors": "Jorge Rodas-Silva, José A. Galindo, David Benavides, R. Soriano",
+        "open_access": True,
+        "citations": 0,
+        "abstract": "",
+        "sources": ["Latindex"],
+    },
+    {
+        "year": "2015",
+        "publication_date": "2015-12-01",
+        "title": "Business Intelligence System and Its Impact on Decision-Making in Telecommunications Companies in La Troncal, Ecuador",
+        "title_aliases": [
+            "Business Intelligence System and Its Impact on Decision-Making in the Companies Telecommunications of the Town La Troncal, Ecuador",
+        ],
+        "journal": "Copérnico",
+        "doi": "",
+        "url": "https://investigacion.unemi.edu.ec/perfil-docente/298/?subtab=articulos&tab=produccion",
+        "type": "Journal Article",
+        "authors": "Jorge Luis Rodas-Silva, Manuel Guillermo Rodríguez-López, Jesennia Cárdenas-Cobo",
+        "open_access": True,
+        "citations": 0,
+        "abstract": "",
+        "sources": ["Latindex"],
+    },
+    {
+        "year": "2015",
+        "publication_date": "2015-09-15",
+        "title": "Strategic Planning Through ICT in Rural Decentralized Autonomous Governments of Milagro Canton",
+        "title_aliases": [
+            "Planificación estratégica a través de las TIC en los Gobiernos Autónomos Descentralizados Rurales del cantón Milagro",
+            "Strategic planning through ICT in rural Autonomous Governments canton Milagro",
+        ],
+        "journal": "Ciencia UNEMI",
+        "doi": "10.29076/issn.2528-7737vol8iss15.2015pp40-49p",
+        "url": "https://doi.org/10.29076/issn.2528-7737vol8iss15.2015pp40-49p",
+        "type": "Journal Article",
+        "authors": "Mariuxi Geovanna Vinueza Morales, Jorge Rodas-Silva, Ana Chacón Luna",
+        "open_access": True,
+        "citations": 0,
+        "abstract": "",
+        "sources": ["Latindex"],
+    },
+    {
+        "year": "2015",
+        "publication_date": "2015-04-01",
+        "title": "Standards That Contribute to the Development and Delivery of High-Quality Software Products",
+        "title_aliases": [
+            "Estándares que contribuyen al desarrollo y entrega de productos de software de calidad",
+            "Standards that contribute to the development and delivery of high quality software products",
+        ],
+        "journal": "Ciencia UNEMI",
+        "doi": "10.29076/issn.2528-7737vol8iss13.2015pp90-99p",
+        "url": "https://doi.org/10.29076/issn.2528-7737vol8iss13.2015pp90-99p",
+        "type": "Journal Article",
+        "authors": "Ana Chacón Luna, Jorge Luis Rodas-Silva, Mariuxi Vinueza Morales",
+        "open_access": True,
+        "citations": 0,
+        "abstract": "",
+        "sources": ["Latindex"],
+    },
+    {
+        "year": "2014",
+        "publication_date": "2014-12-19",
+        "title": "Digital Management Systems to Improve Academic Processes in Educational Institutions",
+        "title_aliases": [
+            "Sistemas de Gestión Digital para mejorar los procesos académicos en instituciones educativas",
+        ],
+        "journal": "Universidad, Ciencia y Tecnología",
+        "doi": "",
+        "url": "https://ve.scielo.org/scielo.php?pid=S1316-48212014000400001&script=sci_arttext&tlng=es",
+        "type": "Journal Article",
+        "authors": "Jorge Rodas-Silva, Jesennia Cárdenas-Cobo",
+        "open_access": True,
+        "citations": 0,
+        "abstract": "",
+        "sources": ["Latindex"],
+    },
+    {
+        "year": "2014",
+        "publication_date": "2014-12-01",
+        "title": "E-Commerce: A Perspective from SMEs for Developing Strategies to Promote Economic and Business Growth in the City of Milagro",
+        "title_aliases": [
+            "Comercio electrónico: Un enfoque desde las perspectivas de las PYMES en la generación de estrategias para potenciar el desarrollo económico y empresarial en la ciudad de Milagro",
+            "E-commerce: an approach from the perspective of PYMES in generating strategies and business promote economic development in the Milagro city",
+        ],
+        "journal": "ECA Sinergia",
+        "doi": "",
+        "url": "https://revistas.utm.edu.ec/index.php/ECASinergia/article/view/177",
+        "type": "Journal Article",
+        "authors": "Jorge Luis Rodas-Silva, Ana Eva Chacón Luna, Mariuxi Geovanna Vinueza Morales",
+        "open_access": True,
+        "citations": 0,
+        "abstract": "",
+        "sources": ["Latindex"],
+    },
+    {
+        "year": "2012",
+        "publication_date": "2012-12-31",
+        "title": "Study to Determine the Use and Application of ICT in Teaching and Learning Processes by Educators in Milagro and Neighboring Cantons",
+        "title_aliases": [
+            "Estudio para determinar el uso y aplicación de las TIC: En los procesos de enseñanza aprendizaje por parte de los docentes de la ciudad de Milagro y cantones aledaños",
+        ],
+        "journal": "Ciencia UNEMI",
+        "doi": "10.29076/issn.2528-7737vol5iss8.2012pp79-92p",
+        "url": "https://doi.org/10.29076/issn.2528-7737vol5iss8.2012pp79-92p",
+        "type": "Journal Article",
+        "authors": "Jorge Luis Rodas-Silva",
+        "open_access": True,
+        "citations": 0,
+        "abstract": "",
+        "sources": ["Latindex"],
+    },
+)
+
 def get(url, headers=None):
     request_headers = dict(HEAD)
     request_headers.update(headers or {})
@@ -75,6 +221,11 @@ def publication_sort_key(item):
 
 def normalized_title(value):
     return re.sub(r"\W+", "", (value or "").casefold())
+
+def title_keys(item):
+    """Return normalized display and alternate titles for deduplication."""
+    values = [item.get("title") or ""] + list(item.get("title_aliases") or [])
+    return {normalized_title(value) for value in values if normalized_title(value)}
 
 def abstract_text(inverted):
     """Reconstruct OpenAlex's inverted abstract index as readable text."""
@@ -305,6 +456,9 @@ def merge_into(target, incoming):
     if len(incoming.get("abstract") or "") > len(target.get("abstract") or ""):
         target["abstract"] = incoming["abstract"]
     target["sources"] = sorted(set((target.get("sources") or []) + (incoming.get("sources") or [])))
+    target["title_aliases"] = sorted(set(
+        (target.get("title_aliases") or []) + (incoming.get("title_aliases") or [])
+    ))
     if target.get("doi"):
         target["doi"] = clean_doi(target["doi"])
         target["url"] = f"https://doi.org/{target['doi']}"
@@ -317,12 +471,12 @@ def merge_catalog(*collections):
         for incoming in collection:
             doi = clean_doi(incoming.get("doi") or "").casefold()
             eid = (incoming.get("scopus_eid") or "").casefold()
-            title = normalized_title(incoming.get("title"))
+            titles = title_keys(incoming)
             match = next((
                 item for item in catalog
                 if (doi and clean_doi(item.get("doi") or "").casefold() == doi)
                 or (eid and (item.get("scopus_eid") or "").casefold() == eid)
-                or (title and normalized_title(item.get("title")) == title)
+                or bool(titles & title_keys(item))
             ), None)
             if match:
                 merge_into(match, incoming)
@@ -337,12 +491,16 @@ def main():
     previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else []
     scopus, scopus_enabled = scopus_works()
     # Scopus is authoritative when sources provide equally precise dates.
-    works = merge_catalog(scopus, orcid_works(), crossref_works(ADDITIONAL_DOIS), previous)
+    # Put curated Latindex records first so their normalized English titles
+    # remain the display titles while richer API metadata is merged into them.
+    works = merge_catalog(LATINDEX_WORKS, scopus, orcid_works(), crossref_works(ADDITIONAL_DOIS), previous)
     alex = openalex_works()
     by_doi = {clean_doi(w.get("doi")).lower(): w for w in alex if w.get("doi")}
     by_title = {normalized_title(w.get("title")): w for w in alex}
     for item in works:
-        match = by_doi.get(clean_doi(item.get("doi") or "").lower()) if item.get("doi") else by_title.get(normalized_title(item["title"]))
+        match = by_doi.get(clean_doi(item.get("doi") or "").lower()) if item.get("doi") else None
+        if not match:
+            match = next((by_title[key] for key in title_keys(item) if key in by_title), None)
         if not match: continue
         authors = [a.get("author", {}).get("display_name") for a in match.get("authorships", [])]
         enrichment = {
@@ -390,6 +548,8 @@ def main():
     sources = ["ORCID", "OpenAlex"]
     if scopus_enabled or any("Scopus" in (item.get("sources") or []) for item in unique):
         sources.insert(1, "Scopus")
+    if any("Latindex" in (item.get("sources") or []) for item in unique):
+        sources.append("Latindex")
     metrics = {
         "publications": len(unique),
         "journals": sum("journal" in p["type"].lower() for p in unique),
