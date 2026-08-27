@@ -1,20 +1,21 @@
 {
-  "publications": 32,
-  "journals": 5,
+  "publications": 39,
+  "journals": 13,
   "conference_papers": 17,
   "book_chapters": 0,
-  "doi_links": 23,
-  "citations": 91,
+  "doi_links": 27,
+  "citations": 94,
   "h_index": 5,
   "i10_index": 2,
-  "citations_per_publication": 2.8,
-  "cited_publications_share": "44%",
-  "open_access_share": "50%",
+  "citations_per_publication": 2.4,
+  "cited_publications_share": "38%",
+  "open_access_share": "62%",
   "updated": "2026-08-27",
   "sources": [
     "ORCID",
     "Scopus",
-    "OpenAlex"
+    "OpenAlex",
+    "Latindex"
   ],
   "scopus_author_ids": [
     "59258484700",
