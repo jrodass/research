@@ -8,7 +8,7 @@ from pathlib import Path
 ORCID = "0000-0001-6526-7740"
 SCOPUS_AUTHOR_IDS = ("59258484700", "57188854666")
 ADDITIONAL_DOIS = ("10.1016/j.bdr.2026.100630",)
-HEAD = {"Accept": "application/json", "User-Agent": "JorgeRodasResearch/13.0"}
+HEAD = {"Accept": "application/json", "User-Agent": "JorgeRodasResearch/14.0"}
 
 def get(url, headers=None):
     request_headers = dict(HEAD)
@@ -22,6 +22,56 @@ def clean_doi(value):
 
 def clean_text(value):
     return re.sub(r"\s+", " ", html_lib.unescape(re.sub(r"<[^>]+>", " ", value or ""))).strip()
+
+def iso_date_from_parts(parts):
+    """Return the most precise valid ISO date available in a date-parts list."""
+    if not parts:
+        return ""
+    try:
+        year = int(parts[0])
+        if not 1900 <= year <= 2100:
+            return ""
+        if len(parts) < 2 or parts[1] in (None, ""):
+            return f"{year:04d}"
+        month = int(parts[1])
+        if not 1 <= month <= 12:
+            return f"{year:04d}"
+        if len(parts) < 3 or parts[2] in (None, ""):
+            return f"{year:04d}-{month:02d}"
+        day = int(parts[2])
+        date(year, month, day)  # Validate the complete calendar date.
+        return f"{year:04d}-{month:02d}-{day:02d}"
+    except (TypeError, ValueError, IndexError):
+        return ""
+
+def normalize_publication_date(value):
+    """Normalize YYYY, YYYY-MM or YYYY-MM-DD values used by source APIs."""
+    match = re.search(
+        r"\b((?:19|20)\d{2})(?:[-/](\d{1,2}))?(?:[-/](\d{1,2}))?\b",
+        str(value or ""),
+    )
+    if not match:
+        return ""
+    return iso_date_from_parts([part for part in match.groups() if part is not None])
+
+def orcid_publication_date(publication_date):
+    """Build the most precise date supplied in an ORCID work summary."""
+    publication_date = publication_date or {}
+    parts = []
+    for field in ("year", "month", "day"):
+        value = (publication_date.get(field) or {}).get("value")
+        if value in (None, ""):
+            break
+        parts.append(value)
+    return iso_date_from_parts(parts)
+
+def publication_sort_key(item):
+    """Sort key for newest-first chronology, with year-only records last."""
+    value = normalize_publication_date(
+        item.get("publication_date") or item.get("year")
+    )
+    parts = [int(part) for part in value.split("-") if part]
+    return tuple((parts + [0, 0, 0])[:3])
 
 def normalized_title(value):
     return re.sub(r"\W+", "", (value or "").casefold())
@@ -54,10 +104,13 @@ def crossref_works(dois):
             payload = get("https://api.crossref.org/works/" + urllib.parse.quote(doi, safe=""))
             message = payload.get("message") or {}
             date_parts = (
-                (message.get("published-print") or {}).get("date-parts")
-                or (message.get("published-online") or {}).get("date-parts")
+                (message.get("published-online") or {}).get("date-parts")
+                or (message.get("published-print") or {}).get("date-parts")
                 or (message.get("issued") or {}).get("date-parts")
                 or []
+            )
+            publication_date = iso_date_from_parts(
+                date_parts[0] if date_parts else []
             )
             authors = []
             for author in message.get("author") or []:
@@ -65,7 +118,8 @@ def crossref_works(dois):
                 if name:
                     authors.append(name)
             works.append({
-                "year": str(date_parts[0][0]) if date_parts and date_parts[0] else "—",
+                "year": publication_date[:4] if publication_date else "—",
+                "publication_date": publication_date,
                 "title": clean_text(next(iter(message.get("title") or []), "Untitled work")),
                 "journal": clean_text(next(iter(message.get("container-title") or []), "")),
                 "doi": doi,
@@ -99,8 +153,10 @@ def orcid_works():
         summary = (group.get("work-summary") or [{}])[0]
         external = (summary.get("external-ids") or {}).get("external-id") or []
         doi = next((clean_doi(x.get("external-id-value")) for x in external if str(x.get("external-id-type", "")).lower() == "doi"), "")
+        publication_date = orcid_publication_date(summary.get("publication-date"))
         works.append({
-            "year": str((((summary.get("publication-date") or {}).get("year") or {}).get("value") or "—")),
+            "year": publication_date[:4] if publication_date else "—",
+            "publication_date": publication_date,
             "title": ((((summary.get("title") or {}).get("title") or {}).get("value") or "Untitled work").strip()),
             "journal": (summary.get("journal-title") or {}).get("value") or "",
             "doi": doi,
@@ -173,10 +229,11 @@ def scopus_works():
             doi = clean_doi(entry.get("prism:doi") or "")
             eid = entry.get("eid") or ""
             cover_date = entry.get("prism:coverDate") or entry.get("prism:coverDisplayDate") or ""
-            year_match = re.search(r"\b(19|20)\d{2}\b", cover_date)
+            publication_date = normalize_publication_date(cover_date)
             scopus_id = re.sub(r"^SCOPUS_ID:", "", entry.get("dc:identifier") or "")
             rows.append({
-                "year": year_match.group(0) if year_match else "—",
+                "year": publication_date[:4] if publication_date else "—",
+                "publication_date": publication_date,
                 "title": clean_text(entry.get("dc:title")) or "Untitled work",
                 "journal": clean_text(entry.get("prism:publicationName")),
                 "doi": doi,
@@ -235,6 +292,10 @@ def merge_into(target, incoming):
         value = incoming.get(field)
         if value and (not target.get(field) or target.get(field) in defaults):
             target[field] = value
+    target_date = normalize_publication_date(target.get("publication_date"))
+    incoming_date = normalize_publication_date(incoming.get("publication_date"))
+    if incoming_date and incoming_date.count("-") > target_date.count("-"):
+        target["publication_date"] = incoming_date
     incoming_authors = incoming.get("authors") or ""
     target_authors = target.get("authors") or ""
     if incoming_authors and ("et al." in target_authors or len(incoming_authors) > len(target_authors)):
@@ -275,7 +336,8 @@ def main():
     previous_path = Path("data/publications.json")
     previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else []
     scopus, scopus_enabled = scopus_works()
-    works = merge_catalog(orcid_works(), scopus, crossref_works(ADDITIONAL_DOIS), previous)
+    # Scopus is authoritative when sources provide equally precise dates.
+    works = merge_catalog(scopus, orcid_works(), crossref_works(ADDITIONAL_DOIS), previous)
     alex = openalex_works()
     by_doi = {clean_doi(w.get("doi")).lower(): w for w in alex if w.get("doi")}
     by_title = {normalized_title(w.get("title")): w for w in alex}
@@ -285,6 +347,9 @@ def main():
         authors = [a.get("author", {}).get("display_name") for a in match.get("authorships", [])]
         enrichment = {
             "authors": ", ".join(filter(None, authors)) or item["authors"],
+            "publication_date": normalize_publication_date(
+                match.get("publication_date") or match.get("publication_year")
+            ),
             "citations": int(match.get("cited_by_count") or 0),
             "open_access": bool((match.get("open_access") or {}).get("is_oa")),
             "abstract": abstract_text(match.get("abstract_inverted_index")),
@@ -293,6 +358,12 @@ def main():
         }
         merge_into(item, enrichment)
     for item in works:
+        publication_date = normalize_publication_date(
+            item.get("publication_date") or item.get("year")
+        )
+        item["publication_date"] = publication_date
+        if publication_date:
+            item["year"] = publication_date[:4]
         if not item.get("abstract") and item.get("scopus_eid"):
             detail = scopus_detail(item["scopus_eid"])
             if detail.get("abstract"):
@@ -310,7 +381,10 @@ def main():
         if override:
             item["summary_es"] = override["es"]
             item["summary_en"] = override["en"]
-    unique = sorted(merge_catalog(works), key=lambda x: (x["year"], x["title"]), reverse=True)
+    unique = merge_catalog(works)
+    # Stable two-pass ordering: title for exact ties, then publication date.
+    unique.sort(key=lambda item: normalized_title(item.get("title")))
+    unique.sort(key=publication_sort_key, reverse=True)
     citations = sorted((int(item.get("citations") or 0) for item in unique), reverse=True)
     h_index = max((i for i, count in enumerate(citations, 1) if count >= i), default=0)
     sources = ["ORCID", "OpenAlex"]
@@ -336,4 +410,3 @@ def main():
     rebuild_site.rebuild(unique, metrics)
 
 if __name__ == "__main__": main()
-
