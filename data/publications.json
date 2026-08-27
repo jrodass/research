@@ -576,7 +576,7 @@
   {
     "year": "2016",
     "publication_date": "2016-09-13",
-    "title": "El uso de modelos de características con atributos para pruebas en sistemas de alta variabilidad: Primeros pasos",
+    "title": "Using Attributed Feature Models for Testing Highly Configurable Systems: First Steps",
     "journal": "Actas de las 21st Jornadas de Ingenier&amp;amp;amp;amp;amp;amp;#65533;a del Software y Bases de Datos, JISBD 2016",
     "doi": "",
     "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85071631743&partnerID=MN8TOARS",
@@ -589,29 +589,11 @@
       "ORCID",
       "OpenAlex"
     ],
-    "title_aliases": [],
+    "title_aliases": [
+      "El uso de modelos de características con atributos para pruebas en sistemas de alta variabilidad: Primeros pasos"
+    ],
     "summary_es": "International audience",
     "summary_en": "International audience"
-  },
-  {
-    "year": "2016",
-    "publication_date": "2016-01-01",
-    "title": "Hacia el uso de sistemas de recomendación en sistemas de alta variabilidad",
-    "journal": "Actas de las 21st Jornadas de Ingenier&amp;amp;amp;amp;amp;amp;#65533;a del Software y Bases de Datos, JISBD 2016",
-    "doi": "",
-    "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85071649308&partnerID=MN8TOARS",
-    "type": "Conference-Paper",
-    "authors": "Jorge Rodas‐Silva, Javier Olivares, José Ángel Galindo Duarte, David Benavides",
-    "open_access": true,
-    "citations": 0,
-    "abstract": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos. Por otra parte, en la industria encontramos los sistemas de recomendación, los cuales, permiten recomendar la serie de productos que mejor se adapten a un usuario o un contexto de uso particular. En este artículo de prospección exploramos el uso de sistemas de recomendación en el contexto de los sistemas de alta variabilidad. Asimismo, identificamos algunas tareas donde podrían ayudar a la gestión de los sistemas de variabilidad.",
-    "sources": [
-      "ORCID",
-      "OpenAlex"
-    ],
-    "title_aliases": [],
-    "summary_es": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos.",
-    "summary_en": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos."
   },
   {
     "year": "2016",
@@ -633,6 +615,28 @@
     "title_aliases": [],
     "summary_es": "Esta publicación examina «The use of feature models with attributes for testing variability intensive systems: First steps». A partir de su título y registro bibliográfico en Actas De Las 21st Jornadas De Ingenier Amp Amp Amp Amp Amp 65533 A Del Software Y Bases De Datos Jisbd 2016, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
     "summary_en": "This publication examines “The use of feature models with attributes for testing variability intensive systems: First steps”. Based on its title and bibliographic record in Actas De Las 21st Jornadas De Ingenier Amp Amp Amp Amp Amp 65533 A Del Software Y Bases De Datos Jisbd 2016, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+  },
+  {
+    "year": "2016",
+    "publication_date": "2016-01-01",
+    "title": "Towards the Use of Recommender Systems in Highly Configurable Systems",
+    "journal": "Actas de las 21st Jornadas de Ingenier&amp;amp;amp;amp;amp;amp;#65533;a del Software y Bases de Datos, JISBD 2016",
+    "doi": "",
+    "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85071649308&partnerID=MN8TOARS",
+    "type": "Conference-Paper",
+    "authors": "Jorge Rodas‐Silva, Javier Olivares, José Ángel Galindo Duarte, David Benavides",
+    "open_access": true,
+    "citations": 0,
+    "abstract": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos. Por otra parte, en la industria encontramos los sistemas de recomendación, los cuales, permiten recomendar la serie de productos que mejor se adapten a un usuario o un contexto de uso particular. En este artículo de prospección exploramos el uso de sistemas de recomendación en el contexto de los sistemas de alta variabilidad. Asimismo, identificamos algunas tareas donde podrían ayudar a la gestión de los sistemas de variabilidad.",
+    "sources": [
+      "ORCID",
+      "OpenAlex"
+    ],
+    "title_aliases": [
+      "Hacia el uso de sistemas de recomendación en sistemas de alta variabilidad"
+    ],
+    "summary_es": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos.",
+    "summary_en": "Los sistemas de alta variabilidad son sistemas software cuyo comportamiento puede ser personalizado de acuerdo con las necesidades de un contexto particular. De hecho, existen sistemas de alta variabilidad que representan miles de productos."
   },
   {
     "year": "2016",
