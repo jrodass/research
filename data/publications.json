@@ -20,6 +20,23 @@
     "summary_en": "This study compares student performance in online and face-to-face object-oriented programming courses. Using educational data mining techniques, it identifies achievement differences and learning patterns that can inform improvements in programming instruction."
   },
   {
+    "year": "2026",
+    "title": "A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)",
+    "journal": "Big Data Research",
+    "doi": "10.1016/j.bdr.2026.100630",
+    "url": "https://doi.org/10.1016/j.bdr.2026.100630",
+    "type": "Journal Article",
+    "authors": "Jorge Parraga-Alava, Jorge Rodas-Silva, Jandry Franco, María-José Vélez",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "sources": [
+      "Crossref"
+    ],
+    "summary_es": "Esta publicación examina «A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)». A partir de su título y registro bibliográfico en Big Data Research, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)”. Based on its title and bibliographic record in Big Data Research, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+  },
+  {
     "year": "2025",
     "title": "Teaching programming in higher education: a bibliometric analysis of trends, technologies, and pedagogical approaches",
     "journal": "Frontiers in Education",
