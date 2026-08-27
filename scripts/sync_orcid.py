@@ -7,6 +7,7 @@ from pathlib import Path
 
 ORCID = "0000-0001-6526-7740"
 SCOPUS_AUTHOR_IDS = ("59258484700", "57188854666")
+ADDITIONAL_DOIS = ("10.1016/j.bdr.2026.100630",)
 HEAD = {"Accept": "application/json", "User-Agent": "JorgeRodasResearch/13.0"}
 
 def get(url, headers=None):
@@ -43,6 +44,42 @@ def crossref_abstract(doi):
         return clean_text(raw)
     except Exception:
         return ""
+
+def crossref_works(dois):
+    """Retrieve confirmed publications by DOI while author-profile APIs catch up."""
+    works = []
+    for requested_doi in dois:
+        doi = clean_doi(requested_doi)
+        try:
+            payload = get("https://api.crossref.org/works/" + urllib.parse.quote(doi, safe=""))
+            message = payload.get("message") or {}
+            date_parts = (
+                (message.get("published-print") or {}).get("date-parts")
+                or (message.get("published-online") or {}).get("date-parts")
+                or (message.get("issued") or {}).get("date-parts")
+                or []
+            )
+            authors = []
+            for author in message.get("author") or []:
+                name = " ".join(filter(None, (author.get("given"), author.get("family"))))
+                if name:
+                    authors.append(name)
+            works.append({
+                "year": str(date_parts[0][0]) if date_parts and date_parts[0] else "—",
+                "title": clean_text(next(iter(message.get("title") or []), "Untitled work")),
+                "journal": clean_text(next(iter(message.get("container-title") or []), "")),
+                "doi": doi,
+                "url": f"https://doi.org/{doi}",
+                "type": str(message.get("type") or "Publication").replace("-", " ").title(),
+                "authors": ", ".join(authors) or "Jorge Rodas-Silva et al.",
+                "open_access": False,
+                "citations": int(message.get("is-referenced-by-count") or 0),
+                "abstract": clean_text(message.get("abstract")),
+                "sources": ["Crossref"],
+            })
+        except Exception as exc:
+            print(f"Crossref fallback unavailable for {doi}: {exc}")
+    return works
 
 def short_summary(abstract, title, journal, lang):
     text = re.sub(r"^(abstract|resumen)\s*[:.—-]*\s*", "", abstract or "", flags=re.I).strip()
@@ -238,7 +275,7 @@ def main():
     previous_path = Path("data/publications.json")
     previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else []
     scopus, scopus_enabled = scopus_works()
-    works = merge_catalog(orcid_works(), scopus, previous)
+    works = merge_catalog(orcid_works(), scopus, crossref_works(ADDITIONAL_DOIS), previous)
     alex = openalex_works()
     by_doi = {clean_doi(w.get("doi")).lower(): w for w in alex if w.get("doi")}
     by_title = {normalized_title(w.get("title")): w for w in alex}
@@ -299,3 +336,4 @@ def main():
     rebuild_site.rebuild(unique, metrics)
 
 if __name__ == "__main__": main()
+
