@@ -313,7 +313,7 @@
   {
     "year": "2021",
     "publication_date": "2021-12-31",
-    "title": "El uso de aplicaciones Web para la Gestión de clínicas veterinarias y su incidencia en la mejora de procesos administrativos",
+    "title": "Use of Web Applications for the Management of Veterinary Clinics and Their Impact on the Improvement of Administrative Processes",
     "journal": "Ecuadorian Science Journal",
     "doi": "10.46480/esj.5.4.174",
     "url": "https://doi.org/10.46480/esj.5.4.174",
@@ -326,7 +326,9 @@
       "ORCID",
       "OpenAlex"
     ],
-    "title_aliases": [],
+    "title_aliases": [
+      "El uso de aplicaciones Web para la Gestión de clínicas veterinarias y su incidencia en la mejora de procesos administrativos"
+    ],
     "summary_es": "Actualmente en Ecuador, el problema que existe en el ámbito de la medicina veterinaria, es que en la mayoría de las clínicas no cuentan con herramientas tecnológicas para llevar una gestión centralizada y digitalizada de la información, siendo que aún lo realizan de forma manual lo que conlleva a que la organización de los expedientes almacenados se dificulte y en muchos casos ocasione la pérdida o la duplicidad de información. Este trabajo tiene como objetivo mostrar una aplicación web mediante el uso de…",
     "summary_en": "Actualmente en Ecuador, el problema que existe en el ámbito de la medicina veterinaria, es que en la mayoría de las clínicas no cuentan con herramientas tecnológicas para llevar una gestión centralizada y digitalizada de la información, siendo que aún lo realizan de forma manual lo que conlleva a que la organización de los expedientes almacenados se dificulte y en muchos casos ocasione la pérdida o la duplicidad de información. Este trabajo tiene como objetivo mostrar una aplicación web mediante el uso de…"
   },
@@ -473,7 +475,8 @@
     "publication_date": "2018-03-24",
     "title": "Selection of Deployment Configurations Using Recommender Systems on Android",
     "title_aliases": [
-      "Selection of deployment configurations using Recommender Systems on Android"
+      "Selection of deployment configurations using Recommender Systems on Android",
+      "Selection of deployment configurations using Recommender Systems on Android,Selección de configuraciones de despliegue usando Sistemas de Recomendación en Android"
     ],
     "journal": "RISTI - Revista Ibérica de Sistemas e Tecnologias de Informação",
     "doi": "",
@@ -485,6 +488,7 @@
     "abstract": "",
     "sources": [
       "Latindex",
+      "ORCID",
       "Scopus"
     ],
     "scopus_eid": "2-s2.0-85048519228",
@@ -507,49 +511,14 @@
     "scopus_eid": "2-s2.0-85172614366",
     "scopus_id": "85172614366",
     "sources": [
+      "ORCID",
       "Scopus"
     ],
-    "title_aliases": [],
+    "title_aliases": [
+      "RESDEC: Un prototipo de herramienta para la selección de configuraciones de despliegue basado en Sistemas de Recomendación"
+    ],
     "summary_es": "Esta publicación examina «RESDEC: A prototype tool for the selection of deployment configurations based on recommender systems». A partir de su título y registro bibliográfico en Actas De Las 23rd Jornadas De Ingenieria Del Software Y Bases De Datos Jisbd 2018, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
     "summary_en": "This publication examines “RESDEC: A prototype tool for the selection of deployment configurations based on recommender systems”. Based on its title and bibliographic record in Actas De Las 23rd Jornadas De Ingenieria Del Software Y Bases De Datos Jisbd 2018, it addresses the stated research problem and presents findings relevant to its academic and professional field."
-  },
-  {
-    "year": "2018",
-    "publication_date": "2018",
-    "title": "RESDEC: Un prototipo de herramienta para la selección de configuraciones de despliegue basado en Sistemas de Recomendación",
-    "journal": "Actas de las 23rd Jornadas de Ingenieria del Software y Bases de Datos, JISBD 2018",
-    "doi": "",
-    "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85071775951&partnerID=MN8TOARS",
-    "type": "Conference-Paper",
-    "authors": "Jorge Rodas-Silva et al.",
-    "open_access": false,
-    "citations": 0,
-    "abstract": "",
-    "sources": [
-      "ORCID"
-    ],
-    "title_aliases": [],
-    "summary_es": "El trabajo presenta RESDEC, un prototipo que utiliza sistemas de recomendación para apoyar la selección de configuraciones de despliegue. La herramienta busca reducir la complejidad de elección y ofrecer alternativas acordes con las necesidades y preferencias del usuario.",
-    "summary_en": "The paper presents RESDEC, a prototype that uses recommender systems to support deployment-configuration selection. The tool reduces choice complexity and recommends alternatives aligned with user needs and preferences."
-  },
-  {
-    "year": "2018",
-    "publication_date": "2018",
-    "title": "Selection of deployment configurations using Recommender Systems on Android,Selección de configuraciones de despliegue usando Sistemas de Recomendación en Android",
-    "journal": "RISTI - Revista Iberica de Sistemas e Tecnologias de Informacao",
-    "doi": "",
-    "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85048519228&partnerID=MN8TOARS",
-    "type": "Journal-Article",
-    "authors": "Jorge Rodas-Silva et al.",
-    "open_access": false,
-    "citations": 0,
-    "abstract": "",
-    "sources": [
-      "ORCID"
-    ],
-    "title_aliases": [],
-    "summary_es": "El artículo estudia el uso de sistemas de recomendación para seleccionar configuraciones de despliegue en aplicaciones Android. La propuesta ayuda a orientar decisiones entre múltiples alternativas considerando las características y preferencias asociadas al contexto de implementación.",
-    "summary_en": "This article studies the use of recommender systems to select deployment configurations for Android applications. The approach supports decisions among multiple alternatives by considering characteristics and preferences associated with the implementation context."
   },
   {
     "year": "2017",
