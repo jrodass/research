@@ -2,8 +2,11 @@ name: Sync scientific profile
 
 on:
   workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/**"
   schedule:
-    # 06:17 en Ecuador (UTC-5), todos los días.
     - cron: "17 11 * * *"
 
 permissions:
