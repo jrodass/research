@@ -167,14 +167,20 @@ TITLE_TRANSLATIONS = {
         "Bibliometric Analysis of Teaching Strategies for Programming Courses in Higher Education",
     "Análisis comparativo de metodologías y herramientas tecnológicas para procesos de Business Intelligence orientado a la toma de decisiones":
         "Comparative Analysis of Methodologies and Technological Tools for Business Intelligence Processes Aimed at Decision-Making",
+    "El uso de aplicaciones Web para la Gestión de clínicas veterinarias y su incidencia en la mejora de procesos administrativos":
+        "Use of Web Applications for the Management of Veterinary Clinics and Their Impact on the Improvement of Administrative Processes",
     "Enseñanza de programación mediante MIT App Inventor: una revisión de literatura":
         "Teaching Programming with MIT App Inventor: A Literature Review",
     "El uso del software Alice como herramienta para el aprendizaje de programación: una revisión de literatura":
         "Using Alice Software as a Tool for Learning Programming: A Literature Review",
     "RESDEC: Un prototipo de herramienta para la selección de configuraciones de despliegue basada en Sistemas de Recomendación":
-        "RESDEC: A Prototype Tool for Selecting Deployment Configurations Based on Recommender Systems",
+        "RESDEC: A Prototype Tool for the Selection of Deployment Configurations Based on Recommender Systems",
+    "RESDEC: Un prototipo de herramienta para la selección de configuraciones de despliegue basado en Sistemas de Recomendación":
+        "RESDEC: A Prototype Tool for the Selection of Deployment Configurations Based on Recommender Systems",
     "Selección de Configuraciones de configuración con sistemas de recomendación en Android":
         "Selecting Configuration Options Using Recommender Systems on Android",
+    "Selection of deployment configurations using Recommender Systems on Android,Selección de configuraciones de despliegue usando Sistemas de Recomendación en Android":
+        "Selection of Deployment Configurations Using Recommender Systems on Android",
     "Programación con la herramienta SCRATCH+CARAMBA. Una experiencia de aprendizaje significativo":
         "Programming with the Scratch+Caramba Tool: A Meaningful Learning Experience",
     "Programación con la herramienta SCRATCH+CARAMBA. Una experiencia de aprendizajecv significativo":
