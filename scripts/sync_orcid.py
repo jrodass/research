@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Synchronize ORCID + Scopus works and enrich them with OpenAlex/Crossref."""
 import html as html_lib
-import json, os, re, urllib.parse, urllib.request
+import json, os, re, unicodedata, urllib.parse, urllib.request
 from datetime import date
 from pathlib import Path
 
@@ -156,6 +156,45 @@ LATINDEX_WORKS = (
     },
 )
 
+# Verified Spanish titles found in the institutional articles and conference
+# catalogues.  These are deliberate academic translations, not automatic
+# word-for-word substitutions.  The original title is always retained as an
+# alias so records from ORCID, Scopus, OpenAlex and Latindex still deduplicate.
+TITLE_TRANSLATIONS = {
+    "Equidad en la evaluación académica y calidad de los exámenes universitarios: un análisis de patrones en educación superior":
+        "Equity in Academic Evaluation and Quality of University Exams: A Pattern Analysis in Higher Education",
+    "Análisis bibliométrico de estrategias de enseñanza para cursos de programación en educación superior":
+        "Bibliometric Analysis of Teaching Strategies for Programming Courses in Higher Education",
+    "Análisis comparativo de metodologías y herramientas tecnológicas para procesos de Business Intelligence orientado a la toma de decisiones":
+        "Comparative Analysis of Methodologies and Technological Tools for Business Intelligence Processes Aimed at Decision-Making",
+    "Enseñanza de programación mediante MIT App Inventor: una revisión de literatura":
+        "Teaching Programming with MIT App Inventor: A Literature Review",
+    "El uso del software Alice como herramienta para el aprendizaje de programación: una revisión de literatura":
+        "Using Alice Software as a Tool for Learning Programming: A Literature Review",
+    "RESDEC: Un prototipo de herramienta para la selección de configuraciones de despliegue basada en Sistemas de Recomendación":
+        "RESDEC: A Prototype Tool for Selecting Deployment Configurations Based on Recommender Systems",
+    "Selección de Configuraciones de configuración con sistemas de recomendación en Android":
+        "Selecting Configuration Options Using Recommender Systems on Android",
+    "Programación con la herramienta SCRATCH+CARAMBA. Una experiencia de aprendizaje significativo":
+        "Programming with the Scratch+Caramba Tool: A Meaningful Learning Experience",
+    "Programación con la herramienta SCRATCH+CARAMBA. Una experiencia de aprendizajecv significativo":
+        "Programming with the Scratch+Caramba Tool: A Meaningful Learning Experience",
+    "El uso de modelos de características con atributos para pruebas en sistemas de alta variabilidad: primeros pasos":
+        "Using Attributed Feature Models for Testing Highly Configurable Systems: First Steps",
+    "Hacia el uso de sistemas de recomendación en sistemas de alta variabilidad":
+        "Towards the Use of Recommender Systems in Highly Configurable Systems",
+    "Planificación estratégica a través de las TIC en los Gobiernos Autónomos Descentralizados Rurales del cantón Milagro":
+        "Strategic Planning Through ICT in Rural Decentralized Autonomous Governments of Milagro Canton",
+    "Estándares que contribuyen al desarrollo y entrega de productos de software de calidad":
+        "Standards That Contribute to the Development and Delivery of High-Quality Software Products",
+    "Sistemas de Gestión Digital para mejorar los procesos académicos en instituciones educativas":
+        "Digital Management Systems to Improve Academic Processes in Educational Institutions",
+    "Comercio electrónico: Un enfoque desde las perspectivas de las PYMES en la generación de estrategias para potenciar el desarrollo económico y empresarial en la ciudad de Milagro":
+        "E-Commerce: A Perspective from SMEs for Developing Strategies to Promote Economic and Business Growth in the City of Milagro",
+    "Estudio para determinar el uso y aplicación de las TIC: En los procesos de enseñanza aprendizaje por parte de los docentes de la ciudad de Milagro y cantones aledaños":
+        "Study to Determine the Use and Application of ICT in Teaching and Learning Processes by Educators in Milagro and Neighboring Cantons",
+}
+
 def get(url, headers=None):
     request_headers = dict(HEAD)
     request_headers.update(headers or {})
@@ -220,7 +259,26 @@ def publication_sort_key(item):
     return tuple((parts + [0, 0, 0])[:3])
 
 def normalized_title(value):
-    return re.sub(r"\W+", "", (value or "").casefold())
+    folded = unicodedata.normalize("NFKD", (value or "").casefold())
+    without_marks = "".join(char for char in folded if not unicodedata.combining(char))
+    return re.sub(r"\W+", "", without_marks)
+
+TITLE_TRANSLATIONS_BY_KEY = {
+    normalized_title(source): translated
+    for source, translated in TITLE_TRANSLATIONS.items()
+}
+
+def translate_title(item):
+    """Replace a verified Spanish title while retaining it as a source alias."""
+    original = clean_text(item.get("title") or "")
+    translated = TITLE_TRANSLATIONS_BY_KEY.get(normalized_title(original))
+    if not translated or normalized_title(translated) == normalized_title(original):
+        return item
+    aliases = set(item.get("title_aliases") or [])
+    aliases.add(original)
+    item["title_aliases"] = sorted(aliases)
+    item["title"] = translated
+    return item
 
 def title_keys(item):
     """Return normalized display and alternate titles for deduplication."""
@@ -494,6 +552,10 @@ def main():
     # Put curated Latindex records first so their normalized English titles
     # remain the display titles while richer API metadata is merged into them.
     works = merge_catalog(LATINDEX_WORKS, scopus, orcid_works(), crossref_works(ADDITIONAL_DOIS), previous)
+    for item in works:
+        translate_title(item)
+    # Translation can expose bilingual duplicates that lacked a DOI.
+    works = merge_catalog(works)
     alex = openalex_works()
     by_doi = {clean_doi(w.get("doi")).lower(): w for w in alex if w.get("doi")}
     by_title = {normalized_title(w.get("title")): w for w in alex}
