@@ -39,7 +39,7 @@ def card(p,lang):
       <h3><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{html.escape(p.get("title",""))}</a></h3>
       <div class="authors">{author_html(p.get("authors",""))}</div>
       <div class="publication-info"><span class="pub-badge">{html.escape(str(p.get("year","—")))} · {html.escape(p.get("type","Publication"))}</span><span class="journal">{html.escape(p.get("journal") or "Academic publication")}</span></div>
-      <p class="publication-abstract"><strong>{"Abstract:" if lang=="en" else "Resumen:"}</strong> {html.escape(abstract)}</p>
+      <details class="publication-summary"><summary>{"View abstract" if lang=="en" else "Ver resumen"}</summary><p class="publication-abstract"><strong>{"Abstract:" if lang=="en" else "Resumen:"}</strong> {html.escape(abstract)}</p></details>
       <div class="publication-actions"><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{icon("external")} {source}</a><a href="{cite_query}" target="_blank" rel="noopener">{icon("quote")} {"Cite" if lang=="en" else "Citar"}</a>{oa}</div>
     </article>'''
 

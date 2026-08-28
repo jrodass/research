@@ -1,15 +1,11 @@
-REDISENO DEL SITIO - VERSION 1
+DENSIDAD EDITORIAL - VERSION 3
 
-1. Abra la carpeta local del repositorio llamada research.
-2. Copie TODO el contenido de esta carpeta dentro de research.
-3. Cuando macOS lo solicite, seleccione Reemplazar y Aplicar a todos.
-4. Abra GitHub Desktop.
-5. Escriba: Reorganizar sitio con prioridad en publicaciones
-6. Presione Commit to main y luego Push origin.
+1. Copie assets, en, scripts e index.html dentro de research-clean.
+2. Seleccione Reemplazar y Aplicar a todos.
+3. No copie este archivo INSTRUCCIONES.txt.
+4. Confirme que data/publications.json y data/metrics.json no aparecen modificados.
+5. En GitHub Desktop use: Aplicar densidad editorial compacta
+6. Presione Commit to main y Push origin.
 
-Se reemplazan solamente seis archivos. No se modifican data/publications.json,
-data/metrics.json, sync_orcid.py ni el workflow de GitHub Actions.
-
-El cambio de scripts/rebuild_site.py hace que las tres publicaciones recientes
-se regeneren automaticamente despues de cada sincronizacion.
-
+La version reduce el espacio vertical, conserva las 37 publicaciones y mantiene
+la reconstruccion automatica en espanol e ingles.

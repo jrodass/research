@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     publicationList.style.alignContent="start";
     publicationList.style.gridAutoRows="max-content";
   }
-  const pageSize=5;
+  const pageSize=6;
   let page=1;
   let topicFilter="";
 
