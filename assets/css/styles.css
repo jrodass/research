@@ -254,3 +254,23 @@ h1 span{color:var(--blue)}.hero-copy{font-size:clamp(1.03rem,1.45vw,1.25rem);col
 .unified-research-grid .interest-card{background:linear-gradient(145deg,#f4f8ff,#eaf3ff);border-color:#cbdcf2}
 @media(max-width:1080px){.unified-research-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.unified-research-grid{grid-template-columns:1fr}.unified-research-grid .research-card{min-height:176px}}
+
+/* v18 — integrated profile and scientific impact */
+.hero{padding:30px 0 28px;background:linear-gradient(125deg,#f8fbff 0%,#edf5ff 64%,#f8fbff 100%)}
+.hero-grid{grid-template-columns:165px minmax(0,1fr);gap:28px}
+.hero h1{max-width:none;font-size:clamp(2.25rem,3.15vw,3.25rem);white-space:nowrap}
+.hero-copy{max-width:none}
+.hero-impact{margin-top:24px}
+.impact-panel{display:grid;grid-template-columns:220px minmax(0,1fr);align-items:stretch;background:rgba(255,255,255,.78);border:1px solid #d2e0ef;border-radius:16px;box-shadow:0 8px 22px rgba(22,54,101,.05);overflow:hidden}
+.impact-title{display:flex;flex-direction:column;justify-content:center;padding:18px 22px;border-right:1px solid #dce6f1}
+.impact-title h2{margin:5px 0 0;color:var(--ink);font-size:1.38rem;line-height:1.15;letter-spacing:-.025em}
+.impact-panel .impact-metrics{margin:0;border:0;border-radius:0;box-shadow:none;background:transparent}
+.impact-panel .impact-metrics .metric-primary{min-height:98px;padding:15px 17px}
+.impact-panel .secondary-metrics{grid-column:1/-1;margin:0 20px;padding:9px 0 0;border-top:1px solid #dce6f1}
+.impact-panel .metrics-source{grid-column:1/-1;margin:8px 20px 13px}
+@media(max-width:1180px){.hero h1{font-size:clamp(2.1rem,3.4vw,3rem);white-space:normal}}
+@media(max-width:900px){.impact-panel{grid-template-columns:1fr}.impact-title{padding:15px 18px;border-right:0;border-bottom:1px solid #dce6f1}.impact-title h2{font-size:1.25rem}.impact-panel .impact-metrics{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:760px){
+  .hero{padding:30px 0 25px}.hero-grid{grid-template-columns:1fr}.hero h1{white-space:normal}
+  .hero-impact{margin-top:20px}.impact-panel .impact-metrics{grid-template-columns:repeat(2,1fr)}
+}

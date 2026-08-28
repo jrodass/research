@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   const nav=document.querySelector(".nav-links");
   menu?.addEventListener("click",()=>{const open=nav?.classList.toggle("open");menu.setAttribute("aria-expanded",String(Boolean(open)));});
   nav?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");menu?.setAttribute("aria-expanded","false");}));
-  document.querySelectorAll("[data-print-cv]").forEach(link=>link.addEventListener("click",event=>{event.preventDefault();window.print();}));
-
   const search=document.querySelector("#pub-search");
   const year=document.querySelector("#year-filter");
   const cards=[...document.querySelectorAll(".publication-card")];

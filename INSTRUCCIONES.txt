@@ -1,12 +1,24 @@
-RECURSOS COMPLETOS Y CUADRICULA DE INVESTIGACION - VERSION 5
+ACTUALIZACION VISUAL Y CV A4 - VERSION 6
 
-Este paquete contiene completas las carpetas assets y scripts. Puede seleccionar
-Reemplazar en Finder sin perder el logotipo, la fotografia, JavaScript ni la
-sincronizacion cientifica.
+1. Descomprima este paquete.
+2. Abra la carpeta local limpia del repositorio: research-clean.
+3. Copie en research-clean estos cuatro elementos del paquete:
+   - assets
+   - en
+   - scripts
+   - index.html
+4. Cuando macOS pregunte, seleccione Reemplazar y Aplicar a todos.
+5. No elimine ni reemplace las carpetas data y .github de research-clean.
+6. En GitHub Desktop confirme que Current repository sea research-clean.
+7. Use el resumen: Integrar impacto en portada y corregir CV PDF
+8. Presione Commit to main y luego Push origin.
 
-1. Copie assets, en, scripts e index.html dentro de research-clean.
-2. Seleccione Reemplazar y Aplicar a todos.
-3. No copie INSTRUCCIONES.txt.
-4. Confirme que data/publications.json y data/metrics.json no cambian.
-5. En GitHub Desktop use: Restaurar recursos y redistribuir investigación
-6. Presione Commit to main y Push origin.
+El paquete incluye completas las carpetas assets y scripts. Por eso conserva
+el logotipo, la fotografía, los dos CV y los tres programas de sincronización.
+
+RESULTADO
+- Perfil e impacto científico integrados en un bloque inicial más compacto.
+- Menos espacio vertical antes de las publicaciones.
+- Botones de CV enlazados a documentos A4 reales de dos páginas.
+- Versiones independientes en español e inglés.
+- La reconstrucción automática conserva la nueva distribución.
