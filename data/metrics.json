@@ -1,0 +1,25 @@
+{
+  "publications": 38,
+  "journals": 24,
+  "conference_papers": 11,
+  "book_chapters": 1,
+  "doi_links": 28,
+  "citations": 99,
+  "h_index": 5,
+  "i10_index": 3,
+  "citations_per_publication": 2.6,
+  "cited_publications_share": "42%",
+  "open_access_share": "66%",
+  "updated": "2026-08-28",
+  "sources": [
+    "ORCID",
+    "Scopus",
+    "OpenAlex",
+    "Latindex",
+    "Crossref"
+  ],
+  "scopus_author_ids": [
+    "59258484700",
+    "57188854666"
+  ]
+}

@@ -1,20 +1,18 @@
-ACTUALIZACION FINAL DEL SITIO Y CV - VERSION 11
+ACTUALIZACION AUDITADA DEL PERFIL CIENTIFICO
 
-1. Descomprima el paquete.
-2. Copie assets, en, scripts e index.html dentro de research-clean.
-3. Seleccione Reemplazar y Aplicar a todos.
-4. No reemplace data ni .github.
+1. Abra esta carpeta descomprimida.
+2. Copie las carpetas assets, data, en y scripts, y el archivo index.html.
+3. Pegue esos elementos dentro de la carpeta local research-clean.
+4. En macOS, seleccione Reemplazar o Aplicar a todos cuando se solicite.
 5. En GitHub Desktop confirme que Current repository sea research-clean.
-6. Resumen: Finalizar diseño editorial del CV académico
+6. Use el resumen: Actualizar catalogo auditado a 38 publicaciones
 7. Presione Commit to main y luego Push origin.
 
-RESULTADO
-- Nombre alineado a la izquierda junto a la fotografía.
-- Nombre, cargo, resumen y enlaces comparten el mismo eje.
-- Publicaciones con diseño editorial, sin numeración.
-- Año en columna lateral.
-- Nombre del autor resaltado en negrita.
-- Revista y DOI en una sola línea.
-- 37 publicaciones completas en cuatro páginas A4.
-- Versiones finales en español e inglés con URL nueva.
-- Vista previa en el navegador antes de descargar.
+Esta version incluye:
+- 38 publicaciones unicas y ordenadas cronologicamente.
+- El trabajo DATA 2023 confirmado mediante DOI 10.5220/0012086300003541.
+- Contador e indicadores actualizados.
+- CV completo en espanol e ingles con las 38 publicaciones.
+- Regla permanente en scripts/sync_orcid.py para conservar el registro.
+
+No copie el archivo ZIP dentro del repositorio.

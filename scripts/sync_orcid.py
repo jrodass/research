@@ -7,7 +7,12 @@ from pathlib import Path
 
 ORCID = "0000-0001-6526-7740"
 SCOPUS_AUTHOR_IDS = ("59258484700", "57188854666")
-ADDITIONAL_DOIS = ("10.1016/j.bdr.2026.100630",)
+ADDITIONAL_DOIS = (
+    "10.1016/j.bdr.2026.100630",
+    # DATA 2023 proceeding. Confirmed in Crossref, DBLP, SciTePress and
+    # OpenAlex, but not consistently linked to the primary author profiles.
+    "10.5220/0012086300003541",
+)
 HEAD = {"Accept": "application/json", "User-Agent": "JorgeRodasResearch/14.0"}
 
 # Confirmed works published in journals registered by Latindex that are not
@@ -618,6 +623,8 @@ def main():
         sources.insert(1, "Scopus")
     if any("Latindex" in (item.get("sources") or []) for item in unique):
         sources.append("Latindex")
+    if any("Crossref" in (item.get("sources") or []) for item in unique):
+        sources.append("Crossref")
     metrics = {
         "publications": len(unique),
         "journals": sum("journal" in p["type"].lower() for p in unique),
