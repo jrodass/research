@@ -43,10 +43,23 @@ def card(p,lang):
       <div class="publication-actions"><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{icon("external")} {source}</a><a href="{cite_query}" target="_blank" rel="noopener">{icon("quote")} {"Cite" if lang=="en" else "Citar"}</a>{oa}</div>
     </article>'''
 
+def featured_card(p,lang):
+    abstract=(p.get("summary_en") if lang=="en" else p.get("summary_es")) or (p.get("abstract") or "").strip()
+    label="Read publication" if lang=="en" else "Ver publicación"
+    return f'''<article class="featured-publication" data-featured-year="{html.escape(str(p.get("year","")))}">
+      <div class="featured-meta"><span>{html.escape(str(p.get("year","—")))}</span><span>{html.escape(p.get("type","Publication"))}</span></div>
+      <h3><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{html.escape(p.get("title",""))}</a></h3>
+      <div class="authors">{author_html(p.get("authors",""))}</div>
+      <p>{html.escape(abstract)}</p>
+      <a class="featured-link" href="{html.escape(url(p))}" target="_blank" rel="noopener">{label} {icon("external")}</a>
+    </article>'''
+
 def rebuild(pubs,metrics):
     for path,lang in [(ROOT/"index.html","es"),(ROOT/"en/index.html","en")]:
         s=path.read_text(encoding="utf-8")
         cards="".join(card(p,lang) for p in pubs)
+        featured="".join(featured_card(p,lang) for p in pubs[:3])
+        s=re.sub(r'(<div id="featured-publications" class="featured-grid">).*?(</div>\s*<div class="featured-footer">)',lambda m:m.group(1)+featured+m.group(2),s,flags=re.S)
         s=re.sub(r'(<div id="publication-list" class="publication-list"[^>]*>).*?(</div>\s*<nav class="pagination")',lambda m:m.group(1)+cards+m.group(2),s,flags=re.S)
         s=re.sub(r'(<strong id="visible-total">)\d+(</strong>)',rf'\g<1>{len(pubs)}\g<2>',s)
         s=re.sub(r'(<strong id="filtered-count">)\d+(</strong>)',rf'\g<1>{len(pubs)}\g<2>',s)

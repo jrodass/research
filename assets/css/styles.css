@@ -125,3 +125,51 @@ h1 span{color:var(--blue)}.hero-copy{font-size:clamp(1.03rem,1.45vw,1.25rem);col
   .publication-card{display:block!important;break-inside:avoid}.metrics-ten{grid-template-columns:repeat(5,1fr)}
   .metric,.career-entry,.education-entry,.award-card,.aff-card{box-shadow:none;break-inside:avoid}
 }
+
+/* v13 — research-first hierarchy and compact navigation */
+.nav-links{gap:22px}
+.nav-cv{background:var(--blue);border:1px solid var(--blue);border-radius:9px;color:#fff!important;padding:10px 15px!important;box-shadow:0 6px 15px rgba(35,88,216,.17)}
+.nav-cv::after{display:none!important}
+.impact-section{border-bottom:1px solid var(--line)}
+.impact-heading{margin-bottom:28px}
+.impact-metrics{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:20px}
+.metric-primary{min-height:148px;background:linear-gradient(145deg,#fff,#f7faff)}
+.metric-primary .metric-head>span:first-child{display:grid;place-items:center;width:24px;height:24px;color:var(--blue);font-weight:800;font-size:1.04rem}
+.metric-primary strong{font-size:2.45rem;margin-top:31px}
+.secondary-metrics{border-top:1px solid var(--line);padding-top:17px}
+.secondary-metrics summary{width:max-content;max-width:100%;color:var(--blue);font-size:.79rem;font-weight:750;cursor:pointer;list-style-position:inside}
+.secondary-metrics[open] summary{margin-bottom:18px}
+.secondary-metrics-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0}
+.metric-secondary{min-height:104px;padding:17px 19px;box-shadow:none;background:#f8fafd}
+.metric-secondary strong{font-size:1.6rem;margin-top:18px}
+.metrics-source{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:18px 0 0;color:#8191aa;font-size:.7rem}
+.featured-section{background:linear-gradient(180deg,#f3f6fb,#eef3fa);border-bottom:1px solid var(--line)}
+.featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.featured-publication{position:relative;display:flex;flex-direction:column;min-height:385px;padding:26px;background:#fff;border:1px solid #d9e4f1;border-top:4px solid var(--blue);border-radius:18px;box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease}
+.featured-publication:hover{transform:translateY(-4px);box-shadow:0 17px 34px rgba(22,54,101,.12)}
+.featured-meta{display:flex;gap:9px;align-items:center;margin-bottom:17px;color:#7185a4;font-size:.67rem;font-weight:750;text-transform:uppercase;letter-spacing:.06em}
+.featured-meta span:first-child{background:var(--blue-soft);border:1px solid #c8ddff;border-radius:6px;color:var(--blue);padding:5px 8px}
+.featured-publication h3{margin:0 0 13px;color:var(--ink);font-size:1.04rem;line-height:1.45}
+.featured-publication h3 a:hover{color:var(--blue)}
+.featured-publication .authors{margin-bottom:14px}
+.featured-publication>p{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:4;margin:0 0 22px;color:#667a97;font-size:.79rem;line-height:1.65}
+.featured-link{display:inline-flex;align-items:center;gap:7px;margin-top:auto;color:var(--blue);font-size:.75rem;font-weight:750}
+.featured-footer{display:flex;justify-content:center;margin-top:27px}
+.featured-footer .btn strong{font:inherit}
+.catalogue-section{background:var(--bg);border-bottom:1px solid var(--line)}
+.catalogue-section .publications-lead{margin-bottom:28px}
+@media(max-width:1080px){
+  .impact-metrics{grid-template-columns:repeat(2,1fr)}
+  .secondary-metrics-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){.featured-grid{grid-template-columns:1fr}.featured-publication{min-height:0}}
+@media(max-width:760px){
+  .impact-metrics,.secondary-metrics-grid{grid-template-columns:1fr}
+  .metrics-source{display:block}.metrics-source span{display:block;margin-top:5px}
+  .featured-footer{justify-content:stretch}.featured-footer .btn{justify-content:center;width:100%}
+  .nav-cv{padding:10px 14px!important}
+}
+@media print{
+  .secondary-metrics>summary{display:none}.secondary-metrics>.secondary-metrics-grid{display:grid!important}
+  .featured-publication{min-height:0;box-shadow:none;break-inside:avoid}
+}

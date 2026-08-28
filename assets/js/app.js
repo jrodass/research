@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   const menu=document.querySelector(".menu");
   const nav=document.querySelector(".nav-links");
   menu?.addEventListener("click",()=>{const open=nav?.classList.toggle("open");menu.setAttribute("aria-expanded",String(Boolean(open)));});
+  nav?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");menu?.setAttribute("aria-expanded","false");}));
   document.querySelectorAll("[data-print-cv]").forEach(link=>link.addEventListener("click",event=>{event.preventDefault();window.print();}));
 
   const search=document.querySelector("#pub-search");
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(year)year.value="";
     document.querySelectorAll("[data-topic-filter]").forEach(item=>item.classList.toggle("is-active",item===button));
     page=1;render();
-    document.querySelector("#publications")?.scrollIntoView({behavior:"smooth",block:"start"});
+    document.querySelector("#publication-catalogue")?.scrollIntoView({behavior:"smooth",block:"start"});
   }));
   prev?.addEventListener("click",()=>{if(page>1){page--;render();document.querySelector("#publication-list")?.scrollIntoView({behavior:"smooth",block:"start"});}});
   next?.addEventListener("click",()=>{const count=Math.max(1,Math.ceil(matchingCards().length/pageSize));if(page<count){page++;render();document.querySelector("#publication-list")?.scrollIntoView({behavior:"smooth",block:"start"});}});

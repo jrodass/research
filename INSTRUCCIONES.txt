@@ -1,0 +1,15 @@
+REDISENO DEL SITIO - VERSION 1
+
+1. Abra la carpeta local del repositorio llamada research.
+2. Copie TODO el contenido de esta carpeta dentro de research.
+3. Cuando macOS lo solicite, seleccione Reemplazar y Aplicar a todos.
+4. Abra GitHub Desktop.
+5. Escriba: Reorganizar sitio con prioridad en publicaciones
+6. Presione Commit to main y luego Push origin.
+
+Se reemplazan solamente seis archivos. No se modifican data/publications.json,
+data/metrics.json, sync_orcid.py ni el workflow de GitHub Actions.
+
+El cambio de scripts/rebuild_site.py hace que las tres publicaciones recientes
+se regeneren automaticamente despues de cada sincronizacion.
+
