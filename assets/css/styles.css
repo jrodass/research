@@ -242,3 +242,8 @@ h1 span{color:var(--blue)}.hero-copy{font-size:clamp(1.03rem,1.45vw,1.25rem);col
   .research-grid,.research-grid-interests{grid-template-columns:1fr}.research-card{min-height:180px}
   .toolbar{grid-template-columns:1fr}.credentials-grid{gap:30px}
 }
+
+/* v16 — positioning statement as the hero headline */
+.hero h1{max-width:860px;font-size:clamp(2.25rem,3.5vw,3.6rem);line-height:1.02;letter-spacing:-.042em}
+.hero h1 span{color:var(--blue)}
+@media(max-width:760px){.hero h1{max-width:620px;margin-inline:auto;font-size:clamp(2.15rem,10vw,3rem)}}
