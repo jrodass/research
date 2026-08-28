@@ -173,3 +173,34 @@ h1 span{color:var(--blue)}.hero-copy{font-size:clamp(1.03rem,1.45vw,1.25rem);col
   .secondary-metrics>summary{display:none}.secondary-metrics>.secondary-metrics-grid{display:grid!important}
   .featured-publication{min-height:0;box-shadow:none;break-inside:avoid}
 }
+
+/* v14 — denser editorial layout with resilient brand imagery */
+.section{padding:56px 0}
+.section-head{margin-bottom:24px}
+.section-head h2{font-size:clamp(1.9rem,3.2vw,3rem)}
+.brand{display:block;flex:0 0 auto}.brand picture{display:block}.logo{width:285px;max-width:39vw}
+.nav{height:76px}.nav-links a{padding:25px 0}.nav-links a::after{bottom:15px}
+.hero{padding:46px 0 49px;background:linear-gradient(125deg,#f8fbff 0%,#eef5ff 64%,#f8fbff 100%)}
+.hero-grid{grid-template-columns:210px minmax(0,1fr);gap:42px;align-items:center}
+.hero-content{grid-column:2}.hero-portrait{grid-column:1;grid-row:1}
+.hero h1{font-size:clamp(2.55rem,4.3vw,4.4rem);line-height:1.02;letter-spacing:-.045em;margin:.13em 0 .12em}
+.hero-role{margin:0;color:var(--blue);font-size:clamp(1rem,1.5vw,1.2rem);font-weight:750}
+.hero-specialties{margin:10px 0 0;color:#657894;font-size:.78rem;font-weight:600}
+.hero-copy{max-width:900px;margin:14px 0 0;color:#536984;font-size:.88rem;line-height:1.65}
+.hero-actions{margin-top:20px}.orcid-btn{color:#537526;border-color:#b9d79b;background:#f8fff2}
+.portrait-wrap{padding:7px}.portrait-wrap::before{inset:0;border-radius:50%;transform:none;background:linear-gradient(145deg,#d7e8fb,#b7d5f5)}
+.portrait{aspect-ratio:1;border-radius:50%;border:5px solid #fff;object-position:center 16%;box-shadow:0 14px 32px rgba(21,54,101,.17)}
+.impact-heading{margin-bottom:22px}.impact-metrics{margin-bottom:15px}.metric-primary{min-height:126px;padding:19px 21px}.metric-primary strong{font-size:2.15rem;margin-top:21px}
+.secondary-metrics{padding-top:13px}.metrics-source{margin-top:13px}
+.publications-lead{margin:-5px 0 23px;font-size:.9rem}
+.featured-grid{gap:14px}.featured-publication{min-height:315px;padding:21px}.featured-publication h3{font-size:.95rem}.featured-publication>p{-webkit-line-clamp:3;margin-bottom:16px}.featured-footer{margin-top:21px}
+.research-intro{margin-bottom:27px;font-size:.9rem}.research-grid{gap:14px}.research-card{min-height:195px;padding:22px 22px 20px 68px}.research-card::before{left:49px;top:23px;bottom:23px}.research-number{left:21px;top:23px}.research-card h3{font-size:.94rem}.research-card p{font-size:.76rem;line-height:1.55}.research-link{left:68px;bottom:19px;font-size:.68rem}.interest-label{margin-top:22px}
+.recent-bar{margin-bottom:14px}.toolbar{margin-bottom:14px}.publication-list{gap:13px}.publication-card{padding:19px 22px}.publication-abstract{margin-top:10px;-webkit-line-clamp:2}
+.career-layout{gap:13px}.career-entry{min-height:138px;padding-top:21px;padding-bottom:21px}.education-layout{gap:11px}.education-entry{padding:19px 22px}.awards-grid,.affiliations-grid{gap:13px}.award-card,.aff-card{padding:20px}
+@media(max-width:1080px){.nav-links{top:75px}.hero-grid{grid-template-columns:180px minmax(0,1fr);gap:32px}}
+@media(max-width:760px){
+  .section{padding:45px 0}.nav{height:70px}.nav-links{top:69px}.logo{width:245px;max-width:72vw}
+  .hero{padding:37px 0 42px}.hero-grid{grid-template-columns:1fr;gap:24px}.hero-content{grid-column:1;grid-row:2}.hero-portrait{grid-column:1;grid-row:1}.portrait-wrap{max-width:190px;margin:auto}
+  .hero h1{text-align:center}.hero .kicker,.hero-role,.hero-specialties{text-align:center}.hero-copy{font-size:.84rem}.hero-actions{justify-content:center}
+  .research-card{min-height:215px}
+}
