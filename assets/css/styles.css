@@ -247,3 +247,10 @@ h1 span{color:var(--blue)}.hero-copy{font-size:clamp(1.03rem,1.45vw,1.25rem);col
 .hero h1{max-width:860px;font-size:clamp(2.25rem,3.5vw,3.6rem);line-height:1.02;letter-spacing:-.042em}
 .hero h1 span{color:var(--blue)}
 @media(max-width:760px){.hero h1{max-width:620px;margin-inline:auto;font-size:clamp(2.15rem,10vw,3rem)}}
+
+/* v17 — unified 3 × 2 research grid */
+.unified-research-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.unified-research-grid .research-card{min-height:168px;height:100%}
+.unified-research-grid .interest-card{background:linear-gradient(145deg,#f4f8ff,#eaf3ff);border-color:#cbdcf2}
+@media(max-width:1080px){.unified-research-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.unified-research-grid{grid-template-columns:1fr}.unified-research-grid .research-card{min-height:176px}}
