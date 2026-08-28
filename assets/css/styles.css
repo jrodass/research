@@ -257,7 +257,7 @@ h1 span{color:var(--blue)}.hero-copy{font-size:clamp(1.03rem,1.45vw,1.25rem);col
 
 /* v18 — integrated profile and scientific impact */
 .hero{padding:30px 0 28px;background:linear-gradient(125deg,#f8fbff 0%,#edf5ff 64%,#f8fbff 100%)}
-.hero-grid{grid-template-columns:165px minmax(0,1fr);gap:28px}
+.hero-grid{grid-template-columns:190px minmax(0,1fr);gap:32px}
 .hero h1{max-width:none;font-size:clamp(2.25rem,3.15vw,3.25rem);white-space:nowrap}
 .hero-copy{max-width:none}
 .hero-impact{margin-top:24px}

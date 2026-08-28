@@ -1,24 +1,20 @@
-ACTUALIZACION VISUAL Y CV A4 - VERSION 6
+ACTUALIZACION FINAL DEL SITIO Y CV - VERSION 11
 
-1. Descomprima este paquete.
-2. Abra la carpeta local limpia del repositorio: research-clean.
-3. Copie en research-clean estos cuatro elementos del paquete:
-   - assets
-   - en
-   - scripts
-   - index.html
-4. Cuando macOS pregunte, seleccione Reemplazar y Aplicar a todos.
-5. No elimine ni reemplace las carpetas data y .github de research-clean.
-6. En GitHub Desktop confirme que Current repository sea research-clean.
-7. Use el resumen: Integrar impacto en portada y corregir CV PDF
-8. Presione Commit to main y luego Push origin.
-
-El paquete incluye completas las carpetas assets y scripts. Por eso conserva
-el logotipo, la fotografía, los dos CV y los tres programas de sincronización.
+1. Descomprima el paquete.
+2. Copie assets, en, scripts e index.html dentro de research-clean.
+3. Seleccione Reemplazar y Aplicar a todos.
+4. No reemplace data ni .github.
+5. En GitHub Desktop confirme que Current repository sea research-clean.
+6. Resumen: Finalizar diseño editorial del CV académico
+7. Presione Commit to main y luego Push origin.
 
 RESULTADO
-- Perfil e impacto científico integrados en un bloque inicial más compacto.
-- Menos espacio vertical antes de las publicaciones.
-- Botones de CV enlazados a documentos A4 reales de dos páginas.
-- Versiones independientes en español e inglés.
-- La reconstrucción automática conserva la nueva distribución.
+- Nombre alineado a la izquierda junto a la fotografía.
+- Nombre, cargo, resumen y enlaces comparten el mismo eje.
+- Publicaciones con diseño editorial, sin numeración.
+- Año en columna lateral.
+- Nombre del autor resaltado en negrita.
+- Revista y DOI en una sola línea.
+- 37 publicaciones completas en cuatro páginas A4.
+- Versiones finales en español e inglés con URL nueva.
+- Vista previa en el navegador antes de descargar.
