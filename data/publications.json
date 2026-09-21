@@ -1,7 +1,7 @@
 [
   {
     "year": "2026",
-    "publication_date": "2026-08",
+    "publication_date": "2026-08-01",
     "title": "A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)",
     "journal": "Big Data Research",
     "doi": "10.1016/j.bdr.2026.100630",
@@ -12,7 +12,8 @@
     "citations": 0,
     "abstract": "",
     "sources": [
-      "Crossref"
+      "Crossref",
+      "OpenAlex"
     ],
     "title_aliases": [],
     "summary_es": "Esta publicación examina «A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)». A partir de su título y registro bibliográfico en Big Data Research, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
@@ -26,7 +27,7 @@
     "doi": "10.1007/978-3-032-12882-9_6",
     "url": "https://doi.org/10.1007/978-3-032-12882-9_6",
     "type": "Conference Paper",
-    "authors": "Jorge Rodas-Silva et al.",
+    "authors": "Jorge Rodas-Silva, Jorge Parraga‐Alava",
     "open_access": false,
     "citations": 0,
     "abstract": "",
@@ -34,6 +35,7 @@
     "scopus_id": "105030882645",
     "sources": [
       "ORCID",
+      "OpenAlex",
       "Scopus"
     ],
     "title_aliases": [],
@@ -116,18 +118,19 @@
     "doi": "10.1109/ETCM67548.2025.11304406",
     "url": "https://doi.org/10.1109/ETCM67548.2025.11304406",
     "type": "Conference Paper",
-    "authors": "Jorge Rodas-Silva et al.",
+    "authors": "Jorge Parraga‐Alava, Jorge Rodas-Silva, Joseph Chávez Reyes, Gema Bravo Navarrete",
     "open_access": false,
     "citations": 0,
-    "abstract": "",
+    "abstract": "Aphid infestations represent a significant threat to lemon production in Ecuador, negatively impacting crop yields and farmer income. This research evaluates five convolutional neural network architectures (VGG16, ResNet50, AlexNet, DenseNet and InceptionV3) for detection of aphids on lemon leaves under real-world field conditions. Using LeLePhid dataset comprising 655 images of real-field 1 emon 1 eaves c ollected in Manabí, Ecuador, we conducted a comprehensive comparison of model performance across three parameters: classification accuracy, processing speed, and computational resource requirements (CPU, GPU, RAM). Experimental results indicate that VGG16 achieved the highest classification performance average (0.923) and area under curve score (0.964), demonstrating superior detection capability. Among the tested models, ResNet50 and InceptionV3 exhibited the most favorable balance between accuracy and computational efficiency, making them particularly suitable for implementation in resource-constrained agricultural environments. These findings $\\mathbf{p}$ rovide $\\mathbf{p}$ ractical $\\mathbf{g}$ uidance for farmers, agronomists, and developers in selecting AI solutions that are not only reliable but also affordable and easy to implement in real-world farming conditions.",
     "scopus_eid": "2-s2.0-105032518036",
     "scopus_id": "105032518036",
     "sources": [
+      "OpenAlex",
       "Scopus"
     ],
     "title_aliases": [],
-    "summary_es": "Esta publicación examina «Deep Learning for Aphids Detection: A Comparative CNNs Study on Lemon Leaves Images». A partir de su título y registro bibliográfico en Etcm 2025 9th Ecuador Technical Chapters Meeting, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
-    "summary_en": "This publication examines “Deep Learning for Aphids Detection: A Comparative CNNs Study on Lemon Leaves Images”. Based on its title and bibliographic record in Etcm 2025 9th Ecuador Technical Chapters Meeting, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+    "summary_es": "Aphid infestations represent a significant threat to lemon production in Ecuador, negatively impacting crop yields and farmer income. This research evaluates five convolutional neural network architectures (VGG16, ResNet50, AlexNet, DenseNet and InceptionV3) for detection of aphids on lemon leaves under real-world field conditions.",
+    "summary_en": "Aphid infestations represent a significant threat to lemon production in Ecuador, negatively impacting crop yields and farmer income. This research evaluates five convolutional neural network architectures (VGG16, ResNet50, AlexNet, DenseNet and InceptionV3) for detection of aphids on lemon leaves under real-world field conditions."
   },
   {
     "year": "2025",
@@ -137,18 +140,19 @@
     "doi": "10.1109/SMC58881.2025.11343106",
     "url": "https://doi.org/10.1109/SMC58881.2025.11343106",
     "type": "Conference Paper",
-    "authors": "Jorge Rodas-Silva et al.",
+    "authors": "Jorge Rodas-Silva, Jorge Parraga‐Alava",
     "open_access": false,
     "citations": 0,
-    "abstract": "",
+    "abstract": "Automated helmet detection is essential for verifying compliance with personal protective equipment (PPE) regulations. Real-time detection of helmet use can significantly reduce the risk of injuries caused by falling objects, machinery accidents or other hazards in high-risk environments. In this paper, we explore the impact of Genetic Algorithm (GA) optimization on the computational efficiency and performance of Convolutional Neural Networks (CNNs) for automated helmet detection, ensuring compliance with PPE regulations. Our approach includes a robust data collection and annotation stage, a CNN architecture, and GA-based optimization to fine-tune hyperparameters for improved accuracy and computational efficiency. Experimental results demonstrate that the GA-optimized CNN outperforms the baseline model in accuracy and robustness, particularly under challenging conditions such as normal lighting and angle variation. With 94% accuracy and a 98% AUC, an inference time of 23.5 ms, and a memory footprint of 245 MB, the GA-CNN excels helmet detection.",
     "scopus_eid": "2-s2.0-105033155475",
     "scopus_id": "105033155475",
     "sources": [
+      "OpenAlex",
       "Scopus"
     ],
     "title_aliases": [],
-    "summary_es": "Esta publicación examina «Enhanced Helmet Detection using a CNN and Genetic Algorithm for Personal Protective Equipment Compliance». A partir de su título y registro bibliográfico en Conference Proceedings IEEE International Conference on Systems Man and Cybernetics, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
-    "summary_en": "This publication examines “Enhanced Helmet Detection using a CNN and Genetic Algorithm for Personal Protective Equipment Compliance”. Based on its title and bibliographic record in Conference Proceedings IEEE International Conference on Systems Man and Cybernetics, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+    "summary_es": "Automated helmet detection is essential for verifying compliance with personal protective equipment (PPE) regulations. Real-time detection of helmet use can significantly reduce the risk of injuries caused by falling objects, machinery accidents or other hazards in high-risk environments.",
+    "summary_en": "Automated helmet detection is essential for verifying compliance with personal protective equipment (PPE) regulations. Real-time detection of helmet use can significantly reduce the risk of injuries caused by falling objects, machinery accidents or other hazards in high-risk environments."
   },
   {
     "year": "2025",
