@@ -21,6 +21,26 @@
   },
   {
     "year": "2026",
+    "publication_date": "2026-07-01",
+    "title": "Evaluating Zero-Shot and Few-Shot Vision-Language Models Against Supervised CNNs for Coffee Leaf Rust Classification",
+    "journal": "",
+    "doi": "10.1109/ACMLC70381.2026.11700499",
+    "url": "https://doi.org/10.1109/ACMLC70381.2026.11700499",
+    "type": "Conference-Paper",
+    "authors": "Jorge Rodas‐Silva, Jorge Antonio Párraga Álava",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "sources": [
+      "ORCID",
+      "OpenAlex"
+    ],
+    "title_aliases": [],
+    "summary_es": "Esta publicación examina «Evaluating Zero-Shot and Few-Shot Vision-Language Models Against Supervised CNNs for Coffee Leaf Rust Classification». A partir de su título y registro bibliográfico en el registro científico indexado, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “Evaluating Zero-Shot and Few-Shot Vision-Language Models Against Supervised CNNs for Coffee Leaf Rust Classification”. Based on its title and bibliographic record in the indexed scientific record, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+  },
+  {
+    "year": "2026",
     "publication_date": "2026-01-01",
     "title": "Comparing Academic Performance in Online and Face-to-Face Object-Oriented Programming Courses: An Educational Data Mining Analysis",
     "journal": "Lecture Notes in Networks and Systems",
