@@ -572,14 +572,15 @@
     "doi": "10.18687/LACCEI2017.1.1.268",
     "url": "https://doi.org/10.18687/LACCEI2017.1.1.268",
     "type": "Conference Paper",
-    "authors": "Jorge Rodas-Silva et al.",
+    "authors": "J. Cobo, David Benavides, Mayra D’Armas, Mariuxi Vinueza, Jorge Rodas‐Silva",
     "open_access": false,
     "citations": 1,
-    "abstract": "",
+    "abstract": "El alto indice de reprobados es un problema generalizado en la ensenanza de la programacion en los espacios educativos formales, en el caso de las carreras Ingenieria de Sistemas Computacionales e Ingenieria Industrial de la Universidad Estatal de Milagro, Ecuador, se han impulsado iniciativas que van en pro del buen desempeno del estudiante. La herramienta de programacion SCRATCH y el sistema de recomendacion CARAMBA, se aplican como una alternativa a las estrategias clasicas de ensenanza. La investigacion reportada analiza con base en la percepcion de los estudiantes del curso pre-universitario, el impacto del uso de herramientas alternativas como el SCRATCH en el proceso de ensenanza y aprendizaje de la programacion. Se concluye que debe mantenerse la aplicacion de SCRATCH +CARAMBA con los estudiantes del pre-universitario y continuar con el descenso a los niveles academicos inferiores en forma progresiva, es decir colegios y escuelas del sector.",
     "scopus_eid": "2-s2.0-85046302606",
     "scopus_id": "85046302606",
     "sources": [
       "ORCID",
+      "OpenAlex",
       "Scopus"
     ],
     "title_aliases": [],
