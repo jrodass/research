@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     const query=(search?.value||"").trim().toLowerCase();
     const selectedYear=year?.value||"";
     return cards.filter(card=>{
-      const matchesQuery=!query||card.textContent.toLowerCase().includes(query);
+      const searchableText=`${card.textContent} ${card.dataset.aliases||""}`.toLowerCase();
+      const matchesQuery=!query||searchableText.includes(query);
       const matchesYear=!selectedYear||card.dataset.year===selectedYear;
       const matchesTopic=!topicFilter||(card.dataset.topics||"").split(" ").includes(topicFilter);
       return matchesQuery&&matchesYear&&matchesTopic;

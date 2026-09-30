@@ -12,6 +12,10 @@ ADDITIONAL_DOIS = (
     # DATA 2023 proceeding. Confirmed in Crossref, DBLP, SciTePress and
     # OpenAlex, but not consistently linked to the primary author profiles.
     "10.5220/0012086300003541",
+    # Confirmed 2026 works with final DOI records. These remain available on
+    # the site while Scopus completes indexing and author-profile assignment.
+    "10.1007/s11192-026-05818-4",
+    "10.1109/ACMLC70381.2026.11700499",
 )
 HEAD = {"Accept": "application/json", "User-Agent": "JorgeRodasResearch/14.0"}
 

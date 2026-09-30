@@ -35,7 +35,8 @@ def card(p,lang):
         abstract=(f'This publication examines “{p.get("title","")}” and presents contributions relevant to its academic field.' if lang=="en" else f'Esta publicación examina «{p.get("title","")}» y presenta aportes relevantes para su campo académico.')
     cite_query=html.escape("https://scholar.google.com/scholar?q="+re.sub(r"\s+","+",p.get("title","").strip()))
     oa=(f'<a class="open-access" href="{html.escape(url(p))}" target="_blank" rel="noopener">{"Open access" if lang=="en" else "Acceso abierto"}</a>' if p.get("open_access") else "")
-    return f'''<article class="publication-card" data-year="{html.escape(str(p.get("year","")))}" data-topics="{html.escape(topic_tags(p))}">
+    aliases=" | ".join(str(alias) for alias in (p.get("title_aliases") or []) if alias)
+    return f'''<article class="publication-card" data-year="{html.escape(str(p.get("year","")))}" data-topics="{html.escape(topic_tags(p))}" data-aliases="{html.escape(aliases)}">
       <h3><a href="{html.escape(url(p))}" target="_blank" rel="noopener">{html.escape(p.get("title",""))}</a></h3>
       <div class="authors">{author_html(p.get("authors",""))}</div>
       <div class="publication-info"><span class="pub-badge">{html.escape(str(p.get("year","—")))} · {html.escape(p.get("type","Publication"))}</span><span class="journal">{html.escape(p.get("journal") or "Academic publication")}</span></div>
