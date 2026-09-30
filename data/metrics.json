@@ -1,8 +1,8 @@
 {
   "publications": 40,
-  "journals": 25,
-  "conference_papers": 12,
-  "book_chapters": 1,
+  "journals": 13,
+  "conference_papers": 17,
+  "book_chapters": 0,
   "doi_links": 30,
   "citations": 100,
   "h_index": 5,
@@ -10,7 +10,7 @@
   "citations_per_publication": 2.5,
   "cited_publications_share": "40%",
   "open_access_share": "62%",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "sources": [
     "ORCID",
     "Scopus",
