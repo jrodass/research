@@ -21,19 +21,22 @@
   },
   {
     "year": "2026",
-    "publication_date": "2026-08-01",
+    "publication_date": "2026-08-28",
     "title": "A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)",
     "journal": "Big Data Research",
     "doi": "10.1016/j.bdr.2026.100630",
     "url": "https://doi.org/10.1016/j.bdr.2026.100630",
-    "type": "Journal Article",
+    "type": "Article",
     "authors": "Jorge Antonio Párraga Álava, Jorge Rodas‐Silva, Jandry Franco, María-José Vélez",
     "open_access": false,
     "citations": 0,
     "abstract": "",
+    "scopus_eid": "2-s2.0-105047063366",
+    "scopus_id": "105047063366",
     "sources": [
       "Crossref",
-      "OpenAlex"
+      "OpenAlex",
+      "Scopus"
     ],
     "title_aliases": [],
     "summary_es": "Esta publicación examina «A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)». A partir de su título y registro bibliográfico en Big Data Research, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
