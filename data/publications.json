@@ -1,26 +1,6 @@
 [
   {
     "year": "2026",
-    "publication_date": "2026-09-23",
-    "title": "Growth, concentration, and internationalisation of research output at a post-reform regional university in Ecuador: bibliometric evidence from Scopus (2016–2025)",
-    "journal": "Scientometrics",
-    "doi": "10.1007/s11192-026-05818-4",
-    "url": "https://doi.org/10.1007/s11192-026-05818-4",
-    "type": "Journal Article",
-    "authors": "Jorge Parraga-Alava, Jorge Rodas-Silva",
-    "open_access": false,
-    "citations": 0,
-    "abstract": "",
-    "sources": [
-      "Crossref",
-      "OpenAlex"
-    ],
-    "title_aliases": [],
-    "summary_es": "Esta publicación examina «Growth, concentration, and internationalisation of research output at a post-reform regional university in Ecuador: bibliometric evidence from Scopus (2016–2025)». A partir de su título y registro bibliográfico en Scientometrics, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
-    "summary_en": "This publication examines “Growth, concentration, and internationalisation of research output at a post-reform regional university in Ecuador: bibliometric evidence from Scopus (2016–2025)”. Based on its title and bibliographic record in Scientometrics, it addresses the stated research problem and presents findings relevant to its academic and professional field."
-  },
-  {
-    "year": "2026",
     "publication_date": "2026-08-28",
     "title": "A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)",
     "journal": "Big Data Research",
@@ -85,6 +65,29 @@
     "title_aliases": [],
     "summary_es": "Este estudio compara el desempeño académico de estudiantes en cursos de programación orientada a objetos impartidos en modalidad virtual y presencial. Mediante técnicas de minería de datos educativos, identifica diferencias de rendimiento y patrones útiles para mejorar el diseño de la enseñanza de programación.",
     "summary_en": "This study compares student performance in online and face-to-face object-oriented programming courses. Using educational data mining techniques, it identifies achievement differences and learning patterns that can inform improvements in programming instruction."
+  },
+  {
+    "year": "2026",
+    "publication_date": "2026-01-01",
+    "title": "Growth, concentration, and internationalisation of research output at a post-reform regional university in Ecuador: bibliometric evidence from Scopus (2016–2025)",
+    "journal": "Scientometrics",
+    "doi": "10.1007/s11192-026-05818-4",
+    "url": "https://doi.org/10.1007/s11192-026-05818-4",
+    "type": "Article",
+    "authors": "Jorge Parraga-Alava, Jorge Rodas-Silva",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "scopus_eid": "2-s2.0-105051570803",
+    "scopus_id": "105051570803",
+    "sources": [
+      "Crossref",
+      "OpenAlex",
+      "Scopus"
+    ],
+    "title_aliases": [],
+    "summary_es": "Esta publicación examina «Growth, concentration, and internationalisation of research output at a post-reform regional university in Ecuador: bibliometric evidence from Scopus (2016–2025)». A partir de su título y registro bibliográfico en Scientometrics, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “Growth, concentration, and internationalisation of research output at a post-reform regional university in Ecuador: bibliometric evidence from Scopus (2016–2025)”. Based on its title and bibliographic record in Scientometrics, it addresses the stated research problem and presents findings relevant to its academic and professional field."
   },
   {
     "year": "2025",
