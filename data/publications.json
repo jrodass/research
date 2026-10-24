@@ -257,7 +257,7 @@
     "type": "Article",
     "authors": "Joel Garcia-Arteaga, Jesús Zambrano-Zambrano, Jorge Antonio Párraga Álava, Jorge Rodas‐Silva",
     "open_access": false,
-    "citations": 10,
+    "citations": 11,
     "abstract": "",
     "scopus_eid": "2-s2.0-85175232121",
     "scopus_id": "85175232121",
@@ -625,7 +625,7 @@
     "authors": "Mariuxi Vinueza, Jorge Rodas‐Silva, José Ángel Galindo Duarte, David Benavides",
     "open_access": true,
     "citations": 0,
-    "abstract": "International audience",
+    "abstract": "Los modelos de características con atributos representan todos los productos de una línea de productos junto con información adi-cional. En la literatura encontramos modelos representando miles de pro-ductos distintos. La selección de estos productos para hacer pruebas es un reto que se está estudiando en la literatura, en algunas de estas propuestas utilizan modelos de características con atributos para seleccionar este subconjunto de productos. Sin embargo no existe una guía de como utilizar los atributos para selección de casos de pruebas en distintos es-cenarios, con el objetivo de alimentar esa guía , nos proponemos buscar en la literatura la manera de caracterizar los modelos usados por otros investigadores con el objetivo de ayudar a modelar atributos en modelos de características para realizar las pruebas. Una línea de productos permite desarrollar un conjunto de productos dis-tintos que comparten parte de la funcionalidad. Los modelos de características son usados para representar el conjunto de productos de software en términos de características y relaciones [6]. El análisis automático de modelos de características trata de extraer informa-ción de los modelos de características usando mecanismos automatizados [2]. Por ejemplo, para validar la corrección del modelo o identificar el conjunto de carac-terístcas que lo conforman. FAMA [3] o FaMiLiar[1], entre otras, son herramien-tas que implementan e integran diferentes soluciones para análisis automático de modelos de características. Existen propuestas para representar la información de calidad dentro de los modelos de características. Actualmente, a este tipo de modelos con información adicional se les denomina como extendidos, avanzados, o modelos de característi-cas con atributos [2,4,5]. Un modelo de características extendido contiene infor-mación extra sobre las características , el propósito de esta extensión es añadir información medible (cuantitativa) sobre las características mediante la intro-ducción de atributos, así como la inclusión de restricciones más complejas entre las características y sus atributos.",
     "sources": [
       "ORCID",
       "OpenAlex"
@@ -633,8 +633,8 @@
     "title_aliases": [
       "El uso de modelos de características con atributos para pruebas en sistemas de alta variabilidad: Primeros pasos"
     ],
-    "summary_es": "International audience",
-    "summary_en": "International audience"
+    "summary_es": "Los modelos de características con atributos representan todos los productos de una línea de productos junto con información adi-cional. En la literatura encontramos modelos representando miles de pro-ductos distintos.",
+    "summary_en": "Los modelos de características con atributos representan todos los productos de una línea de productos junto con información adi-cional. En la literatura encontramos modelos representando miles de pro-ductos distintos."
   },
   {
     "year": "2016",
