@@ -16,6 +16,9 @@ ADDITIONAL_DOIS = (
     # the site while Scopus completes indexing and author-profile assignment.
     "10.1007/s11192-026-05818-4",
     "10.1109/ACMLC70381.2026.11700499",
+    # Discover Artificial Intelligence, published 17 October 2026.
+    # Retain it while Scopus completes indexing and profile assignment.
+    "10.1007/s44163-026-02501-8",
 )
 HEAD = {"Accept": "application/json", "User-Agent": "JorgeRodasResearch/14.0"}
 
