@@ -74,17 +74,17 @@
     "url": "https://doi.org/10.1109/ACMLC70381.2026.11700499",
     "type": "Conference-Paper",
     "authors": "Jorge Rodas‐Silva, Jorge Antonio Párraga Álava",
-    "open_access": false,
+    "open_access": true,
     "citations": 0,
-    "abstract": "",
+    "abstract": "Coffee leaf rust threatens global coffee production, yet automated severity assessment tools remain inaccessible to smallholder farmers who lack annotated datasets and machine learning expertise. This study compares three classification paradigms on the publicly available RoCoLe dataset (1560 robusta coffee leaf images): supervised fine-tuned CNNs, zero-shot (ZS) multi-modal LLM inference, and few-shot (FS) multimodal LLM inference. Three CNN architectures (EfficientNet-B0, MobileNetV3-Large, DenseNet121) and three Claude models (Opus 4.6, Sonnet 4.6, Haiku 4.5) are evaluated on two tasks: binary classification (healthy vs. unhealthy) and rust severity classification (three levels). Balanced accuracy is used as the primary scalar metric to account for class imbalance. For binary classification, supervised CNNs achieve the highest balanced accuracy (EfficientNet-B0: 0.949) with Opus 4.6 few-shot close behind (0.924). For rust severity, MobileNetV3-L (CNN, 0.686) and Sonnet 4.6 few-shot (LLM, 0.686) tie at the best balanced accuracy, while Sonnet 4.6 ZS and Opus 4.6 FS achieve the best F1 (0.689), surpassing all CNNs while requiring zero training time. A recall analysis reveals a systematic bias asymmetry: LLMs overdetect disease on the binary task but under-call severe rust on the severity task, whereas CNNs show the opposite tendency. Cohen$d$effect sizes confirm large practical differences between paradigms$(\\vert d\\vert >1.5)$. These results indicate that supervised CNNs remain superior for coarse binary screening, whereas zero-shot LLMs offer a competitive, training-free alternative for fine-grained severity classification under data scarcity.",
     "sources": [
       "Crossref",
       "ORCID",
       "OpenAlex"
     ],
     "title_aliases": [],
-    "summary_es": "Esta publicación examina «Evaluating Zero-Shot and Few-Shot Vision-Language Models Against Supervised CNNs for Coffee Leaf Rust Classification». A partir de su título y registro bibliográfico en 2026 8th Asia Conference on Machine Learning and Computing (ACMLC), aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
-    "summary_en": "This publication examines “Evaluating Zero-Shot and Few-Shot Vision-Language Models Against Supervised CNNs for Coffee Leaf Rust Classification”. Based on its title and bibliographic record in 2026 8th Asia Conference on Machine Learning and Computing (ACMLC), it addresses the stated research problem and presents findings relevant to its academic and professional field."
+    "summary_es": "Coffee leaf rust threatens global coffee production, yet automated severity assessment tools remain inaccessible to smallholder farmers who lack annotated datasets and machine learning expertise. This study compares three classification paradigms on the publicly available RoCoLe dataset (1560 robusta coffee leaf images): supervised fine-tuned CNNs, zero-shot (ZS) multi-modal LLM inference, and few-shot (FS) multimodal LLM inference.",
+    "summary_en": "Coffee leaf rust threatens global coffee production, yet automated severity assessment tools remain inaccessible to smallholder farmers who lack annotated datasets and machine learning expertise. This study compares three classification paradigms on the publicly available RoCoLe dataset (1560 robusta coffee leaf images): supervised fine-tuned CNNs, zero-shot (ZS) multi-modal LLM inference, and few-shot (FS) multimodal LLM inference."
   },
   {
     "year": "2026",
