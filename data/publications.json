@@ -370,14 +370,14 @@
     "authors": "Jorge Rodas‐Silva, Jorge Antonio Párraga Álava",
     "open_access": true,
     "citations": 5,
-    "abstract": "",
+    "abstract": "The success of higher education institutions in the online learning environment can be measured by the performance of students. Identifying backgrounds or factors that increase the academic success rate of online students is especially helpful for educational decision-makers to adequately plan actions to promote successful outcomes in this digital landscape. In this paper, we identify the factors that contribute to the academic success of students in public Ecuadorian online universities and develop a predictive model to aid in improving their performance. Our approach involved five stages: data collection and description, which involved gathering data from universities, including social demographic, and academic features. In preprocessing, cleaning, and transforming the data to prepare it for analysis was performed. Modeling involved applying machine learning algorithms to identify patterns and key factors to predict student outcomes. It was validated in the next stage where the performance of feature selection and predictive model was tackled. In the last stage, were interpreted the results of the analysis about the factors that contribute to the academic success of low-income students in online universities in Ecuador. The results suggest that the grade in the leveling course, the family income, and the age of the student mainly influence their academic performance. The best performances were achieved with Boruta + Random Forest and LVQ + SVM, reaching an accuracy of 75.24% and 68.63% for binary (Pass/Fail) and multiclass (Average/Good/Excellent) academic performance prediction, respectively.",
     "sources": [
       "Crossref",
       "OpenAlex"
     ],
     "title_aliases": [],
-    "summary_es": "Esta publicación examina «Predicting Academic Performance of Low-Income Students in Public Ecuadorian Online Universities: An Educational Data Mining Approach». A partir de su título y registro bibliográfico en Proceedings of the 12th International Conference on Data Science, Technology and Applications, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
-    "summary_en": "This publication examines “Predicting Academic Performance of Low-Income Students in Public Ecuadorian Online Universities: An Educational Data Mining Approach”. Based on its title and bibliographic record in Proceedings of the 12th International Conference on Data Science, Technology and Applications, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+    "summary_es": "The success of higher education institutions in the online learning environment can be measured by the performance of students. Identifying backgrounds or factors that increase the academic success rate of online students is especially helpful for educational decision-makers to adequately plan actions to promote successful outcomes in this digital landscape.",
+    "summary_en": "The success of higher education institutions in the online learning environment can be measured by the performance of students. Identifying backgrounds or factors that increase the academic success rate of online students is especially helpful for educational decision-makers to adequately plan actions to promote successful outcomes in this digital landscape."
   },
   {
     "year": "2022",
@@ -434,7 +434,7 @@
     "authors": "Jorge Antonio Párraga Álava, Jorge Rodas‐Silva, Iván Quimi, Roberth Abel Alcivar Cevallos",
     "open_access": true,
     "citations": 2,
-    "abstract": "",
+    "abstract": "Social media data have been used for opinion and sentiment analysis and seem to have the potential to reflect the political picture of many territories. This paper analyzes the opinions and sentiments of users about the organization and candidates of the 2021 Ecuadorian presidential election to determine whether these can be considered as a relevant factor to predict election outcomes in this country. We used a social media analytics methodology with four phases: first two correspond to data acquisition and pre-processing, where Twitter search API was used for fetching election-related tweets that were taken and converted into a structured format; in the third phase, an opinion analysis was performed to offer statistics about the number of tweets and users, hashtags, mentions and, word clouds. In the fourth phase, we verified the emotional attitude of the users regarding the presidential candidates by using sentiment analysis. The results showed that most of the users’ opinions reflected positive sentiment about presidential candidate Arauz in the first round. On the other hand, in the second round, presidential candidate Lasso, concerning the first round, captured a more significant positive response from Twitter users, who achieved a closed result over candidate Arauz. Finally, it is concluded that there is a correspondence between positive sentiments expressed in the tweets and the total votes obtained by candidates.",
     "scopus_eid": "2-s2.0-85146198380",
     "scopus_id": "85146198380",
     "sources": [
@@ -457,7 +457,7 @@
     "authors": "Mariuxi Vinueza-Morales, Ana Eva Chacón-Luna, Jorge Rodas‐Silva, Héctor Serrano Mantilla",
     "open_access": true,
     "citations": 3,
-    "abstract": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor. The findings indicate a high acceptance in the academic community of App Inventor as an effective tool for motivation and performance of students who are initiated in programming, without distinction in the educational level.",
+    "abstract": "MIT App Inventor es un entorno de programación visual por bloques creado para el desarrollo de aplicaciones para móviles por programadores novatos, y es ampliamente utilizado en todo el mundo para el aprendizaje de programación. En el presente se describe la revisión de literatura realizada a partir de la aplicación de criterios de búsqueda y selección, utilizando motores de búsqueda especializados, seguido del análisis de los 35 estudios seleccionados (experimentos y experiencias) sobre el proceso de enseñanza-aprendizaje de programación realizados por docentes de diversos países, mediante el uso de App Inventor. Los hallazgos indican una gran aceptación en la comunidad académica de App Inventor como herramienta eficaz para la motivación y el rendimiento de los estudiantes que se inician en la programación, sin distinguir en el nivel educativo.",
     "scopus_eid": "2-s2.0-85096810867",
     "scopus_id": "85096810867",
     "sources": [
@@ -466,8 +466,8 @@
       "Scopus"
     ],
     "title_aliases": [],
-    "summary_es": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor.",
-    "summary_en": "MIT App Inventor is a visual block programming environment created for mobile application development by novice programmers, and is widely used around the world for learning programming. This paper describes the literature review conducted by applying search and selection criteria, using specialized search engines, followed by the analysis of the 35 selected studies (experiments and experiences) on the teaching-learning process of programming conducted by teachers from various countries, using App Inventor."
+    "summary_es": "MIT App Inventor es un entorno de programación visual por bloques creado para el desarrollo de aplicaciones para móviles por programadores novatos, y es ampliamente utilizado en todo el mundo para el aprendizaje de programación. En el presente se describe la revisión de literatura realizada a partir de la aplicación de criterios de búsqueda y selección, utilizando motores de búsqueda especializados, seguido del análisis de los 35 estudios seleccionados (experimentos y experiencias) sobre el proceso de…",
+    "summary_en": "MIT App Inventor es un entorno de programación visual por bloques creado para el desarrollo de aplicaciones para móviles por programadores novatos, y es ampliamente utilizado en todo el mundo para el aprendizaje de programación. En el presente se describe la revisión de literatura realizada a partir de la aplicación de criterios de búsqueda y selección, utilizando motores de búsqueda especializados, seguido del análisis de los 35 estudios seleccionados (experimentos y experiencias) sobre el proceso de…"
   },
   {
     "year": "2019",
@@ -549,7 +549,7 @@
     "authors": "Jorge Antonio Córdova Morán, Jorge Rodas‐Silva, Mariuxi G. Vinueza Morales",
     "open_access": true,
     "citations": 3,
-    "abstract": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review. We used the most common databases in the area of computer science such as ACM, IEE, among others; and taking into account a search protocol, and some criteria, 24 articles were selected. Among the findings are the effectiveness of the use of Alice as a learning resource for introduction to programming, the amount of work in English, and the weak validity of the experimental results.",
+    "abstract": "Alice ® is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review. We used the most common databases in the area of computer science such as ACM, IEE, among others; and taking into account a search protocol, and some criteria, 24 articles were selected. Among the findings are the effectiveness of the use of Alice as a learning resource for introduction to programming, the amount of work in English, and the weak validity of the experimental results.",
     "scopus_eid": "2-s2.0-85073595967",
     "scopus_id": "85073595967",
     "sources": [
@@ -558,8 +558,8 @@
       "Scopus"
     ],
     "title_aliases": [],
-    "summary_es": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review.",
-    "summary_en": "Alice is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review."
+    "summary_es": "Alice ® is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review.",
+    "summary_en": "Alice ® is one of the most used tools in learning programming languages, given its usefulness to acquire skills in problem solving and algorithmic thinking. This document presents the results of the analysis of the use of the Alice platform as a tool for learning programming from a literature review."
   },
   {
     "year": "2018",
