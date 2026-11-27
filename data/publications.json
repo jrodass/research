@@ -110,6 +110,26 @@
     "summary_en": "This study compares student performance in online and face-to-face object-oriented programming courses. Using educational data mining techniques, it identifies achievement differences and learning patterns that can inform improvements in programming instruction."
   },
   {
+    "year": "2026",
+    "publication_date": "2026-01-01",
+    "title": "MINERÍA DE DATOS Y APRENDIZAJE AUTÓMATICO FUNDAMENTOS Y EJERCICIOS",
+    "journal": "",
+    "doi": "10.63624/risei.book-978-9907-817-51-5",
+    "url": "https://doi.org/10.63624/risei.book-978-9907-817-51-5",
+    "type": "Book",
+    "authors": "Jorge Antonio Párraga Álava, Jorge Rodas‐Silva, J. Cobo",
+    "open_access": false,
+    "citations": 0,
+    "abstract": "",
+    "sources": [
+      "ORCID",
+      "OpenAlex"
+    ],
+    "title_aliases": [],
+    "summary_es": "Esta publicación examina «MINERÍA DE DATOS Y APRENDIZAJE AUTÓMATICO FUNDAMENTOS Y EJERCICIOS». A partir de su título y registro bibliográfico en el registro científico indexado, aborda el problema de investigación planteado y presenta aportes relevantes para su campo académico y profesional.",
+    "summary_en": "This publication examines “MINERÍA DE DATOS Y APRENDIZAJE AUTÓMATICO FUNDAMENTOS Y EJERCICIOS”. Based on its title and bibliographic record in the indexed scientific record, it addresses the stated research problem and presents findings relevant to its academic and professional field."
+  },
+  {
     "year": "2025",
     "publication_date": "2025-12-01",
     "title": "Equity in academic evaluation and quality of university exams: a pattern analysis in higher education",
@@ -525,7 +545,7 @@
     "type": "Article",
     "authors": "Jorge Rodas‐Silva, José Á. Galindo, Jorge Garcia-Gutierrez, David Benavides",
     "open_access": true,
-    "citations": 49,
+    "citations": 50,
     "abstract": "In software products line (SPL), there may be features which can be implemented by different components, which means there are several implementations for the same feature. In this context, the selection of the best components set to implement a given configuration is a challenging task due to the high number of combinations and options which could be selected. In certain scenarios, it is possible to find information associated with the components which could help in this selection task, such as user ratings. In this paper, we introduce a component-based recommender system, called (REcommender System that suggests implementation Components from selecteD fEatures), which uses information associated with the implementation components to make recommendations in the domain of the SPL configuration. We also provide a RESDEC reference implementation that supports collaborative-based and content-based filtering algorithms to recommend (i.e., implementation components) regarding WordPress-based websites configuration. The empirical results, on a knowledge base with 680 plugins and 187 000 ratings by 116 000 users, show promising results. Concretely, this indicates that it is possible to guide the user throughout the implementation components selection with a margin of error smaller than 13% according to our evaluation.",
     "scopus_eid": "2-s2.0-85067252529",
     "scopus_id": "85067252529",
